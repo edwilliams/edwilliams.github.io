@@ -1,0 +1,43 @@
+.work-list {
+  overflow: hidden;
+}
+
+.work-item {
+  margin-top: 4%;
+  float: left;
+  width: 100%;
+}
+
+.work-item:first-child {
+  margin-top: 0px;
+}
+
+.work-item-left {
+  width: 50%;
+  float: left;
+  a {
+    display: block;
+  }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: inherit;
+  }
+}
+
+.work-item-right {
+  display: block;
+  width: 50%;
+  padding: 0 5%;
+  float: left;
+  color: $black;
+}
+
+.wi-title {
+  padding: 0;
+  margin: 0;
+}
+
+.wi-text {
+  display: block;
+}

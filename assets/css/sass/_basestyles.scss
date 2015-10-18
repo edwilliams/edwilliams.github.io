@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "brandon-regular-webfont";
+  src: url("../fonts/brandon/brandon-regular-webfont.eot");
+  src: url("../fonts/brandon/brandon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon-regular-webfont.woff") format("woff"), url("../fonts/brandon/brandon-regular-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon-regular-webfont.svg#brandon_grot_w01_regularRg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "justvector";
+  src: url("../fonts/justvector/justvector-webfont.eot");
+  src: url("../fonts/justvector/justvector-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/justvector/justvector-webfont.woff") format("woff"), url("../fonts/justvector/justvector-webfont.ttf") format("truetype"), url("../fonts/justvector/justvector-webfont.svg#jubilatregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+  // overflow: hidden
+  width: 100%;
+  font-family: "brandon-regular-webfont";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  // color: $black
+  color: #62796d;
+  font-size: 16px;
+  font-family: upperlanelight;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.about-text li {
+  margin-bottom: 15px;
+}
+
+a {
+  @include prefix( transition, 0.3s );
+  font-family: "brandon-regular-webfont";
+  &:hover {
+    color: $aqua;
+  }
+}
+
+
+a:active {
+  color: #ff851b;
+}
+
+//a:visited,
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 171, 214);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "brandon-regular-webfont";
+  color: $black;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+a,
+div,
+ul,
+li,
+p {
+  -webkit-tap-highlight-color: transparent;
+  color: $black;
+}
+
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+p, li {
+  font-family: "brandon-regular-webfont";
+}
+
+.inside-pages {
+  display: block;
+  width: 83%;
+  height: 100%;
+  float: right;
+}
+
+.content {
+  float: left;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 5%;
+}

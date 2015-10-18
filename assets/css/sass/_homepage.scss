@@ -1,0 +1,31 @@
+#new-home {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.window {
+  width: 100%;
+  position: absolute;
+  @include CB-animation;
+}
+
+.window_left {
+  border-right-width: 1008px;
+  border-right-style: solid;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-style: solid;
+  border-top-color: white;
+  top: 0;
+}
+
+.window_right {
+  left: 50%;
+  border-left-style: solid;
+  border-left-color: transparent;
+  border-bottom-style: solid;
+  // border-bottom-color: #A8BDB2
+  border-bottom-color: black;
+}
