@@ -296,8 +296,6 @@ p, li {
   z-index: 3;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
   transition: 0.5s ease; }
 
 .window_info h1 {
@@ -310,8 +308,6 @@ p, li {
   .window_info.opened h1, .window_info.opened h2 {
     -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
     -moz-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-    -o-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-    -ms-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
     transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s; }
   .window_info.opened h1 {
     font-size: 16px; }
@@ -332,8 +328,6 @@ p, li {
   width: 100%;
   -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   -moz-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -o-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -ms-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   margin-top: -30px; }
   .main-menu ul {
@@ -452,7 +446,7 @@ p, li {
 .social_media_icon-github:before {
   content: "j"; }
 
-#new-home {
+.new-home {
   display: none;
   position: absolute;
   width: 100%;
@@ -464,8 +458,6 @@ p, li {
   position: absolute;
   -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   -moz-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -o-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -ms-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s; }
 
 .window_left {
@@ -483,13 +475,13 @@ p, li {
   border-bottom-style: solid;
   border-bottom-color: black; }
 
-#about {
+.about {
   margin: 50px 0 0 0;
   height: 100%; }
-  #about h2 {
+  .about h2 {
     margin-bottom: -20px; }
 
-#about > div {
+.about > div {
   overflow-x: hidden;
   overflow-y: auto;
   float: left;
@@ -505,22 +497,22 @@ p, li {
   float: left;
   width: 70%; }
 
-#about::-webkit-scrollbar {
+.about::-webkit-scrollbar {
   width: 5px; }
 
-#about::-webkit-scrollbar-track {
+.about::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px; }
 
-#about::-webkit-scrollbar-thumb {
+.about::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5); }
 
-#contact {
+.contact {
   min-height: initial; }
 
-#contact_email {
+.contact_email {
   text-decoration: none; }
 
 .footer {
@@ -593,7 +585,7 @@ p, li {
     border-left: none;
     min-height: inherit; }
 
-  #new-home {
+  .new-home {
     display: none !important; } }
 @media all and (max-width: 1470px) {
   .social_media_container {
@@ -645,10 +637,10 @@ p, li {
     width: 60%;
     background-color: rgba(255, 255, 255, 0.5); } }
 @media all and (max-width: 1024px) {
-  #about {
+  .about {
     background: none;
     height: initial; }
-    #about > div {
+    .about > div {
       overflow: hidden;
       max-height: inherit;
       padding: 0; }
@@ -657,7 +649,7 @@ p, li {
     width: 100%;
     background-color: white; } }
 @media all and (max-width: 800px) {
-  #about {
+  .about {
     margin: 0; }
 
   .about-text ul {
@@ -684,7 +676,7 @@ p, li {
   .work-item {
     padding: 0 0 50px 0; } }
 @media all and (max-width: 800px) {
-  #contact {
+  .contact {
     min-height: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

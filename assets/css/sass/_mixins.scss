@@ -33,24 +33,18 @@ $black: #222222;
 @mixin CB-animation {
   -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   -moz-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -o-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-  -ms-transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
   transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
 }
 
 @mixin ease-animation {
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 @mixin borderImage($src) {
   -webkit-border-image:url($src) 30 30 round;
   -moz-border-image:url($src) 30 30 round;
-  -ms-border-image:url($src) 30 30 round;
-  -o-border-image:url($src) 30 30 round;
   border-image:url($src) 30 30 round;
 }
 
@@ -62,8 +56,6 @@ $black: #222222;
 @mixin prefix($name, $value) {
   -webkit-#{$name}: $value;
   -moz-#{$name}: $value;
-  // -ms-#{$name}: $value;
-  // -o-#{$name}: $value;
   #{$name}: $value;
 }
 
@@ -94,8 +86,6 @@ $black: #222222;
   border-width: #{$top}px #{$right}px #{$bottom}px #{$left}px;
   -webkit-border-image: url($image) $top $right $bottom $left $repeat;
   -moz-border-image: url($image) $top $right $bottom $left $repeat;
-  -ms-border-image: url($image) $top $right $bottom $left $repeat;
-  -o-border-image: url($image) $top $right $bottom $left $repeat;
   border-image: url($image) $top $right $bottom $left $repeat;
 }
 
@@ -109,7 +99,6 @@ $black: #222222;
   -webkit-transition: #{$property} $duration $timing;
   -moz-transition: #{$property} $duration $timing;
   -ie-transition: #{$property} $duration $timing;
-  -o-transition: #{$property} $duration $timing;
   transition: $property $duration $timing;
 }
 
@@ -118,21 +107,16 @@ $black: #222222;
   -webkit-transition: -webkit-#{$property} $duration $timing;
   -moz-transition: -moz-#{$property} $duration $timing;
   -ie-transition: -moz-#{$property} $duration $timing;
-  -o-transition: -o-#{$property} $duration $timing;
   transition: $property $duration $timing;
 }
 
 @mixin transform($type) {
   -webkit-transform: $type;
   -moz-transform: $type;
-  -ms-transform: $type;
-  -o-transform: $type;
   transform: $type;
 }
 
 @mixin animation($name, $timing: 0.5s) {
   -webkit-animation: $name $timing;
   -moz-animation: $name $timing;
-  -ms-animation: $name $timing;
-  -o-animation: $name $timing;
 }

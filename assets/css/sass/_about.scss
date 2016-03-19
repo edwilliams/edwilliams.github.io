@@ -1,4 +1,4 @@
-#about {
+.about {
   margin: 50px 0 0 0;
   // background-image: url("../img/ed.png");
   // background-position: 50% 100%;
@@ -9,7 +9,7 @@
   }
 }
 
-#about > div {
+.about > div {
   overflow-x: hidden;
   overflow-y: auto;
   float: left;
@@ -28,21 +28,21 @@
   width: 70%;
 }
 
-#about::-webkit-scrollbar {
+.about::-webkit-scrollbar {
   width: 5px;
 }
 
-#about::-webkit-scrollbar-track {
+.about::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-#about::-webkit-scrollbar-thumb {
+.about::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
 }
 
-#about::-webkit-scrollbar-thumb:window-inactive {
+.about::-webkit-scrollbar-thumb:window-inactive {
   //background: #fff
 }

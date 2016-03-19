@@ -36,7 +36,7 @@ $screen_width_small: 800px;
     border-left: none;
     min-height: inherit;
   }
-  #new-home {
+  .new-home {
     display: none !important;
   }
 }
@@ -132,7 +132,7 @@ $screen_width_small: 800px;
 }
 
 @media all and (max-width: $screen_width_medium) {
-  #about {
+  .about {
     background: none;
     height: initial;
     &>div {
@@ -148,7 +148,7 @@ $screen_width_small: 800px;
 }
 
 @media all and (max-width: $screen_width_small) {
-  #about {
+  .about {
     margin: 0;
   }
   .about-text {
@@ -195,28 +195,7 @@ $screen_width_small: 800px;
 // ==================================================================
 
 @media all and (max-width: $screen_width_small) {
-  #contact {
+  .contact {
     min-height: 250px;
   }
 }
-
-//     div.social-media-container
-//         float: none
-//         display: inline-block
-
-//     #SkypeButton_Call_edwilliamsmusic_1
-//         float: none
-//         display: inline-block
-
-//     .contact
-//         ul
-//             text-align: center
-//             li
-//                 float: none
-//                 display: inline-block
-//                 // width: inherit
-//         p
-//             float: none
-//             width: 100%
-//         a
-//             float: none
