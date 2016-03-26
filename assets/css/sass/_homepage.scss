@@ -9,7 +9,7 @@
 .window {
   width: 100%;
   position: absolute;
-  @include CB-animation;
+  // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
 }
 
 .window_left {

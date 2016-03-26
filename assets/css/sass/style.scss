@@ -1,11 +1,56 @@
-@import "mixins";
+// ==================================================================
+// styles for screen less than 1024px
+// ==================================================================
+
+$screen_width_larger: 1470px;
+
+$screen_width_large: 1360px;
+$screen_width_medium: 1024px;
+$screen_width_small: 800px;
+
+@mixin prefix($name, $value) {
+  -webkit-#{$name}: $value;
+  -moz-#{$name}: $value;
+  #{$name}: $value;
+}
+
+$black: #222222;
+$navy: #001f3f;
+$silver: #dddddd;
+
 @import "fonts";
 @import "normalize";
 @import "basestyles";
-@import "menu";
 @import "homepage";
 @import "about";
 @import "contact";
 @import "footer";
 @import "work";
-@import "breakpoints";
+@import "menu";
+
+@media all and (max-width: $screen_width_small) {
+  html {
+    overflow: auto !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 0;
+  }
+  .inside-pages {
+    width: 100%;
+    display: block !important;
+    height: initial;
+    z-index: 4;
+    position: relative;
+    background-color: white;
+    box-sizing: content-box;
+    margin-bottom: 120px;
+  }
+  .content {
+    border-left: none;
+    min-height: inherit;
+  }
+  .new-home {
+    display: none !important;
+  }
+}

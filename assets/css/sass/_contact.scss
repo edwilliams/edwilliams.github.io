@@ -1,7 +1,13 @@
 .contact {
-  min-height: initial;
+    min-height: initial;
 }
 
-.contact_email {
-  text-decoration: none;
+.contact-email {
+    text-decoration: none;
+}
+
+@media all and (max-width: $screen_width_small) {
+    .contact {
+        min-height: 250px;
+    }
 }

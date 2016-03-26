@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html style="overflow: hidden;">
   <head>
     <meta charset="utf-8">
     <title>Ed Williams :: Frontend Developer</title>
@@ -21,7 +21,7 @@
     <div id="window_info" class="window_info">
         <h2>ED WILLIAMS</h2>
         <h1>FRONTEND DEVELOPER</h1>
-        <nav id="main-menu" class="main-menu">
+        <nav id="main-menu" class="main-menu menu-icon">
             <ul class="main-menu-links">
                 <li id="display_menu" class="display_menu"><a href="#"></a></li>
                 <li><a href="#about">ABOUT ME</a></li>
@@ -36,29 +36,27 @@
         <div id="window_right" class="window window_right"></div>
     </section>
 
-    <article id="inside-pages" class="inside-pages">
+    <article id="inside-pages" class="inside-pages" style="display: none;">
 
         <section id="about" class="about" class="pg-item content">
 
-            <div style="direction: rtl;">
-                <div style="direction: ltr;">
+            <h2>About me</h2>
+            <div class="about-text">
+                <p class="about_title">As a Developer, I...</p>
+                <ul>
+                    <li>build websites / SPA's / apps</li>
+                    <li>write fullstack JavaScript (Node / Express)</li>
+                    <li>write a fair bit of PHP</li>
+                    <li>like working in sprints</li>
+                    <li>am test driven</li>
+                    <li>have been known to dable with PhoneGap</li>
+                    <li>love pushing CSS to its limits and lean towards Three.js for WebGL</li>
+                    <li>use GIT for version control and make regular use of Bash</li>
+                    <li>prefer couchDB over MongoDB when it comes to NoSQL</li>
+                    <li>currently feel enthusiastic about React other other JS frameworks</li>
+                    <li>think and talk too much about all of the above</li>
+                </ul>
 
-                    <h2>About me</h2>
-                    <div class="about-text">
-                        <p class="about_title">As a Developer, I...</p>
-                        <ul>
-                            <li>build webapps</li>
-                            <li>am obsessed with JavaScript</li>
-                            <li>write a lot of PHP</li>
-                            <li>keep up-to-date with the latest HTML5 API's</li>
-                            <li>love CSS animations and WebGL</li>
-                            <li>love GIT and Linux</li>
-                            <li>think and talk too much about all of the above</li>
-                        </ul>
-
-                    </div>
-
-                </div>
             </div>
 
         </section>
@@ -67,59 +65,66 @@
             <h2>Work</h2>
             <div class="work-list">
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.infiniteobjects.co.uk/"><img class="lazy" data-original="/assets/img/infiniteobjects-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.infiniteobjects.co.uk/">Infinite Objects</a></h2>
-                        <p class="wi-text">Bespoke eCommerce (Woocommerce) website, showcasing the work of the talented friends Rosie Lee have made over the years.<br> Project undertaken whilst employed as a Developer at <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://infiniteobjects.co.uk/"><img class="lazy" data-original="/assets/img/infiniteobjects-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://infiniteobjects.co.uk/">Infinite Objects</a></h2>
+                        <p>Bespoke eCommerce (Woocommerce) website, showcasing the work of the talented friends Rosie Lee have made over the years.<br>
+                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.johntree.net/"><img class="lazy" data-original="/assets/img/johntree-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.johntree.net/">John Tree</a></h2>
-                        <p class="wi-text">Portfolio website for London based product designer.<br> Project undertaken whilst employed as a Developer at <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://www.johntree.net/"><img class="lazy" data-original="/assets/img/johntree-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://www.johntree.net/">John Tree</a></h2>
+                        <p>Portfolio website for London based product designer.<br>
+                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.breakfluid.cc/"><img class="lazy" data-original="/assets/img/breakfluid-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.breakfluid.cc/">Break Fluid</a></h2>
-                        <p class="wi-text">eCommerce coffee subscription website.<br> Project undertaken whilst employed as a Developer at <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://www.breakfluid.cc/"><img class="lazy" data-original="/assets/img/breakfluid-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://www.breakfluid.cc/">Break Fluid</a></h2>
+                        <p>eCommerce coffee subscription website.<br>
+                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.amplifychange.org/"><img class="lazy" data-original="/assets/img/amplifychange-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.amplifychange.org/">Amplify Change</a></h2>
-                        <p class="wi-text">Providing grants to civil society organisations to advocate for, and support policy on, marginalised sexual and reproductive health and rights issues.<br> Project undertaken whilst employed as a Frontend Developer at <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://www.amplifychange.org/"><img class="lazy" data-original="/assets/img/amplifychange-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://www.amplifychange.org/">Amplify Change</a></h2>
+                        <p>Providing grants to civil society organisations to advocate for, and support policy on, marginalised sexual and reproductive health and rights issues.<br>
+                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.istylista.com/"><img class="lazy" data-original="/assets/img/istylista-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.istylista.com/">iStylista</a></h2>
-                        <p class="wi-text">Hand picked clothing delivered straight to your inbox.<br> Project undertaken whilst employed as a Frontend Developer at <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://www.istylista.com/"><img class="lazy" data-original="/assets/img/istylista-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://www.istylista.com/">iStylista</a></h2>
+                        <p>Hand picked clothing delivered straight to your inbox.<br>
+                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="https://www.manxflights.com/"><img class="lazy" data-original="/assets/img/manxflights-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="https://www.manxflights.com/">Manx Flights</a></h2>
-                        <p class="wi-text">Manx Flights is an online travel agent specialising in flights to the Isle of Man.<br>Project undertaken whilst employed as a Frontend Developer at <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="https://www.manxflights.com/"><img class="lazy" data-original="/assets/img/manxflights-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="https://www.manxflights.com/">Manx Flights</a></h2>
+                        <p>Manx Flights is an online travel agent specialising in flights to the Isle of Man.<br>
+                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
                     </div>
                 </div>
 
-                <div class="work-item">
-                    <div class="work-item-left"><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/"><img class="lazy" data-original="/assets/img/nhc-macbook.jpg"></a></div>
-                    <div class="work-item-right">
-                        <h2 class="wi-title"><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/">Norfolk Holiday Cottages</a></h2>
-                        <p class="wi-text">A directory of holiday cottages and self-catering accommodation in North Norfolk. <br>Frontend only project, all other development undertaken and maintainend by <a href="http://www.github.com/HarryWiles/">Harry Wiles</a>.</p>
+                <div class="item">
+                    <div class="item-left"><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/"><img class="lazy" data-original="/assets/img/nhc-macbook.jpg"></a></div>
+                    <div class="item-right">
+                        <h2><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/">Norfolk Holiday Cottages</a></h2>
+                        <p>A directory of holiday cottages and self-catering accommodation in North Norfolk.<br>
+                            Freelance development for <a href="http://www.github.com/HarryWiles/">Harry Wiles</a>.</p>
                     </div>
                 </div>
 
@@ -128,10 +133,10 @@
 
         <section id="contact" class="contact" class="pg-item content">
             <h2>You can contact me at...</h2>
-            <a id="contact_email" class="contact_email" href="mailto:edwilliamsdevelopment@gmail.com">edwilliamsdevelopment@gmail.com</a>
+            <a id="contact-email" class="contact-email" href="mailto:edwilliamsdevelopment@gmail.com">edwilliamsdevelopment@gmail.com</a>
         </section>
 
-        <footer class="footer"><h5>&#169; 2014 Ed Williams.</h5></footer>
+        <footer class="footer"><h5>&#169; 2016 Ed Williams.</h5></footer>
 
     </article>
 

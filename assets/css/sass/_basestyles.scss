@@ -43,7 +43,7 @@ a {
   @include prefix( transition, 0.3s );
   font-family: "brandon-regular-webfont";
   &:hover {
-    color: $aqua;
+    // color: $aqua;
   }
 }
 
@@ -119,7 +119,8 @@ p, li {
   float: right;
 }
 
-.content {
+.content,
+.contact {
   float: left;
   width: 100%;
   min-height: 100%;
