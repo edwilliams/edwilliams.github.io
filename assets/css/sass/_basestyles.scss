@@ -1,95 +1,95 @@
 @font-face {
-  font-family: "brandon-regular-webfont";
-  src: url("../fonts/brandon/brandon-regular-webfont.eot");
-  src: url("../fonts/brandon/brandon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon-regular-webfont.woff") format("woff"), url("../fonts/brandon/brandon-regular-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon-regular-webfont.svg#brandon_grot_w01_regularRg") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "brandon-regular-webfont";
+    src: url("../fonts/brandon/brandon-regular-webfont.eot");
+    src: url("../fonts/brandon/brandon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon-regular-webfont.woff") format("woff"), url("../fonts/brandon/brandon-regular-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon-regular-webfont.svg#brandon_grot_w01_regularRg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "justvector";
-  src: url("../fonts/justvector/justvector-webfont.eot");
-  src: url("../fonts/justvector/justvector-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/justvector/justvector-webfont.woff") format("woff"), url("../fonts/justvector/justvector-webfont.ttf") format("truetype"), url("../fonts/justvector/justvector-webfont.svg#jubilatregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "justvector";
+    src: url("../fonts/justvector/justvector-webfont.eot");
+    src: url("../fonts/justvector/justvector-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/justvector/justvector-webfont.woff") format("woff"), url("../fonts/justvector/justvector-webfont.ttf") format("truetype"), url("../fonts/justvector/justvector-webfont.svg#jubilatregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 html {
-  // overflow: hidden
-  width: 100%;
-  font-family: "brandon-regular-webfont";
+    overflow: hidden;
+    width: 100%;
+    font-family: "brandon-regular-webfont";
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  // color: $black
-  color: #62796d;
-  font-size: 16px;
-  font-family: upperlanelight;
-  line-height: 1.8;
-  -webkit-font-smoothing: antialiased;
+    // color: $black
+    color: #62796d;
+    font-size: 16px;
+    font-family: upperlanelight;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
 }
 
 .about-text li {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 a {
-  @include prefix( transition, 0.3s );
-  font-family: "brandon-regular-webfont";
-  &:hover {
-    // color: $aqua;
-  }
+    @include prefix( transition, 0.3s );
+    font-family: "brandon-regular-webfont";
+    &:hover {
+        // color: $aqua;
+    }
 }
 
 
 a:active {
-  color: #ff851b;
+    color: #ff851b;
 }
 
 //a:visited,
 a {
-  color: $black;
-  text-decoration: none;
+    color: $black;
+    text-decoration: none;
 }
 
 a:hover {
-  color: rgb(0, 171, 214);
+    color: rgb(0, 171, 214);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon-regular-webfont";
-  color: $black;
+    font-family: "brandon-regular-webfont";
+    color: $black;
 }
 
 h1 {
-  font-size: 42px;
+    font-size: 42px;
 }
 
 h2 {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 h3 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 h4 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h5 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 h5 {
-  font-size: 12px;
-  font-weight: 700;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 a,
@@ -97,32 +97,184 @@ div,
 ul,
 li,
 p {
-  -webkit-tap-highlight-color: transparent;
-  color: $black;
+    -webkit-tap-highlight-color: transparent;
+    color: $black;
 }
 
 embed,
 object,
 video {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 p, li {
-  font-family: "brandon-regular-webfont";
+    font-family: "brandon-regular-webfont";
 }
 
 .inside-pages {
-  display: block;
-  width: 83%;
-  height: 100%;
-  float: right;
+    display: none;
+    width: 83%;
+    height: 100%;
+    float: right;
 }
 
+.about,
 .content,
 .contact {
-  float: left;
+    float: left;
+    width: 100%;
+    min-height: 100%;
+    padding: 0 5%;
+}
+
+// ========================================
+// home
+// ========================================
+
+.new-home {
+  position: absolute;
   width: 100%;
-  min-height: 100%;
-  padding: 0 5%;
+  height: 100%;
+  z-index: 1;
+}
+
+.window {
+  width: 100%;
+  position: absolute;
+  // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
+}
+
+.window_left {
+  border-right-width: 1008px;
+  border-right-style: solid;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-style: solid;
+  border-top-color: white;
+  top: 0;
+}
+
+.window_right {
+    left: 50%;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: $black;
+
+    border-left-width: 100vh;
+    border-bottom-width: 100vh;
+    margin-left: -50vh;
+}
+
+// ========================================
+// site open
+// ========================================
+
+.site-open {
+    overflow: auto;
+    .window_left {
+        left: -100%;
+    }
+    .window_right {
+        left: -130%;
+    }
+    .new-home {
+        display: none;
+    }
+    .window_info {
+        width: 17%;
+        padding-top: 28px;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-right-color: rgb(238, 226, 226);
+        h1, h2 {
+            // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
+        }
+        h1 {
+            font-size: 16px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+    }
+
+    .display_menu {
+        display: none;
+    }
+
+    .window_info {
+        .main-menu {
+            margin-top: 0px;
+            font-size: 14px;
+            ul {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .inside-pages {
+        display: block;
+    }
+
+    .main-menu {
+        @include prefix( transform, scale(1) );
+        li {
+            &:first-child {
+                a {
+                    width: initial;
+                }
+            }
+        }
+        a {
+            background-color: transparent;
+            width: initial;
+            &:before {
+                display: block;
+            }
+        }
+    }
+
+    .social_media_container {
+        display: inline-block;
+    }
+
+    .display_menu {
+        display: none;
+    }
+
+}
+
+// ========================================
+// contact
+// ========================================
+
+.contact {
+    min-height: initial;
+}
+
+.contact-email {
+    text-decoration: none;
+}
+
+@media all and (max-width: $screen_width_small) {
+    .contact {
+        min-height: 250px;
+    }
+}
+
+// ========================================
+// footer
+// ========================================
+
+.footer {
+    min-height: 20px;
+    background-color: $navy;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+    width: 100%;
+    float: left;
+    background-color: $silver;
+    line-height: 50px;
+    text-align: center;
 }

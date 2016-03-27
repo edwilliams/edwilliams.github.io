@@ -11,7 +11,10 @@
     width: 50%;
     text-align: center;
     z-index: 3;
-    // transition: 0.5s ease;
+    h1 {
+        font-size: 4em;
+        line-height: 1.5625em;
+    }
     @media all and (max-width: $screen_width_large) {
         font-size: 14px;
     }
@@ -23,7 +26,7 @@
         width: 100% !important;
         background-color: white;
         position: static;
-        float: left;
+        // float: left;
         // perhaps not so good for large mobile screens?
         // height: initial
         h1 {
@@ -36,29 +39,6 @@
     }
 }
 
-.window_info h1 {
-    font-size: 4em;
-    line-height: 1.5625em;
-}
-
-.window_info.opened {
-    width: 17%;
-    padding-top: 28px;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: rgb(238, 226, 226);
-    h1, h2 {
-        // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-    }
-    h1 {
-        font-size: 16px;
-    }
-    h2 {
-        font-size: 22px;
-        margin-bottom: 0;
-    }
-}
-
 .click {
     text-decoration: none;
     font-size: 60px;
@@ -68,11 +48,9 @@
 }
 
 .main-menu {
-    float: left;
     position: relative;
     width: 100%;
     // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
-    margin-top: -30px;
     ul {
         list-style: none;
         display: inline-block;
@@ -108,6 +86,21 @@
             border-bottom: 10px solid $black;
         }
     }
+    @include prefix( transform, scale(0.3) );
+    li {
+        &:first-child {
+            a {
+                width: 140px;
+            }
+        }
+    }
+    a {
+        background-color: $black;
+        width: 150px;
+        &:before {
+            display: none;
+        }
+    }
     @media all and (max-width: $screen_width_medium) {
         font-size: 14px;
     }
@@ -116,36 +109,7 @@
     }
 }
 
-.window_info.opened {
-    .main-menu {
-        margin-top: 0px;
-        font-size: 14px;
-        ul {
-            padding-left: 30px;
-        }
-    }
-}
-
-.main-menu.menu-icon {
-    @include prefix( transform, scale(0.3) );
-        li {
-            &:first-child {
-                a {
-                    width: 140px;
-                }
-            }
-        }
-        a {
-            background-color: $black;
-            width: 150px;
-            &:before {
-                display: none;
-            }
-        }
-}
-
 .display_menu {
-    display: none;
     position: absolute;
     cursor: pointer;
     width: 150px;
@@ -178,7 +142,7 @@
     list-style: none;
     li {
         text-align: center;
-        float: left;
+        // float: left;
     }
     @media all and (max-width: $screen_width_larger) {
         font-size: 0.875em;
