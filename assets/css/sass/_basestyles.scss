@@ -1,29 +1,7 @@
-@font-face {
-    font-family: "brandon-regular-webfont";
-    src: url("../fonts/brandon/brandon-regular-webfont.eot");
-    src: url("../fonts/brandon/brandon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon-regular-webfont.woff") format("woff"), url("../fonts/brandon/brandon-regular-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon-regular-webfont.svg#brandon_grot_w01_regularRg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "justvector";
-    src: url("../fonts/justvector/justvector-webfont.eot");
-    src: url("../fonts/justvector/justvector-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/justvector/justvector-webfont.woff") format("woff"), url("../fonts/justvector/justvector-webfont.ttf") format("truetype"), url("../fonts/justvector/justvector-webfont.svg#jubilatregular") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 html {
     overflow: hidden;
     width: 100%;
     font-family: "brandon-regular-webfont";
-}
-
-html,
-body {
-    height: 100%;
 }
 
 body {
@@ -114,7 +92,7 @@ p, li {
 
 .inside-pages {
     display: none;
-    width: 83%;
+    width: 80%;
     height: 100%;
     float: right;
 }
@@ -122,9 +100,7 @@ p, li {
 .about,
 .content,
 .contact {
-    float: left;
-    width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     padding: 0 5%;
 }
 
@@ -182,8 +158,8 @@ p, li {
         display: none;
     }
     .window_info {
-        width: 17%;
-        padding-top: 28px;
+        width: 20%;
+        min-height: 100vh;
         border-right-style: solid;
         border-right-width: 1px;
         border-right-color: rgb(238, 226, 226);
@@ -191,10 +167,10 @@ p, li {
             // transition: all 1s cubic-bezier(0.7, 0, 0.58, 1) 0s;
         }
         h1 {
-            font-size: 16px;
+            // font-size: 16px;
         }
         h2 {
-            font-size: 22px;
+            // font-size: 22px;
             margin-bottom: 0;
         }
     }
@@ -207,9 +183,15 @@ p, li {
         .main-menu {
             margin-top: 0px;
             font-size: 14px;
+            @media all and (max-width: $screen_width_small) {
+                margin-top: 30px;
+            }
             ul {
                 padding-left: 30px;
             }
+        }
+        @media all and (max-width: $screen_width_small) {
+            width: 100%;
         }
     }
 
@@ -235,12 +217,21 @@ p, li {
         }
     }
 
-    .social_media_container {
-        display: inline-block;
+    .social-media-container {
+        display: block;
     }
 
     .display_menu {
         display: none;
+    }
+
+    .window_info {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
     }
 
 }
@@ -250,7 +241,10 @@ p, li {
 // ========================================
 
 .contact {
-    min-height: initial;
+    min-height: 25vh;
+    @media all and (max-width: $screen_width_small) {
+        padding-top: 30px;
+    }
 }
 
 .contact-email {

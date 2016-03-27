@@ -11,24 +11,16 @@
     width: 50%;
     text-align: center;
     z-index: 3;
-    h1 {
-        font-size: 4em;
-        line-height: 1.5625em;
-    }
     @media all and (max-width: $screen_width_large) {
         font-size: 14px;
     }
-
     @media all and (max-width: $screen_width_medium) {
         font-size: 10px;
     }
     @media all and (max-width: $screen_width_small) {
-        width: 100% !important;
-        background-color: white;
-        position: static;
-        // float: left;
-        // perhaps not so good for large mobile screens?
-        // height: initial
+        position: relative;
+        top: 30px;
+        width: 100%;
         h1 {
             font-size: 1.428em;
         }
@@ -122,7 +114,7 @@
 .contact_icons {
     position: fixed;
     bottom: 20px;
-    width: 17%;
+    width: 20%;
     left: 0;
     z-index: 4;
     text-align: center;
@@ -135,70 +127,47 @@
     }
 }
 
-.social_media_container {
-    padding: 0 0 0 15px;
+.social-media-container {
     display: none;
     margin: 0;
     list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
     li {
-        text-align: center;
-        // float: left;
-    }
-    @media all and (max-width: $screen_width_larger) {
-        font-size: 0.875em;
-    }
-    @media all and (max-width: $screen_width_large) {
-        font-size: 0.625em;
-    }
-
-    @media all and (max-width: $screen_width_medium) {
-        font-size: 0.5em;
-    }
-    @media all and (max-width: $screen_width_small) {
-        font-size: 1.375em;
+        display: inline-block;
     }
 }
 
-
-.social_media_diamond {
-    font-size: 2.9375em;
-    color: white;
-    display: block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.58333em;
-    text-shadow: 1px 1px 1px $black;
-    text-decoration: none;
-    // @include prefix(box-shadow, 1px 1px 1px 1px $black);
-    @include prefix(transform, rotate(45deg));
-    // @include prefix(transition, 0.3s);
-}
-
-.social_media_icon {
+.social-media-icon {
+    position: relative;
     font-family: "justvector";
-    @include prefix(transform, rotate(-45deg));
-    display: block;
-    height: 1em;
-    line-height: 1em;
+    display: inline-block;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    @media all and (max-width: $screen_width_small) {
+        font-size: 70px;
+        height: 70px;
+        width: 70px;
+    }
 }
 
-.social_media_icon:before {
+.social-media-icon:before {
     color: $black;
     position: absolute;
+    left: 0;
     top: 0;
-    left: 0.08333em;
 }
 
-.social_media_icon-linkedin:before {
+.social-media-icon-linkedin:before {
     content: "v";
-    font-size: 0.85em;
-    left: 0.2em;
 }
 
-.social_media_icon-twitter:before {
+.social-media-icon-twitter:before {
     content: "_";
 }
 
-.social_media_icon-github:before {
+.social-media-icon-github:before {
     content: "j";
 }
