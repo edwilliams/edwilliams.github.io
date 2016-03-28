@@ -1,0 +1,57 @@
+.table {
+
+}
+.row {
+	float: left;
+	width: 100%;
+	display: block;
+}
+.cell {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #000;
+	color: grey;
+	cursor: pointer;
+	text-align: center;
+	float: left;
+}
+
+.bomb {
+	background-color: red;
+}
+
+.covered {
+	background-color: grey;
+}
+.uncovered {
+	background-color: rgba(0,0,0,0);
+	pointer-events: none;
+}
+
+.lost {
+	pointer-events: none;
+	opacity: 0.3;
+	&:before {
+		position: absolute;
+		content: "You've lost!";
+		font-size: 40px;
+		background-color: white;
+		-webkit-transform: translateY(100%);
+	}
+	.bomb {
+		background-color: red;
+	}
+}
+
+.won {
+	pointer-events: none;
+	opacity: 0.3;
+	&:before {
+		position: absolute;
+		content: "You've won!";
+		font-size: 40px;
+		background-color: white;
+		-webkit-transform: translateY(100%);
+	}
+}

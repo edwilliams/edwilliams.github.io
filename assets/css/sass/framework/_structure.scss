@@ -1,0 +1,45 @@
+// ========================================
+// strucutre
+// ========================================
+
+.container {
+    max-width: 1366px;
+}
+
+.content {
+    min-height: 100vh;
+    padding: 0 30px;
+}
+
+.main {
+    padding-left: 20vw;
+    @include breakpoint(mobile) {
+        padding-left: 0;
+    }
+}
+
+.aside {
+    position: fixed;
+    width: 20vw;
+    min-height: 100vh;
+    border-right: 1px solid $black;
+    @include breakpoint(mobile) {
+        position: relative;
+        width: 100vw;
+    }
+}
+
+iframe {
+    width: 100%;
+    min-height: 100vh;
+    // max-width: 480px;
+}
+
+// ========================================
+// contact
+// ========================================
+
+.contact {
+    display: inline-block;
+    font-size: 5vw;
+}

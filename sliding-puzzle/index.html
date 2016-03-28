@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<canvas id="canvas" width="600" height="600"></canvas>
+
+<img style="display: none;" id="one" src="1.png">
+<img style="display: none;" id="two" src="2.png">
+<img style="display: none;" id="three" src="3.png">
+<img style="display: none;" id="four" src="4.png">
+<img style="display: none;" id="five" src="5.png">
+<img style="display: none;" id="six" src="6.png">
+<img style="display: none;" id="seven" src="7.png">
+<img style="display: none;" id="eight" src="8.png">
+
+<script src="fabric.js"></script>
+<script>
+var Puzzle = (function(){
+
+    // http://fabricjs.com/articles/
+    var canvas = new fabric.Canvas('canvas');
+    canvas.selection = false; // prevent multiple selection
+
+    var tiles = [];
+
+    var coords = [
+        { left : 0,   top : 0 },
+        { left : 200, top : 0 },
+        { left : 400, top : 0 },
+        { left : 0,   top : 200 },
+        { left : 200, top : 200 },
+        { left : 400, top : 200 },
+        { left : 0,   top : 400 },
+        { left : 200, top : 400 }
+    ];
+
+    function init( imageIDs ) {
+
+        tiles = imageIDs
+
+        createTiles();
+
+        events();
+
+    }
+
+    function createTiles() {
+
+        coords = shuffle(coords);
+
+        tiles.forEach(function(tile, i) {
+
+            canvas.add(
+                new fabric.Image(document.getElementById(tile), {
+                    left : coords[i].left,
+                    top  : coords[i].top,
+                    hasBorders : false,
+                    hasControls : false
+                }));
+
+        });
+
+    }
+
+    function events() {
+
+        // ========================================
+        // snap to grid
+        // http://jsfiddle.net/fabricjs/S9sLu/
+        // ========================================
+
+        canvas.on('object:moving', function(options) {
+            options.target.set({
+                left: Math.round(options.target.left / 200) * 200,
+                top: Math.round(options.target.top / 200) * 200
+            });
+        });
+
+    }
+
+    function shuffle(array) {
+
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // while there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // and swap it with the current element.
+            temporaryValue      = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex]  = temporaryValue;
+
+        }
+
+        return array;
+
+    }
+
+    return {
+        init : init
+    }
+
+})();
+Puzzle.init(['one','two','three','four','five','six','seven','eight']);
+</script>
+</body>
+</html>

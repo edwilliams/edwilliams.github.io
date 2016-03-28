@@ -10,139 +10,218 @@
     <link rel="stylesheet" href="/assets/css/compiled/style.css">
 </head>
   <body>
-    <div class="contact_icons">
-        <ul id="social-media-container" class="social-media-container">
-            <li><a href="http://uk.linkedin.com/in/edwilliamsdevelopment" target="_blank" class="social-media-icon social-media-icon-linkedin"></a></li>
-            <li><a href="http://www.twitter.com/oldgithub" target="_blank" class="social-media-icon social-media-icon-twitter"></a></li>
-            <li><a href="http://www.github.com/edwilliams" target="_blank" class="social-media-icon social-media-icon-github"></a></li>
-        </ul>
-    </div>
 
-    <div id="window_info" class="window_info">
-        <h2>ED WILLIAMS</h2>
-        <h1>CREATIVE CODER</h1>
-        <nav id="main-menu" class="main-menu">
-            <ul class="main-menu-links">
-                <li id="display_menu" class="display_menu"><a href="#"></a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#works">WORK</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+    <aside class="aside ptl typo-center">
+
+        <h1>ED WILLIAMS</h1>
+        <h2>DEVELOPER</h2>
+        <nav id="main-menu" class="main-menu ptl">
+            <ul class="main-menu-links v-list">
+                <li><a class="twitter" target="_blank" href="http://twitter.com/oldgithub"></a></li>
+                <li><a class="linkedin" target="_blank" href="https://uk.linkedin.com/in/edwilliamsdevelopment"></a></li>
+                <li><a class="github" target="_blank" href="http://github.com/edwilliams"></a></li>
             </ul>
         </nav>
-    </div>
 
-    <section id="new-home" class="new-home">
-        <div id="window_left" class="window window_left"></div>
-        <div id="window_right" class="window window_right"></div>
-    </section>
+    </aside>
 
-    <article id="inside-pages" class="inside-pages">
+    <main class="main container">
 
-        <section id="about" class="about" class="pg-item content">
+        <section id="about" class="content">
 
-            <h2>About me</h2>
-            <div class="about-text">
-                <p class="about-title">As a Developer, I...</p>
-                <ul>
-                    <li>build websites / SPA's / apps</li>
-                    <li>write fullstack JavaScript (Node / Express)</li>
-                    <li>write a fair bit of PHP</li>
-                    <li>love pushing CSS to its limits and lean towards Three.js for WebGL</li>
-                    <li>have been known to dable with PhoneGap</li>
-                    <li>like working in sprints</li>
-                    <li>am test driven</li>
-                    <li>use GIT for version control and make regular use of Bash</li>
-                    <li>prefer couchDB over MongoDB when it comes to NoSQL</li>
-                    <li>currently feel enthusiastic about React other other JS frameworks</li>
-                    <li>think and talk too much about all of the above</li>
-                </ul>
+            <h3 class="pvl">About me</h3>
+            <p class="f_m pvm mbm">As a Developer, I...</p>
+            <ul class="v-list pll">
+                <li>build websites and / webapps / API's</li>
+                <li>write fullstack JavaScript (Node / <a target="_blank" href="http://expressjs.com/">Express</a>)</li>
+                <li>write a fair bit of PHP, including WordPress plugins</li>
+                <li>love pushing CSS to its limits and lean towards <a target="_blank" href="http://threejs.org/">Three.js</a> for WebGL</li>
+                <li>have been known to dable with <a target="_blank" href="http://phonegap.com/">PhoneGap</a></li>
+                <li>like working in sprints</li>
+                <li>am <a target="_blank" href="https://github.com/substack/tape">test driven</a></li>
+                <li>use GIT for version control and make regular use of Bash</li>
+                <li>prefer <a target="_blank" href="http://couchdb.apache.org/">couchDB</a> over MongoDB when it comes to NoSQL</li>
+                <li>currently feel enthusiastic about <a target="_blank" href="https://facebook.github.io/react/">React</a> other other JS frameworks</li>
+                <li>think and talk too much about all of the above</li>
+            </ul>
 
+        </section>
+
+        <section class="content">
+            <h3 class="pvl mbm bb">Work</h3>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://infiniteobjects.co.uk/">
+                        <img class="lazy" data-original="/assets/img/infiniteobjects-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://infiniteobjects.co.uk/">Infinite Objects</a></h4>
+                    <p>Bespoke eCommerce (Woocommerce) website, showcasing the work of the talented friends Rosie Lee have made over the years.</p>
+                    <p>Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://www.johntree.net/">
+                        <img class="lazy" data-original="/assets/img/johntree-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://www.johntree.net/">John Tree</a></h4>
+                    <p>Portfolio website for London based product designer.</p>
+                    <p>Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://www.breakfluid.cc/">
+                        <img class="lazy" data-original="/assets/img/breakfluid-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://www.breakfluid.cc/">Break Fluid</a></h4>
+                    <p>eCommerce coffee subscription website.</p>
+                    <p>Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://www.amplifychange.org/">
+                        <img class="lazy" data-original="/assets/img/amplifychange-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://www.amplifychange.org/">Amplify Change</a></h4>
+                    <p>Providing grants to civil society organisations to advocate for, and support policy on, marginalised sexual and reproductive health and rights issues.</p>
+                    <p>Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://www.istylista.com/">
+                        <img class="lazy" data-original="/assets/img/istylista-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://www.istylista.com/">iStylista</a></h4>
+                    <p>Hand picked clothing delivered straight to your inbox.</p>
+                    <p>Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="https://www.manxflights.com/">
+                        <img class="lazy" data-original="/assets/img/manxflights-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="https://www.manxflights.com/">Manx Flights</a></h4>
+                    <p>Manx Flights is an online travel agent specialising in flights to the Isle of Man.</p>
+                    <p>Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/">
+                        <img class="lazy" data-original="/assets/img/nhc-macbook.jpg">
+                    </a>
+                </div>
+                <div class="unit size1of2 mobile1of1">
+                    <h4 class="pvxl"><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/">Norfolk Holiday Cottages</a></h4>
+                    <p>A directory of holiday cottages and self-catering accommodation in North Norfolk.</p>
+                    <p>Freelance development for <a href="http://www.github.com/HarryWiles/">Harry Wiles</a>.</p>
+                </div>
             </div>
 
         </section>
 
-        <section id="works" class="pg-item content">
-            <h2>Work</h2>
-            <div class="work-list">
+        <section class="content">
+            <h3 class="pvl mbm bb">Games / Experiments</h3>
 
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://infiniteobjects.co.uk/"><img class="lazy" data-original="/assets/img/infiniteobjects-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://infiniteobjects.co.uk/">Infinite Objects</a></h2>
-                        <p>Bespoke eCommerce (Woocommerce) website, showcasing the work of the talented friends Rosie Lee have made over the years.<br>
-                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
-                    </div>
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Import 3D Render</h4>
+                    <p class="pbl">Boilerplate for importing a 3D render using Three.JS. Dragable and zoomable.</p>
                 </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://www.johntree.net/"><img class="lazy" data-original="/assets/img/johntree-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://www.johntree.net/">John Tree</a></h2>
-                        <p>Portfolio website for London based product designer.<br>
-                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
-                    </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/chair/"></iframe>
                 </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://www.breakfluid.cc/"><img class="lazy" data-original="/assets/img/breakfluid-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://www.breakfluid.cc/">Break Fluid</a></h2>
-                        <p>eCommerce coffee subscription website.<br>
-                            Development @ <a target="_blank" href="http://www.rosielees.co.uk/">Rosie Lee</a>.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://www.amplifychange.org/"><img class="lazy" data-original="/assets/img/amplifychange-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://www.amplifychange.org/">Amplify Change</a></h2>
-                        <p>Providing grants to civil society organisations to advocate for, and support policy on, marginalised sexual and reproductive health and rights issues.<br>
-                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://www.istylista.com/"><img class="lazy" data-original="/assets/img/istylista-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://www.istylista.com/">iStylista</a></h2>
-                        <p>Hand picked clothing delivered straight to your inbox.<br>
-                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="https://www.manxflights.com/"><img class="lazy" data-original="/assets/img/manxflights-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="https://www.manxflights.com/">Manx Flights</a></h2>
-                        <p>Manx Flights is an online travel agent specialising in flights to the Isle of Man.<br>
-                            Development @ <a target="_blank" href="http://www.deepbluesky.com/">Deep Blue Sky</a>.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="item-left"><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/"><img class="lazy" data-original="/assets/img/nhc-macbook.jpg"></a></div>
-                    <div class="item-right">
-                        <h2><a target="_blank" href="http://www.norfolk-holiday-cottages.co.uk/">Norfolk Holiday Cottages</a></h2>
-                        <p>A directory of holiday cottages and self-catering accommodation in North Norfolk.<br>
-                            Freelance development for <a href="http://www.github.com/HarryWiles/">Harry Wiles</a>.</p>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Exploding Box</h4>
+                    <p class="pbl">3D CSS proof of concept. To be built into a football.</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/exploding-box/"></iframe>
+                </div>
+            </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Shooting Stars</h4>
+                    <p class="pbl">Inspired by a Seb Delisle video</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/shooting-stars/"></iframe>
+                </div>
+            </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Minute Melodies</h4>
+                    <p class="pbl">Webapp that generates a 16 bar melody. Built with Express.JS</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="http://minutemelodies.com/"></iframe>
+                </div>
+            </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Hangman</h4>
+                    <p class="pbl">Vanilla JS bash at hangman circa 2014... built with an API that generates mostly unguessable words!</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/hangman/"></iframe>
+                </div>
+            </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Naughts & Crosses</h4>
+                    <p class="pbl">Beginners naughts and crosses tutorial with Prism.JS syntax highlighting.</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/naughts-and-crosses/"></iframe>
+                </div>
+            </div>
+
+            <div class="grid mobile-vl">
+                <div class="unit size1of1 mobile1of1">
+                    <h4 class="pvxl">Sliding Puzzle</h4>
+                    <p class="pbl">Using Fabric.js to add an object model to canvas.</p>
+                </div>
+                <div class="unit size1of1 mobile1of1">
+                    <iframe src="/sliding-puzzle/"></iframe>
+                </div>
+            </div>
+
         </section>
 
-        <section id="contact" class="contact" class="pg-item content">
-            <h2>You can contact me at...</h2>
-            <a id="contact-email" class="contact-email" href="mailto:edwilliamsdevelopment@gmail.com">edwilliamsdevelopment@gmail.com</a>
+        <section class="social">
+            <ul>
+                <li><a href="http://uk.linkedin.com/in/edwilliamsdevelopment" target="_blank" class="social-icon social-icon-linkedin"></a></li>
+                <li><a href="http://www.twitter.com/oldgithub" target="_blank" class="social-icon social-icon-twitter"></a></li>
+                <li><a href="http://www.github.com/edwilliams" target="_blank" class="social-icon social-icon-github"></a></li>
+            </ul>
         </section>
 
-        <footer class="footer"><h5>&#169; 2016 Ed Williams.</h5></footer>
+        <section class="pll">
+            <h3 class="pvl mbm bb">You can contact me at...</h3>
+            <a class="contact pal" href="mailto:edwilliamsdevelopment@gmail.com">edwilliamsdevelopment@gmail.com</a>
+        </section>
 
-    </article>
+        <footer class="footer pal">
+            <h5>&#169; 2016 Ed Williams.</h5>
+        </footer>
 
-    <script src="/assets/js/vendor/jquery.js"></script>
-    <script src="/assets/js/vendor/jquery.lazyload.js"></script>
-    <script src="/assets/js/core.js"></script>
+    </main>
+
+    <script src="/assets/js/lib/jquery-2.1.4.min.js"></script>
+    <script src="/assets/js/lib/jquery.lazyload.js"></script>
+    <script src="/assets/js/dist/global.js"></script>
   </body>
 
 </html>

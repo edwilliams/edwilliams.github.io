@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		html, body {
+			background: #000;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+
+var shootingStars = (function(){
+
+	var canvas = document.getElementById("canvas");
+	var c = canvas.getContext("2d");
+	var blobArray = [];
+	var xPos = 0;
+	var yPos = 0;
+
+	function config() {
+
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+
+	}
+
+	function initialize() {
+
+		config();
+		events();
+
+	}
+
+	function events() {
+
+		window.addEventListener('mouseover', function(e) {
+			var animation = setInterval(function() {
+				draw(xPos,yPos);
+			}, 30);
+		}, false);
+
+		window.addEventListener('mousemove', function(e) {
+			xPos = e.x;
+			yPos = e.y;
+		}, false);
+
+	}
+
+	// helpers
+	function randomRange(min, max) {
+	    return Math.random() * (max - min) + min;
+	}
+
+	function draw(xPos, yPos) {
+
+		var blob = {
+			x : xPos,
+			y : yPos,
+			xSpeed : randomRange(-10, 10),
+			ySpeed : randomRange(-10, 10),
+			size: 10
+		};
+
+		blobArray.push(blob);
+
+		c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+		for ( var i = blobArray.length - 1; i >= 0; i-- ) {
+
+			blob = blobArray[i];
+
+			c.fillStyle = 'cyan';
+			c.fillRect(blob.x, blob.y, blob.size, blob.size);
+
+			blob.x = blob.x + blob.xSpeed;
+			blob.y = blob.y + blob.ySpeed;
+
+			blob.size = blob.size * 0.96;
+
+		}
+
+	}
+
+	initialize();
+
+})();
+
+</script>
+</body>
+</html>

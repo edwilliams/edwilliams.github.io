@@ -1,0 +1,46 @@
+*,*:before, *:after {
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+}
+html, body, #container {
+    height: 100%;
+}
+#container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.left, .right {
+    float: left;
+    width: 512px;
+}
+h2 {
+    float: left;
+    width: 100%;
+}
+#answer_container {
+    float: left;
+    width: 100%;
+}
+#alphabet_container{
+    float: left;
+    width: 50%;
+}
+.alphabet_letter,
+.game_answer_letter {
+    border: 1px solid #000;
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 10px 10px 0;
+}
+.alphabet_letter {
+    text-decoration: none;
+    color: #000;
+}
+.alphabet_letter:hover {
+    background-color: #ddd;
+}

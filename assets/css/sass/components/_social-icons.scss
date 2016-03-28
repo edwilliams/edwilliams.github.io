@@ -1,0 +1,29 @@
+// ========================================
+// social icons
+// ========================================
+
+.twitter {
+    background: url( create-svg( $twitter-path, $white, $black ) );
+}
+
+.linkedin {
+    background: url( create-svg( $linkedin-path, $white, $black ) );
+}
+
+.github {
+    background: url( create-svg( $github-path, $black, $white ) );
+}
+
+.twitter,
+.github,
+.linkedin {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    border-radius: 3px;
+    &.large {
+        height: 30px;
+        width: 30px;
+    }
+}
