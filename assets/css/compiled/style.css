@@ -2529,9 +2529,9 @@ iframe {
   font-size: 5vw; }
 
 * {
-  -webkit-transition: 600ms;
-  -moz-transition: 600ms;
-  transition: 600ms; }
+  -webkit-transition: 1200ms;
+  -moz-transition: 1200ms;
+  transition: 1200ms; }
 
 .window {
   position: fixed; }
