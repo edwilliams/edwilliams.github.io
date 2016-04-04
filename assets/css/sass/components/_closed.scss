@@ -1,0 +1,96 @@
+// ========================================
+// site closed
+// ========================================
+
+* {
+    @include prefix( transition, 600ms );
+}
+
+// ========================================
+// window
+// ========================================
+
+.window {
+    position: fixed;
+    &.left {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100vh 100vh 100vh;
+        border-color: transparent transparent #000 transparent;
+        left: -150vw;
+    }
+    &.right {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100vh 100vh 0 100vh;
+        border-color: #000 transparent transparent transparent;
+        left: 150vw;
+    }
+
+}
+
+.closed {
+    .window {
+        &.left {
+            left: -75vw;
+        }
+        &.right {
+            left: 75vw;
+        }
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        content: "";
+        width: 50vw;
+        height: 100vh;
+        background: $white;
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        left: 50vw;
+    }
+}
+
+// ========================================
+// main
+// ========================================
+
+.closed {
+    overflow: hidden;
+    .main {
+        z-index: -2;
+    }
+}
+
+// ========================================
+// name and title
+// ========================================
+
+.closed {
+    .name,
+    .title {
+        @include prefix( transform, translate( 75%, 300% ) );
+        cursor: pointer;
+    }
+}
+
+// ========================================
+// nav
+// ========================================
+
+.closed {
+    .aside {
+        border-color: transparent;
+    }
+    .main-menu {
+        @include prefix( transform, translate(-100%) );
+    }
+}

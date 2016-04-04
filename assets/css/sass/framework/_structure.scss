@@ -2,6 +2,10 @@
 // strucutre
 // ========================================
 
+html {
+    overflow: auto;
+}
+
 .container {
     max-width: 1366px;
 }
@@ -12,6 +16,8 @@
 }
 
 .main {
+    position: relative;
+    z-index: 0; // -2;
     padding-left: 20vw;
     @include breakpoint(mobile) {
         padding-left: 0;
@@ -20,6 +26,7 @@
 
 .aside {
     position: fixed;
+    z-index: 1;
     width: 20vw;
     min-height: 100vh;
     border-right: 1px solid $black;
@@ -27,6 +34,10 @@
         position: relative;
         width: 100vw;
     }
+}
+
+.name, .title {
+    cursor: normal;
 }
 
 iframe {
