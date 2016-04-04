@@ -17,7 +17,11 @@ var global = (function(){
 
         $('.name, .title').on('click', function() {
             $('html').removeClass('closed');
-        })
+        });
+
+        if ( window.matchMedia('(max-width: 1024px)').matches ) {
+            $('html').removeClass('closed');
+        }
 
     }
 

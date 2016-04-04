@@ -2151,14 +2151,26 @@ body {
 .f_l, .h1, h1, .h2, h2, .h3, h3, .h4, h4 {
   font-size: 32px;
   line-height: 38px; }
+  @media screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
+    .f_l, .h1, h1, .h2, h2, .h3, h3, .h4, h4 {
+      font-size: 22px;
+      line-height: 28px; } }
 
 .f_m {
   font-size: 24px;
   line-height: 30px; }
+  @media screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
+    .f_m {
+      font-size: 18px;
+      line-height: 24px; } }
 
 .f_r, body {
   font-size: 16px;
   line-height: 22px; }
+  @media screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
+    .f_r, body {
+      font-size: 14px;
+      line-height: 20px; } }
 
 .f_s, .h5, h5, .h6, h6 {
   font-size: 12px;
@@ -2518,7 +2530,7 @@ html {
       width: 100vw; } }
 
 .name, .title {
-  cursor: normal; }
+  cursor: auto; }
 
 iframe {
   width: 100%;
@@ -2549,6 +2561,9 @@ iframe {
     border-width: 100vh 100vh 0 100vh;
     border-color: #000 transparent transparent transparent;
     left: 150vw; }
+  @media screen and (max-device-width: 1024px), screen and (max-width: 1024px) {
+    .window {
+      display: none; } }
 
 .closed .window.left {
   left: -75vw; }
