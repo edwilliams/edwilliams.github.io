@@ -2555,6 +2555,8 @@ iframe {
 .contact {
   padding-left: 30px;
   font-size: 5vw; }
+  .contact a {
+    display: inline-block; }
   @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .contact {
       padding-left: 0; } }
