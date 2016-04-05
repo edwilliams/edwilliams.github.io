@@ -2509,6 +2509,21 @@ html {
 .content {
   min-height: 100vh;
   padding: 0 30px; }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .content p {
+      margin-bottom: 15px; } }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .content {
+      padding: 0 15px; } }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .content.work {
+      text-align: center; } }
+
+.work-title {
+  padding: 50px 0; }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .work-title {
+      padding: 15px 0; } }
 
 .main {
   position: relative;
@@ -2526,6 +2541,7 @@ html {
   border-right: 1px solid #000500; }
   @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
     .aside {
+      border-right: none;
       position: relative;
       width: 100vw; } }
 
@@ -2537,8 +2553,14 @@ iframe {
   min-height: 100vh; }
 
 .contact {
-  display: inline-block;
+  padding-left: 30px;
   font-size: 5vw; }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .contact {
+      padding-left: 0; } }
+  @media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    .contact * {
+      text-align: center; } }
 
 * {
   -webkit-transition: 1200ms;
