@@ -1,0 +1,15 @@
+#snakePit, #snakeFood {
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+#score{
+	position: absolute;
+	top: 200px;
+	width: 300px;
+	left: 50%;
+	transform: translateX(-50%);
+}

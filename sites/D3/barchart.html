@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+	.chart div {
+	  font: 10px sans-serif;
+	  background-color: steelblue;
+	  text-align: right;
+	  padding: 3px;
+	  margin: 1px;
+	  color: white;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+<!-- https://github.com/mbostock/d3/wiki/Tutorials -->
+
+<div class="chart"></div>
+
+<script src="js/d3.js"></script>
+
+<script>
+
+// ================================================
+// values
+// ================================================
+
+var values = [4, 8, 15, 16, 23, 42];
+
+// ================================================
+// barchart
+// ================================================
+
+// var chart 		= d3.select(".chart"); 				// cache DOM
+// var bar 		= chart.selectAll("div");			// use this to create, update elements - elements you 'want' to exist
+// var barUpdate 	= bar.data(values);					// join the data to the bars (divs)
+// var barEnter 	= barUpdate.enter().append("div");	// create the elements in the DOM
+
+// barEnter.style("width", function(data) {
+// 	return data * 10 + "px";
+// });
+
+// barEnter.text(function(data) {
+// 	return data;
+// });
+
+// ================================================
+// chaining
+// ================================================
+
+d3.select(".chart")												// cache DOM
+	.selectAll("div")											// use this to create, update elements - elements you 'want' to exist
+    	.data(values)											// join the data to the bars (divs)
+	.enter().append("div")										// create the elements in the DOM
+		.style("width", function(d) { return d * 10 + "px"; })	// function
+		.text(function(d) { return d; });						// function
+
+</script>
+
+</body>
+</html>

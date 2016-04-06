@@ -1,0 +1,81 @@
+<!-- http://alignedleft.com/tutorials/d3/chaining-methods -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>D3 Test</title>
+<script type="text/javascript" src="js/d3.js"></script>
+</head>
+<body>
+
+<style>
+.bar {
+    display: inline-block;
+    width: 20px;
+    margin-right: 1px;
+}
+</style>
+
+<script type="text/javascript">
+
+// ================================================
+// custom
+// ================================================
+
+var dummyJsonUrl = 'http://echo.jsontest.com/key1/34/key2/65/key3/6666/key4/56/key5/345/key6/876/key7/12/key8/6545/key9/97';
+
+var oReq = new XMLHttpRequest();
+
+// must add listeners before .open()
+oReq.addEventListener("load", AJAX_complete, false);
+oReq.addEventListener("error", AJAX_failed, false);
+
+oReq.open('GET', dummyJsonUrl, true);
+
+function AJAX_complete(event) {
+    data = JSON.parse(this.response);
+    d3Custom(oReq);
+}
+
+function AJAX_failed(event) {
+	console.log("An error occurred while transferring the file.");
+}
+
+oReq.send();
+
+// ================================================
+// d3
+// ================================================
+
+function d3Custom(oReq) {
+
+	var dataset = []; // [ 5, 10, 15, 20, 25 ];
+
+	for ( var prop in oReq.response ) {
+		dataset.push(prop);
+	}
+
+	d3.select("body")
+		.selectAll("p")
+	    .data(dataset)
+	    .enter()
+	    .append("p")
+	    // .text( 'stuff' )
+	    .attr('class', 'bar')
+	    .style('background-color', function(d) {
+		    if (d > 15) {
+		        return "red";
+		    } else {
+		        return "black";
+		    }
+		})
+		.style( 'height', function(d) {
+			return (d) + 'px'}
+		);
+
+}
+
+</script>
+</body>
+</html>
