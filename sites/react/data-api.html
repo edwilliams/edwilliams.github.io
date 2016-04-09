@@ -1,4 +1,7 @@
-<!-- https://facebook.github.io/react/docs/tutorial.html -->
+<!--
+https://facebook.github.io/react/docs/tutorial.html
+https://scotch.io/tutorials/learning-react-getting-started-and-concepts
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +19,52 @@
 
 <script type="text/babel">
 
+var data = {
+    artist: 'Peter, Paul and Mary',
+    album: 'Blowing in the Wind'
+};
+
+// var Book = React.createClass({
+//     getInitialState: function() {
+//         return {value: 'Hello!'};
+//     },
+//     handleChange: function(event) {
+//         this.setState({value: event.target.value});
+//     },
+//     render: function() {
+//         return (
+//             <input type="text" value={this.state.value} onChange={this.handleChange} />
+//         );
+//     }
+// });
+
+var Book = React.createClass({
+    handleChange: function(event) {
+        console.log('onChange: ', event);
+    },
+    handleClick: function(event) {
+        console.log([event.target]);
+    },
+    render: function() {
+        return (
+            <div className="record-collection">
+                <p onClick={this.handleClick}>{this.props.data.artist}</p>
+                <p>{this.props.data.album}</p>
+                <h3>Add New</h3>
+                <input type='text' placeholder='Artist' />
+                <input type='text' placeholder='Album' />
+                <input type='submit' value='Submit' onClick={this.handleClick} />
+            </div>
+        );
+    }
+});
+
+ReactDOM.render(
+    <Book data={data} />,
+    document.getElementById('content')
+);
+
+/* * /
 var data = [
     {id: 1, genre: "reggae", artist: "Bob Marley", text: "Trenchtown Rock"},
     {id: 2, genre: "alt", artist: "Tom Waits", text: "Swordfish Trombone"}
@@ -69,6 +118,7 @@ ReactDOM.render(
     <RecordBox data={data} />,
     document.getElementById('content')
 );
+/* */
 </script>
 </body>
 </html>

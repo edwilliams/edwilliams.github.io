@@ -1,0 +1,33 @@
+// ========================================
+// strucutre
+// ========================================
+
+.container {
+    width: 100%;
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    &:focus {
+        outline-color: #CCC;
+    }
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #CCC;
+    @include prefix( transition, 300ms );
+    &:hover {
+        background-color: #BBB;
+    }
+}
+
+.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
