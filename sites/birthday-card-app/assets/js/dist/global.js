@@ -67,8 +67,8 @@ var Global = (function() {
         },
         handleClick: function(e) {
 
-            var json = queryStringToJSON( $('#main input').serialize() );
-            console.log( json );
+            var json = queryStringToJSON( serialize( document.querySelector('form') ) );
+            alert( JSON.stringify(json) );
 
         },
         render: function() {
@@ -88,23 +88,27 @@ var Global = (function() {
         render: function() {
 
             return (
-                <div className='grid grid-vl grid-hl'>
+                <section className='grid grid-vl'>
 
                     <Hero/>
 
-                    <Title>Happy Boithday!</Title>
+                    <Title>Happy Birthday!</Title>
 
-                    <Input name='name'>Name</Input>
+                    <form className='grid grid-vm grid-hm'>
 
-                    <Input name='email'>Email</Input>
+                        <Input name='name'>Name</Input>
 
-                    <Input name='birthday'>Birthday</Input>
+                        <Input name='email'>Email</Input>
 
-                    <Input name='message'>Message</Input>
+                        <Input name='birthday'>Birthday</Input>
 
-                    <Submit disabled='disabled'>Submit</Submit>
+                        <Input name='message'>Message</Input>
 
-                </div>
+                        <Submit disabled='disabled'>Submit</Submit>
+
+                    </form>
+
+                </section>
             );
 
         }

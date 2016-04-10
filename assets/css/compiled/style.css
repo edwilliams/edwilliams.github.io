@@ -2124,6 +2124,9 @@ table th[class*="col-"] {
 a:hover {
   color: #D64933; }
 
+p a {
+  border-bottom: 1px solid rgba(214, 73, 51, 0.2); }
+
 body {
   font-family: "brandon-regular-webfont"; }
 
