@@ -1,3 +1,12 @@
-@import "closed";
+// @import "closed";
 @import "social-icons";
 @import "icons";
+
+.iframe-container {
+    position: absolute;
+    width: 100%;
+    opacity: 0.3;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
