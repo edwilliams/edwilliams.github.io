@@ -135,8 +135,9 @@ var Global = function() {
 
         arr.map(function(x) {
             x.map(function(y) {
+                y = parseInt(y);
                 if ( !isNaN(y) ) {
-                    allInts.push( parseInt(y) );
+                    allInts.push( y );
                 }
             });
         });
