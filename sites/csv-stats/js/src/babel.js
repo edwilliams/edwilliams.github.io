@@ -85,8 +85,8 @@ function renderHTML( html ) {
 
 var Global = function() {
 
-    // csv generated here: https://www.random.org/integer-sets/ and here: http://listofrandomnames.com/
-    var CSV = './names-scores.csv';
+    // csv generated with these tools: https://www.random.org/integer-sets/ & http://listofrandomnames.com/
+    const CSV = './names-scores.csv';
 
     function init() {
 
@@ -99,13 +99,13 @@ var Global = function() {
         // event listener for all links
         document.addEventListener('click', function(event) {
 
-            var el = event.target;
+            let el = event.target;
 
             if ( el.tagName !== 'A' ) { return false; }
 
             getFile(CSV, function(data) {
 
-                var arr = CSVToArray(data);
+                let arr = CSVToArray(data);
 
                 if ( el.id == 'total-ints' ) {
                     renderHTML( 'The total number of integers in the CSV is: ' + getAllInts(arr).length );
@@ -131,7 +131,7 @@ var Global = function() {
 
     function getAllInts( arr ) {
 
-        var allInts = [];
+        let allInts = [];
 
         arr.map(function(x) {
             x.map(function(y) {
@@ -147,9 +147,9 @@ var Global = function() {
 
     function meanValue( arr ) {
 
-        var ints = getAllInts( arr );
+        let ints = getAllInts( arr );
 
-        var total = 0, length = ints.length;
+        let total = 0, length = ints.length;
 
         ints.forEach(function(val, key) {
             total += val;
@@ -161,7 +161,7 @@ var Global = function() {
 
     function mostIntsInArray( arr ) {
 
-        var largest = [], arrPos = 0, highest = 0;
+        let largest = [], arrPos = 0, highest = 0;
 
         arr.map(function(x, i) {
             if ( x.length > highest ) {

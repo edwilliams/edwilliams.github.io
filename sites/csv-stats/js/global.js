@@ -63,7 +63,7 @@ function renderHTML(html) {
 
 var Global = function () {
 
-    // csv generated here: https://www.random.org/integer-sets/ and here: http://listofrandomnames.com/
+    // csv generated with these tools: https://www.random.org/integer-sets/ & http://listofrandomnames.com/
     var CSV = './names-scores.csv';
 
     function init() {
