@@ -1,0 +1,114 @@
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "amatic-bold";
+}
+
+body {
+    color: $black;
+    font-family: "josefinsans-regular";
+}
+
+// ========================================
+// fonts style
+// ========================================
+
+.typo-uppercase {
+    text-transform: uppercase;
+}
+
+.typo-bold {
+    font-family: "josefinsans-bold";
+}
+
+// ========================================
+// alignment
+// ========================================
+
+.typo-left {
+    text-align: left;
+}
+
+.typo-right {
+    text-align: right;
+}
+
+.typo-center {
+    text-align: center;
+}
+
+.typo-justify {
+    text-align: justify;
+}
+
+.typo-underline {
+    text-decoration: underline;
+}
+
+// ========================================
+// colours
+// ========================================
+
+.typo-white {
+    color: $white;
+}
+
+.typo-black {
+    color: $black;
+}
+
+// ========================================
+// font classes
+// ========================================
+
+%f_l,
+.f_l {
+    font-size: 32px;
+    line-height: 32px + 4px;
+}
+
+%f_m,
+.f_m {
+    font-size: 28px;
+    line-height: 28px + 4px;
+}
+
+%f_r,
+.f_r {
+    font-size: 16px;
+    line-height: 16px + 4px;
+}
+
+%f_s,
+.f_s {
+    font-size: 14px;
+    line-height: 14px + 4px;
+}
+
+// ========================================
+// SIZES
+// ========================================
+
+body {
+    @extend %f_r;
+}
+
+.h1, h1 {
+    @extend %f_l;
+}
+
+.h2, h2 {
+    @extend %f_m;
+}
+
+.h3, h3 {
+    @extend %f_r;
+}
+
+.h4, h4, .h5, h5, .h6, h6 {
+    @extend .f_s;
+}

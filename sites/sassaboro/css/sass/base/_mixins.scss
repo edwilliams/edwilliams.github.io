@@ -1,0 +1,61 @@
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}
+}
+
+// Example usage...
+
+// --Sass:
+
+// @include placeholder { color: red; }
+
+// --Output:
+
+// ::-webkit-input-placeholder { color: red; }
+//           :-moz-placeholder { color: red; }
+//          ::-moz-placeholder { color: red; }
+//      :-ms-input-placeholder { color: red; }
+
+// =============================================================
+// animation contructor function
+// =============================================================
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+// @include keyframes(rainbow) {
+//     14%   { background-color: red; }
+//     28%   { background-color: yellow; }
+//     42%   { background-color: pink; }
+//     56%   { background-color: green; }
+//     70%   { background-color: orange; }
+//     84%   { background-color: purple; }
+//     96%   { background-color: blue; }
+// }

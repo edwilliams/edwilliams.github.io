@@ -1,0 +1,24 @@
+.nav-main {
+    li {
+        position: relative;
+        display: inline-block;
+        border-right: 1px solid $grey;
+        padding: 0 5px 0 10px;
+        &:before {
+            position: absolute;
+            content: "+";
+            top: 8px;
+            left: 5px;
+        }
+        &:last-of-type {
+            border-right: none;
+        }
+    }
+    a {
+        display: inline-block;
+        @extend %f_m;
+        font-family: "amatic-bold";
+        text-transform: uppercase;
+        padding: 0px 10px 5px 10px;
+    }
+}

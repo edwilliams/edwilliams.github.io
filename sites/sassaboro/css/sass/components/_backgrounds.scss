@@ -1,0 +1,50 @@
+.bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-left,
+.bg-right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    @media screen and (min-width: 1600px) {
+        background-position-y: 0;
+        background-size: inherit;
+    }
+}
+
+.bg-left {
+    background-image: url(../../img/bg-left.jpg);
+    background-position-x: 0;
+}
+
+.bg-right {
+    background-image: url(../../img/bg-right.jpg);
+    background-position-x: 100%;
+    margin-left: 50%;
+}
+
+.bg-top,
+.bg-bottom {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+}
+
+.bg-top {
+    background-color: $red;
+    top: 0;
+}
+
+.bg-bottom {
+    background-color: $green-dark;
+    bottom: 0;
+}
