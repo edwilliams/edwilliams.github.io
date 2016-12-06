@@ -3,11 +3,14 @@
 // ========================================
 
 body {
-    // temp
-    min-width: 1024px;
+
 }
 
 .container {
     margin: 0 auto;
-    width: 978px;
+    max-width: 978px;
+    width: 100%;
+    @media screen and (min-width: 1600px) {
+        max-width: 1366px;
+    }
 }

@@ -3,19 +3,23 @@ var source = require('vinyl-source-stream');
 var gulp = require('gulp');
 var browserify = require('browserify');
 var babelify = require('babelify');
-var es2015Preset = require('babel-preset-es2015');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var historyApiFallback = require('connect-history-api-fallback');
 var notify = require('gulp-notify');
+var minify = require('gulp-minify');
+
+// =====================================
+// scripts
+// =====================================
 
 gulp.task('scripts', function(){
     browserify({
         entries: ['./js/main.js'],
         debug: true,
         transform: [babelify.configure({
-            'presets': [es2015Preset]
+            'presets': ['es2015', 'react']
         })]
     })
         .bundle()
@@ -31,6 +35,9 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest('./js'));
 });
 
+// =====================================
+// style
+// =====================================
 
 gulp.task('style', function(){
     gulp.src('./css/sass/style.scss')
@@ -47,7 +54,28 @@ gulp.task('style', function(){
         .pipe(gulp.dest('./css/compiled'));
 });
 
+// =====================================
+// watch
+// =====================================
+
 gulp.task('default', ['scripts', 'style'], function(){
-    gulp.watch(['./js/*', './js/**/*'], ['scripts']);
+    gulp.watch(['./js/main.js', './js/src/*.*',], ['scripts']);
     gulp.watch('./css/sass/**/*.scss',['style']);
+});
+
+// =====================================
+// run this before launch
+// =====================================
+
+gulp.task('compress', function() {
+  gulp.src('./js/bundle.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('js/dist'))
 });
