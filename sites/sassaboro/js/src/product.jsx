@@ -4,7 +4,7 @@ class Product extends Component {
     render() {
         return (
             <div className="unit size1of2">
-                <h3 className="f_m mbs pbs">original/smoked/giftpacks/chilli pulp</h3>
+                <h3 className="f_m mbs pbs">{this.props.title}</h3>
                 <img className="mtm" src="img/bottle-small.jpg" />
             </div>
         )
