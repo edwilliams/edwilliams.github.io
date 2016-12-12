@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Config from './config.js';
 import Backgrounds from './backgrounds.jsx';
 import Header from './header.jsx';
+import Main from './main.jsx';
 import SectionLogo from './section-logo.jsx';
 import SectionStory from './section-story.jsx';
 import SectionProducts from './section-products.jsx';
@@ -73,20 +74,18 @@ class App extends Component {
             <div>
                 <Backgrounds />
                 <Header />
-                <main className="main">
-                    <div className="container bg-white pam">
-                        <SectionLogo />
-                        <SectionStory title={this.state.story.title} subTitle={this.state.story.subTitle} text={this.state.story.text} />
-                        <SectionProducts title={this.state.products.title}>
-                            {this.state.products.items.map((x) =>
-                                <Product key={x.title} title={x.title} />
-                            )}
-                        </SectionProducts>
-                        <SectionShop title={this.state.shop.title} text={this.state.shop.text} />
-                        <SectionStockists title={this.state.stockists.title} text={this.state.stockists.text} />
-                        <SectionContact title={this.state.contact.title} text={this.state.contact.text} />
-                    </div>
-                </main>
+                <Main>
+                    <SectionLogo />
+                    <SectionStory title={this.state.story.title} subTitle={this.state.story.subTitle} text={this.state.story.text} />
+                    <SectionProducts title={this.state.products.title}>
+                        {this.state.products.items.map((x) =>
+                            <Product key={x.title} title={x.title} />
+                        )}
+                    </SectionProducts>
+                    <SectionShop title={this.state.shop.title} text={this.state.shop.text} />
+                    <SectionStockists title={this.state.stockists.title} text={this.state.stockists.text} />
+                    <SectionContact title={this.state.contact.title} text={this.state.contact.text} />
+                </Main>
                 <Footer />
             </div>
         )

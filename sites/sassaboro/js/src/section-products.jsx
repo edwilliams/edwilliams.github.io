@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-// <h1 className="bg-ribbon typo-center mvm">products</h1>
 class SectionProducts extends Component {
     render() {
         return (
