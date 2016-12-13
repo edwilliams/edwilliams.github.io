@@ -13,6 +13,12 @@ function events() {
 
     })
 
+    $('img').hover(function() {
+        $(this).addClass('tada');
+    }, function() {
+        $(this).removeClass('tada');
+    })
+
     $(window).on('load', function(e) {
         $('#header-fixed').html( $('#header-inner').html() )
     })

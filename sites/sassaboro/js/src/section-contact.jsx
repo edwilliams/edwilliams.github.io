@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class SectionContact extends Component {
     render() {
         return (
-            <section id="contact" className="phm">
-                <h1 className="bg-ribbon typo-center mvm">{this.props.title}</h1>
+            <section id="contact" className="container bg-white">
+                <h1 className="bg-ribbon typo-center mbm">{this.props.title}</h1>
                 <div className="grid grid-vl typo-center">
                     <div className="unit size3of4">
                         <p className="mbm">{this.props.text}</p>

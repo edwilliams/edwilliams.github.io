@@ -178,41 +178,38 @@ $sp-xl : 50px;
 }
 
 .bg-ribbon {
-    background-color: $red;
+    background-color: $yellow;
     position: relative;
     height: 40px;
     color: $white;
-    &:after {
-        left: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: rgba(255, 255, 255, 0);
-        border-left-color: $red;
-        border-width: 20px;
-        margin-top: -20px;
-    }
-    &:before {
-        right: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: rgba(255, 255, 255, 0);
-        border-right-color: $red;
-        border-width: 20px;
-        margin-top: -20px;
-}
-    // background: url(../../img/ribbon.png) 50% / 300px no-repeat;
-    // height: 90px;
-    // line-height: 15px;
+    // &:after {
+    //     left: 100%;
+    //     top: 50%;
+    //     border: solid transparent;
+    //     content: " ";
+    //     height: 0;
+    //     width: 0;
+    //     position: absolute;
+    //     pointer-events: none;
+    //     border-color: rgba(255, 255, 255, 0);
+    //     border-left-color: $red;
+    //     border-width: 20px;
+    //     margin-top: -20px;
+    // }
+    // &:before {
+    //     right: 100%;
+    //     top: 50%;
+    //     border: solid transparent;
+    //     content: " ";
+    //     height: 0;
+    //     width: 0;
+    //     position: absolute;
+    //     pointer-events: none;
+    //     border-color: rgba(255, 255, 255, 0);
+    //     border-right-color: $red;
+    //     border-width: 20px;
+    //     margin-top: -20px;
+    // }
 }
 
 // =====================================

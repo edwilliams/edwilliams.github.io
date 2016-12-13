@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class SectionLogo extends Component {
     render() {
         return (
-            <section id="logo" className="phm mbxl mtm">
+            <section id="logo" className="container bg-white ptl mbxl mtm">
                 <div className="stripe mbm"></div>
                 <div className="logo typo-center">
                     <h4 className="f_l">WEST AFRICAN SUNSHINE</h4>

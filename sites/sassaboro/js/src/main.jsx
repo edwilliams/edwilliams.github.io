@@ -4,9 +4,7 @@ class Main extends Component {
     render() {
         return (
             <main className="main">
-                <div className="container bg-white pam">
-                    {this.props.children}
-                </div>
+                {this.props.children}
             </main>
         )
     }

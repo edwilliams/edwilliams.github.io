@@ -5,7 +5,9 @@ class Product extends Component {
         return (
             <div className="unit size1of2">
                 <h3 className="f_m mbs pbs">{this.props.title}</h3>
-                <img className="mtm" src="img/bottle-small.jpg" />
+                <figure>
+                    <img className="animated mtm" src="img/bottle-small.png" />
+                </figure>
             </div>
         )
     }

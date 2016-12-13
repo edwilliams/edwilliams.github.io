@@ -1,3 +1,7 @@
+// =====================================
+// dancers
+// =====================================
+
 .bg {
     position: fixed;
     top: 0;
@@ -47,4 +51,24 @@
 .bg-bottom {
     background-color: $green-dark;
     bottom: 0;
+}
+
+// =====================================
+// dots
+// =====================================
+
+.dots-horz {
+    background: url(/sites/sassaboro/img/dots-horz.jpg) 0 0;
+    height: 9px;
+    width: calc(100% - 101px);
+    bottom: 0;
+    // left: 50px;
+}
+
+.dots-vert {
+    background: url(/sites/sassaboro/img/dots-vert.jpg) 0 0;
+    width: 9px;
+    height: calc(100% - 101px);
+    // top: 50px;
+    right: 0;
 }
