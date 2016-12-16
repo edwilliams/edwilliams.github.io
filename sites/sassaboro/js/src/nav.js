@@ -1,5 +1,0 @@
-function nav() {
-
-}
-
-export { nav }
