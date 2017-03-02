@@ -1,8 +1,6 @@
-var test = require('tape');
+var test = require('tape')
 
 function transformArray( arr ) {
-
-    var newArr = [];
 
     var strings = {
         'zero' : 0,
@@ -14,21 +12,17 @@ function transformArray( arr ) {
         'and' : '+'
     }
 
-    arr.forEach(function(x) {
-        newArr.push( strings[x] );
-    });
-
-    return newArr;
+    return arr.map(function(x) { return x })
 
 }
 
 function splitInput( input ) {
-    return input.split(' ');
+    return input.split(' ')
 }
 
 function getNumberFromString( input ) {
 
-    var arr = transformArray( splitInput( input ) );
+    var arr = transformArray( splitInput( input ) )
 
     // split input into array
     // transformArray() returns new transformed array of values
@@ -36,12 +30,12 @@ function getNumberFromString( input ) {
     // map factor 10  numbers either side of operands
     // return int
 
-    return 301;
+    return 301
 
 }
 
 test('equivalence', function(t) {
-    // t.equal( getNumberFromString('zero'), 0, 'this string is equal to this integer' );
-    t.equal( getNumberFromString('three hundred and one'), 301, 'this string is equal to this integer' );
-    t.end();
-});
+    // t.equal( getNumberFromString('zero'), 0, 'this string is equal to this integer' )
+    t.equal( getNumberFromString('three hundred and one'), 301, 'this string is equal to this integer' )
+    t.end()
+})
