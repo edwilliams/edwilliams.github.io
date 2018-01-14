@@ -17966,14 +17966,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Home = function (_React$Component) {
   (0, _inherits3.default)(Home, _React$Component);
 
-  function Home() {
+  function Home(props) {
     (0, _classCallCheck3.default)(this, Home);
-    return (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).apply(this, arguments));
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).call(this, props));
+
+    _this.handleTap = _this.handleTap.bind(_this);
+
+    return _this;
   }
 
   (0, _createClass3.default)(Home, [{
     key: 'componentDidMount',
-    value: function componentDidMount() {}
+    value: function componentDidMount() {
+
+      var fileInput = document.getElementById('fileInput');
+      var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+      fileInput.addEventListener('change', function () {
+
+        var reader = new FileReader();
+
+        reader.onload = function () {
+
+          fileDisplayArea.innerHTML = "";
+
+          var img = new Image();
+          img.src = reader.result;
+
+          fileDisplayArea.appendChild(img);
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+      });
+    }
+  }, {
+    key: 'handleTap',
+    value: function handleTap() {
+      document.getElementById('fileInput').click();
+    }
   }, {
     key: 'render',
     value: function render() {
@@ -17981,7 +18012,16 @@ var Home = function (_React$Component) {
         'article',
         null,
         _react2.default.createElement(_AppBar2.default, { title: 'Library' }),
-        _react2.default.createElement(_RaisedButton2.default, { primary: true, fullWidth: true, label: 'Add New', className: 'abm' })
+        _react2.default.createElement(_RaisedButton2.default, {
+          primary: true,
+          fullWidth: true,
+          label: 'Add New',
+          className: 'abm',
+          onMouseDown: this.handleTap,
+          onTouchStart: this.handleTap }),
+        false && _react2.default.createElement('input', { type: 'file', accept: 'image/*', id: 'capture', capture: 'camera' }),
+        _react2.default.createElement('input', { type: 'file', id: 'fileInput', style: { visibility: 'hidden' } }),
+        _react2.default.createElement('div', { id: 'fileDisplayArea' })
       );
     }
   }]);
