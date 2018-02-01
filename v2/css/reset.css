@@ -19,8 +19,19 @@ strong,b{font-weight:700}
 * {-webkit-font-smoothing: antialiased}
 html { -webkit-user-select: none}
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling */
+@font-face {
+  font-family: "brandon-regular-webfont";
+  src: url("../fonts/brandon-regular-webfont.eot");
+  src: url("../fonts/brandon-regular-webfont.eot?#iefix") format("eot"),
+       url("../fonts/brandon-regular-webfont.woff") format("woff"),
+       url("../fonts/brandon-regular-webfont.ttf") format("truetype"),
+       url("../fonts/brandon-regular-webfont.svg#socicon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-#app {
+body {
   -webkit-overflow-scrolling: touch;
+  font-family: "brandon-regular-webfont";
+  font-size: 2.4vh;
+  line-height: 3.2vh;
 }

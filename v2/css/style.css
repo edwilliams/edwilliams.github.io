@@ -1,0 +1,38 @@
+header {
+  font-size: 6vh;
+  line-height: 8vh;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: #000;
+}
+
+h3 {
+  font-size: 3vh;
+  line-height: 4vh;
+}
+
+h4 {
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #000;
+  left: 0;
+  bottom: -10px;
+}
