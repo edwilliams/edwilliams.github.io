@@ -170,6 +170,6 @@
   transform: translateY(-50%); }
 
 .center {
-  display: flex;
+  display: grid;
   justify-content: center;
 }

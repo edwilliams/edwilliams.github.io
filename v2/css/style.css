@@ -1,3 +1,8 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   font-size: 6vh;
   line-height: 8vh;
@@ -35,4 +40,19 @@ img {
   background: #000;
   left: 0;
   bottom: -10px;
+}
+
+.items {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  -webkit-filter: grayscale(0.5);
+  max-width: 768px;
+  margin: 50px auto;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

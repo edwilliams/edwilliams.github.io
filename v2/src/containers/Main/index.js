@@ -1,31 +1,31 @@
 import React from 'react'
 import createReactClass from 'create-react-class'
-import CSS from './css'
+import { Switch, Route } from 'react-router-dom'
 import { mergeDeepRight } from 'ramda'
 
+import Home from 'containers/Home'
+import About from 'containers/About'
+import Project from 'containers/Project'
+
+var Projects = () => (
+  <Switch>
+    <Route exact path='/projects' component={Home}/>
+    <Route path='/projects/:id' component={Project}/>
+  </Switch>
+)
+
 var MainComponent = createReactClass({
-
-  getInitialState() {
-    return {
-
-    }
-  },
-
-  componentWillMount() {
-
-  },
-
   render() {
-
-    var css = ( this.props.css ) ? mergeDeepRight(CSS, this.props.css) : CSS
-
     return (
       <main id="main">
-        {this.props.children}
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/projects' component={Projects}/>
+          <Route path='/about' component={About}/>
+        </Switch>
       </main>
     )
   }
-
 })
 
 export default MainComponent
