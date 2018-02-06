@@ -2,10 +2,17 @@ import React from 'react'
 import createReactClass from 'create-react-class'
 
 var Header = createReactClass({
+
+  handleClick() {
+    var isHome = (window.location.hash == '#/')
+    if ( isHome ) window.location.hash = '#/about'
+    else window.location.hash = '#/'
+  },
+
   render() {
 
     return (
-      <div className="phm" style={{
+      <div onClick={this.handleClick} className="phm" style={{
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'

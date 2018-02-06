@@ -32,6 +32,12 @@ img {
   position: relative;
 }
 
+a {
+  text-decoration: underline;
+  display: inline-block;
+  color: #232323;
+}
+
 .underline:after {
   position: absolute;
   content: "";
@@ -46,8 +52,8 @@ img {
   display: grid;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  -webkit-filter: grayscale(0.5);
-  max-width: 768px;
+  -webkit-filter: grayscale(1);
+  max-width: 1024px;
   margin: 50px auto;
 }
 

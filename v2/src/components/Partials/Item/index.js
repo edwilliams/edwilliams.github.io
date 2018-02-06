@@ -7,7 +7,7 @@ var Item = createReactClass({
     var { img, title, url, firm, year, desc } = this.props
 
     return (
-      <div className="mbm" onClick={() => { window.location.hash = `#/${url}` }}>
+      <div className="mbm" onClick={() => { window.location.hash = `#/projects/${url}` }}>
 
         <div className="center">
           <img className="mbs" src={img}/>
