@@ -32,6 +32,4 @@ html { -webkit-user-select: none}
 body {
   -webkit-overflow-scrolling: touch;
   font-family: "brandon-regular-webfont";
-  font-size: 2.4vh;
-  line-height: 3.2vh;
 }

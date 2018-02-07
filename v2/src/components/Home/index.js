@@ -15,16 +15,10 @@ var Home = createReactClass({
 
         <Header>Ed Williams</Header>
 
-        <div className="container">
+        <div className="amm typo-center">
 
-          <Item img={projects['passivliving-app'].imageMain} url="passivliving-app"/>
-
-          <div className="grid col-2">
-            <Item img={projects['jaguar-land-rover'].imageMain} url="jaguar-land-rover"/>
-            <Item img={projects['good-energy'].imageMain} url="good-energy"/>
-            <Item img={projects['rosie-lee-2016'].imageMain} url="rosie-lee-2016"/>
-            <Item img={projects['vue-playbook'].imageMain} url="vue-playbook"/>
-          </div>
+          <p className="mbs">Wiltshire based JavaScript engineer, specialising in React / Redux</p>
+          <h3 onClick={() => { window.location.hash = '#/projects' }}>projects</h3>
 
         </div>
 

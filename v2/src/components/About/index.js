@@ -44,17 +44,6 @@ var About = createReactClass({
 
         </div>
 
-        <hr className="mvm"/>
-
-        <div className="items grid col-6">
-          <div className="item"><img src="/img/logo/nike.png"/></div>
-          <div className="item"><img src="/img/logo/goodenergy.png"/></div>
-          <div className="item"><img src="/img/logo/vue.png"/></div>
-          <div className="item"><img src="/img/logo/passivliving.png"/></div>
-          <div className="item"><img src="/img/logo/jaguarlandrover.jpg"/></div>
-          <div className="item"><img src="/img/logo/headfirstbristol.png"/></div>
-        </div>
-
         <Footer/>
 
       </article>

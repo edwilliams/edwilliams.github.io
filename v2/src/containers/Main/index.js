@@ -5,11 +5,12 @@ import { mergeDeepRight } from 'ramda'
 
 import Home from 'containers/Home'
 import About from 'containers/About'
+import Projects from 'containers/Projects'
 import Project from 'containers/Project'
 
-var Projects = () => (
+var ProjectsSwitch = () => (
   <Switch>
-    <Route exact path='/projects' component={Home}/>
+    <Route exact path='/projects' component={Projects}/>
     <Route path='/projects/:id' component={Project}/>
   </Switch>
 )
@@ -20,7 +21,7 @@ var MainComponent = createReactClass({
       <main id="main">
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/projects' component={Projects}/>
+          <Route path='/projects' component={ProjectsSwitch}/>
           <Route path='/about' component={About}/>
         </Switch>
       </main>

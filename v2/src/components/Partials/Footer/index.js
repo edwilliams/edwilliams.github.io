@@ -4,7 +4,7 @@ import createReactClass from 'create-react-class'
 var Footer = createReactClass({
   render() {
     return (
-      <footer style={{ borderTop: '1px solid #000000' }}>
+      <footer className="footer">
         <div className="plm pvs">© Ed Williams. All rights reserved.</div>
       </footer>
     )
