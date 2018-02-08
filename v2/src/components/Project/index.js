@@ -11,7 +11,7 @@ var Single = createReactClass({
     var content = projects[this.props.match.params.id]
     if ( !content ) return <p>404</p>
 
-    var { imageMain, title, subTitle, location, description, imageSmall } = content
+    var { imageMain, title, subTitle, location, desc, imageSmall } = content
 
     return (
       <article>
@@ -27,13 +27,9 @@ var Single = createReactClass({
           <div className="grid col-2 phm">
             <div>
               <h3 className="mbm underline">{title}</h3>
-              <p className="">{subTitle}</p>
-              <h4 className="mbs">{location}</h4>
-              <p className="mbl">{description}</p>
-              <Link to='/'>Back</Link>
-            </div>
-            <div className="center">
-              <img className="mbs" src={imageSmall}/>
+              <p className="mbm">{subTitle}</p>
+              <p className="mbl">{desc}</p>
+              <Link to='/projects'>Back</Link>
             </div>
           </div>
 
