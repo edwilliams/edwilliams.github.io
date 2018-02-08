@@ -40,7 +40,7 @@ var About = createReactClass({
 
           </div>
 
-          <img className="prm mbs" src="../img/ed.png"/>
+          <img className="prm mbs" src="img/ed.png"/>
 
         </div>
 
