@@ -6635,6 +6635,7 @@ var Home = (0, _createReactClass2.default)({
         null,
         'Ed Williams'
       ),
+      _react2.default.createElement('iframe', { src: '/sites/shooting-stars/', className: 'full-screen' }),
       _react2.default.createElement(
         'div',
         { className: 'amm typo-center' },

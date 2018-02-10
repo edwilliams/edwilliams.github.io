@@ -15,6 +15,8 @@ var Home = createReactClass({
 
         <Header>Ed Williams</Header>
 
+        <iframe src="/sites/shooting-stars/" className="full-screen"></iframe>
+
         <div className="amm typo-center">
 
           <p className="mbs">Wiltshire based JavaScript engineer, specialising in React / Redux</p>

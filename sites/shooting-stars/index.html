@@ -1,95 +1,89 @@
 <html>
 <head>
-	<title></title>
-	<style>
-		html, body {
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+  <title>Shooting Stars</title>
+  <style>html, body { width: 100%; height: 100%; }</style>
 </head>
 <body>
-
 <canvas id="canvas"></canvas>
-
 <script>
+(function() {
 
-var shootingStars = (function(){
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+  var blobArray = [];
+  var xPos = 0;
+  var yPos = 0;
+  var triggered = false
 
-	var canvas = document.getElementById("canvas");
-	var c = canvas.getContext("2d");
-	var blobArray = [];
-	var xPos = 0;
-	var yPos = 0;
+  function config() {
 
-	function config() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
+  }
 
-	}
+  function init() {
 
-	function initialize() {
+    config();
+    events();
 
-		config();
-		events();
+  }
 
-	}
+  function events() {
 
-	function events() {
+    window.addEventListener('mouseover', function(e) {
+      if ( triggered ) return
+      var animation = setInterval(function() {
+        draw(xPos,yPos);
+        triggered = true
+      }, 30);
+    }, false);
 
-		window.addEventListener('mouseover', function(e) {
-			var animation = setInterval(function() {
-				draw(xPos,yPos);
-			}, 30);
-		}, false);
+    window.addEventListener('mousemove', function(e) {
+      xPos = e.x;
+      yPos = e.y;
+    }, false);
 
-		window.addEventListener('mousemove', function(e) {
-			xPos = e.x;
-			yPos = e.y;
-		}, false);
+  }
 
-	}
+  // helpers
+  function randomRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
 
-	// helpers
-	function randomRange(min, max) {
-	    return Math.random() * (max - min) + min;
-	}
+  function draw(xPos, yPos) {
 
-	function draw(xPos, yPos) {
+    var blob = {
+      x : xPos,
+      y : yPos,
+      xSpeed : randomRange(-10, 10),
+      ySpeed : randomRange(-10, 10),
+      size: 5
+    };
 
-		var blob = {
-			x : xPos,
-			y : yPos,
-			xSpeed : randomRange(-10, 10),
-			ySpeed : randomRange(-10, 10),
-			size: 10
-		};
+    blobArray.push(blob);
 
-		blobArray.push(blob);
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-		c.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    for ( var i = blobArray.length - 1; i >= 0; i-- ) {
 
-		for ( var i = blobArray.length - 1; i >= 0; i-- ) {
+      blob = blobArray[i];
 
-			blob = blobArray[i];
+      ctx.fillStyle = '#F5C453';
+      ctx.fillRect(blob.x, blob.y, blob.size, blob.size);
 
-			c.fillStyle = '#D64933';
-			c.fillRect(blob.x, blob.y, blob.size, blob.size);
+      blob.x = blob.x + blob.xSpeed;
+      blob.y = blob.y + blob.ySpeed;
 
-			blob.x = blob.x + blob.xSpeed;
-			blob.y = blob.y + blob.ySpeed;
+      blob.size = blob.size * 0.96;
 
-			blob.size = blob.size * 0.96;
+    }
 
-		}
+  }
 
-	}
-
-	initialize();
+  init();
 
 })();
-
 </script>
 </body>
 </html>
