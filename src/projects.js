@@ -14,6 +14,7 @@ export default {
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
     imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg',
+    vid: '/vid/jlr.m4v'
   },
   'good-energy': {
     title: 'Good Energy Quote Engine',

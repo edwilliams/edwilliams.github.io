@@ -11,7 +11,7 @@ var Single = createReactClass({
     var content = projects[this.props.match.params.id]
     if ( !content ) return <p>404</p>
 
-    var { imageMain, title, subTitle, location, desc, imageSmall } = content
+    var { imageMain, title, subTitle, location, desc, vid } = content
 
     return (
       <article>
@@ -31,6 +31,9 @@ var Single = createReactClass({
               <p className="mbl">{desc}</p>
               <Link to='/projects'>Back</Link>
             </div>
+            {vid && <video style={{ width: '100%' }} controls>
+              <source src={vid} type="video/mp4"/>
+            </video>}
           </div>
 
         </div>
