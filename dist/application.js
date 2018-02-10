@@ -2380,7 +2380,8 @@ exports.default = {
     desc: 'I rebuilt a core piece of functionality of the Jaguar Landrover e-learning system, based on new designs, and worked closely with other developers into integrate this with their existing bespoke .NET platform. The Ajax-centric UI (inc K​nockout) was fed by a controller API which I worked closely with the .NET developers to create.',
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
-    imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg'
+    imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg',
+    vid: '/vid/jlr.m4v'
   },
   'good-energy': {
     title: 'Good Energy Quote Engine',
@@ -6732,7 +6733,7 @@ var Single = (0, _createReactClass2.default)({
         subTitle = content.subTitle,
         location = content.location,
         desc = content.desc,
-        imageSmall = content.imageSmall;
+        vid = content.vid;
 
 
     return _react2.default.createElement(
@@ -6777,6 +6778,11 @@ var Single = (0, _createReactClass2.default)({
               { to: '/projects' },
               'Back'
             )
+          ),
+          vid && _react2.default.createElement(
+            'video',
+            { style: { width: '100%' }, controls: true },
+            _react2.default.createElement('source', { src: vid, type: 'video/mp4' })
           )
         )
       )
