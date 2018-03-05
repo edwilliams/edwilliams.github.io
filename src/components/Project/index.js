@@ -11,7 +11,7 @@ var Single = createReactClass({
     var content = projects[this.props.match.params.id]
     if ( !content ) return <p>404</p>
 
-    var { imageMain, images, title, subTitle, location, desc, vid } = content
+    var { imageMain, images, title, subTitle, location, desc, notes, vid } = content
 
     return (
       <article>
@@ -25,11 +25,18 @@ var Single = createReactClass({
           </div>
 
           <div className="grid col-2 phm">
+
             <div>
               <h3 className="mbm underline">{title}</h3>
               <p className="mbm">{subTitle}</p>
-              <p className="mbl">{desc}</p>
-              <Link to='/projects'>Back</Link>
+              <p className="mbm">{desc}</p>
+
+              {notes && <div>
+                <p className="mbm">Below are some notable functions of the role:</p>
+                {notes.map((note, i) => <p key={i} className="mbs">- {note}</p>)}
+              </div>}
+
+              <Link className="mtl" to='/projects'>Back</Link>
             </div>
 
             {images && <img className="mbs" src={images[0]}/>}

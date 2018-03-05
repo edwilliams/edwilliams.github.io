@@ -2369,7 +2369,8 @@ exports.default = {
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
-    desc: 'PassivLiving App iOS / Android',
+    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. PassivSystems wanted the app to be deployed both in App stores and on their desktop portal. This needed to take place against the backdrop of business requirements driving new features into the App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    notes: ['utilising iframes to migrate to new React ecosystem', 'initial maintenance of legacy Ember codebase and build systems (Grunt / Gulp)', 'maintaining and utilising Cordova plugins and build scripts', 'writing / updating custom Webpack and Jenkins build scripts during migrations', 'leading regular stakeholder meetings to plan new feature architecture', 'working alongside MA students at City University to develop new UX features', 'working with external designers to realise university generated wireframes', 'engineering UI updates around an eventpoll system', 'engineering bespoke animations to represent heating states within the app', 'participating in new API specification', 'writing and maintaining unit tests (Ava) and integration tests (Cypress)', 'utilising emulators in Xcode and Android Studio to test across a range of devices'],
     location: 'Newbury: 2017 to Present',
     logo: 'img/logo/passivliving.png',
     imageMain: 'img/passivliving/iphone6-800x800.png',
@@ -6739,6 +6740,7 @@ var Single = (0, _createReactClass2.default)({
         subTitle = content.subTitle,
         location = content.location,
         desc = content.desc,
+        notes = content.notes,
         vid = content.vid;
 
 
@@ -6776,12 +6778,29 @@ var Single = (0, _createReactClass2.default)({
             ),
             _react2.default.createElement(
               'p',
-              { className: 'mbl' },
+              { className: 'mbm' },
               desc
+            ),
+            notes && _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                { className: 'mbm' },
+                'Below are some notable functions of the role:'
+              ),
+              notes.map(function (note, i) {
+                return _react2.default.createElement(
+                  'p',
+                  { key: i, className: 'mbs' },
+                  '- ',
+                  note
+                );
+              })
             ),
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { to: '/projects' },
+              { className: 'mtl', to: '/projects' },
               'Back'
             )
           ),
