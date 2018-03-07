@@ -24,7 +24,7 @@ var Single = createReactClass({
             <img className="mbs" src={imageMain}/>
           </div>
 
-          <div className="grid col-2 phm">
+          <div className="grid dsktp-2 mob-1 phm">
 
             <div>
               <h3 className="mbm underline">{title}</h3>

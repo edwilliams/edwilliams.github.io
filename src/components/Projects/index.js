@@ -16,7 +16,7 @@ var Home = createReactClass({
         <Header>Ed Williams</Header>
 
         <div className="mbxl">
-          <div className="container-small grid col-2">
+          <div className="container-small grid dsktp-2 mob-1">
 
             <Item img={projects['passivliving-app'].logo}
               title={projects["passivliving-app"].title}

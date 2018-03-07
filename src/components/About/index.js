@@ -16,7 +16,7 @@ var About = createReactClass({
 
         <Header>About Me</Header>
 
-        <div className="grid col-2">
+        <div className="grid dsktp-2 mob-1">
 
           <div className="pam">
 

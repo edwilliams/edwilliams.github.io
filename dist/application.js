@@ -6532,7 +6532,7 @@ var About = (0, _createReactClass2.default)({
       ),
       _react2.default.createElement(
         'div',
-        { className: 'grid col-2' },
+        { className: 'grid dsktp-2 mob-1' },
         _react2.default.createElement(
           'div',
           { className: 'pam' },
@@ -6762,7 +6762,7 @@ var Single = (0, _createReactClass2.default)({
         ),
         _react2.default.createElement(
           'div',
-          { className: 'grid col-2 phm' },
+          { className: 'grid dsktp-2 mob-1 phm' },
           _react2.default.createElement(
             'div',
             null,
@@ -6872,7 +6872,7 @@ var Home = (0, _createReactClass2.default)({
         { className: 'mbxl' },
         _react2.default.createElement(
           'div',
-          { className: 'container-small grid col-2' },
+          { className: 'container-small grid dsktp-2 mob-1' },
           _react2.default.createElement(_Item2.default, { img: _projects2.default['passivliving-app'].logo,
             title: _projects2.default["passivliving-app"].title,
             subTitle: _projects2.default["passivliving-app"].subTitle,
