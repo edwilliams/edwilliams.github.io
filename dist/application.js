@@ -2369,7 +2369,7 @@ exports.default = {
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
-    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. PassivSystems wanted the app to be deployed both in App stores and on their desktop portal. This needed to take place against the backdrop of business requirements driving new features into the App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
     notes: ['utilising iframes to migrate to new React ecosystem', 'initial maintenance of legacy Ember codebase and build systems (Grunt / Gulp)', 'maintaining and utilising Cordova plugins and build scripts', 'writing / updating custom Webpack and Jenkins build scripts during migrations', 'leading regular stakeholder meetings to plan new feature architecture', 'working alongside MA UX students at City University to develop new features', 'working with external designers to realise university generated wireframes', 'engineering UI updates around an eventpoll system', 'engineering bespoke animations to represent heating states within the app', 'participating in new API specification', 'writing and maintaining unit tests (Ava) and integration tests (Cypress)', 'utilising emulators in Xcode and Android Studio to test across a range of devices'],
     location: 'Newbury: 2017 to Present',
     logo: 'img/logo/passivliving.png',
@@ -2379,7 +2379,7 @@ exports.default = {
   'jaguar-land-rover': {
     title: 'Jaguar Land Rover E-Learning Platform',
     subTitle: 'A propriety and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
-    desc: 'This e-learning platform is Jaguar Land Rover\'s propiety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was taked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy systems',
+    desc: 'This e-learning platform is Jaguar Land Rover\'s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was taked with tasking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy systems',
     notes: ['working as part of a distributed national and international team', 'using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'supporting and integrating into existing legacy frontend code, including Knockout.js', 'browser support stretching back to Internet Explorer 8', 'building the UI in vanilla Javascript, borrowing heavily from Angular\'s design pattern'],
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
@@ -2388,18 +2388,30 @@ exports.default = {
   },
   'good-energy': {
     title: 'Good Energy Quote Engine',
-    subTitle: 'Website for ethical renewable electricity company Good Energy\'s following a rebranding by leading Bristol design agency Dare West',
-    desc: '',
-    _desc: 'I contributed to the development of Good Energy\'s new website - an Umbraco / .NET build with all HTML in Razor templates. All SCSS written in BEM format, HTML in Razor templates and all Javascript written in ​ES6​ modules with ​Browserify​ / ​Gulp​.',
+    subTitle: 'Website for ethical renewable electricity company Good Energy',
+    desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
+    notes: ['Developing Good Energy\'s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
     location: 'Dare West: 2016',
     logo: 'img/logo/goodenergy.png',
     imageMain: 'img/good-energy/macbook-640x400.jpg'
   },
+
+  // Inside Rosie Lee
+
+  // Bespoke business administration built as API with Node/Express
+  // Client composed of Collection of UI components
+
+  // VUE Playbook Application
+
+  // CSS animation presentation tool. Offline-first and engineered on top of Impress.js
+  // I later developed a custom backend solution to allow users to edit text
+  // Worked closely with client on site to install presentation in cinema
+
+
   'rosie-lee-2016': {
     title: 'Rosie Lee 2016 Website',
     subTitle: 'Website for leading London design agency Rosie Lee',
-    desc: '',
-    _desc: 'Using a forked version of lazyload (to better animate high quality imagery) I built the 2016 build of Rosie Lee\'s website.',
+    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, \'Inside Rosie Lee\'. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: 'img/rosielee/macbook-640x400.jpg'
@@ -2407,8 +2419,7 @@ exports.default = {
   'vue-playbook': {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
-    desc: '',
-    _desc: 'Cutting edge ​CSS animation​ presentation tool. Built o​ffline-first​ and engineered on top of Impress. I then built a custom CMS for stakeholders to make changes to the slides.',
+    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their \'playbooks\' to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: 'img/vue/macbook-640x400.jpg'
@@ -6542,63 +6553,14 @@ var About = (0, _createReactClass2.default)({
             'As a Developer, I...'
           ),
           _react2.default.createElement(
-            'ul',
-            { className: 'pls' },
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- build Web App, Progressive Web Apps and API\'s'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- have years of experience writing Apps with React and Redux'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- write isomorphic JavaScript for both the client and server'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- deploy Apps to App Store / Google Play using Cordova'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- prefer styling Apps with JavaScript but have years of SASS experience'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- scope projects for small enterprises and multinationals (Nike, Vue, et al)'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- have built many robust and scalable API\'s with PHP'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- communicate with all stakeholders and clients alike'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- can deliver quality code under pressure and on time'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- provide effective mentoring to junior developers'
-            ),
-            _react2.default.createElement(
-              'li',
-              { className: 'mbs' },
-              '- work in teams and solo / remotely'
-            )
+            'p',
+            { className: 'mbs' },
+            'As a developer, I have many years of commercial experience in building robust and scalable websites, Progressive Web Apps and API\'s. I write fullstack JavaScript and enjoy taking a project on from end-to-end. As a confident Linux user I am comfortable using the CLI and writing build scripts. As a UI developer I am completely au fait with SASS and have extensive experience with animations (CSS, SVG and WebGL). My experience with React and Cordova has enabled me to migrate projects to React Native, where I currently see an exciting future for native app development. I am a keen functional programmer and have a proactive approach to learning new skills / keeping skills up-to-date.'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'mbs' },
+            'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al). As a Kanban evangelist, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders. My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for what can be achieved by teamwork, as well as the ability to be effective both solo and remotely.'
           ),
           _react2.default.createElement(
             'p',
