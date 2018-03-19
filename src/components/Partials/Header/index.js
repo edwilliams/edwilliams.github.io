@@ -5,18 +5,26 @@ var style = () => `
   .header {
     display: flex;
     justify-content: space-between;
-    alignItems: center;
-  }
-
-  .header-inner {
-    display: flex;
-    flex: 0 0 10%;
-    justify-content: space-between;
     align-items: center;
   }
 
+  .header > div { width: 100%; }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header-inner li:nth-child(1) {
+    margin-right: 20px;
+  }
+
   .header-inner.open {
-    flex: 0 0 20%;
+    justify-content: space-between;
+  }
+  .header-inner.open li:nth-child(1) {
+    margin-right: 0;
   }
 
   .header-inner.open .twitter,
@@ -32,6 +40,16 @@ var style = () => `
     height: 16px;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+      justify-content: center;
+      text-align: center;
+    }
+    .header-inner {
+      justify-content: center;
+    }
   }
 
   .twitter {
@@ -60,15 +78,16 @@ var Header = createReactClass({
 
     return (
       <header className="header f_xl phm">
-        <style>{style()}</style>
-        <div className="prm ptm pbm" onClick={() => { window.location.hash = '#/' }}>{this.props.children}</div>
-        {false && <img src="../img/hamburger.png" style={{ width: '40px' }}/>}
-        <div className="header-inner" ref={el => { this.inner = el }}>
-          <p className="f_m" onClick={() => { window.location.hash = `#/${routes[x].url}` }}>{routes[x].name}</p>
-          <p className="f_m" onClick={() => { this.inner.classList.toggle('open') }}>Social</p>
-          <a className="twitter" target="_blank" href="http://twitter.com/oldgithub"></a>
-          <a className="linkedin" target="_blank" href="https://uk.linkedin.com/in/edwilliamsdevelopment"></a>
-          <a className="github" target="_blank" href="http://github.com/edwilliams"></a>
+        <div className="grid dsktp-2 mob-1">
+          <style>{style()}</style>
+          <div className="ptm pbm" onClick={() => { window.location.hash = '#/' }}>{this.props.children}</div>
+          <ul className="header-inner" ref={el => { this.inner = el }}>
+            <li><p className="f_m" onClick={() => { window.location.hash = `#/${routes[x].url}` }}>{routes[x].name}</p></li>
+            <li><p className="f_m" onClick={() => { this.inner.classList.toggle('open') }}>Social</p></li>
+            <li><a className="twitter" target="_blank" href="http://twitter.com/oldgithub"></a></li>
+            <li><a className="linkedin" target="_blank" href="https://uk.linkedin.com/in/edwilliamsdevelopment"></a></li>
+            <li><a className="github" target="_blank" href="http://github.com/edwilliams"></a></li>
+          </ul>
         </div>
       </header>
     )
