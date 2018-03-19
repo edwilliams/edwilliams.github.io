@@ -53,23 +53,6 @@ export default {
     logo: 'img/logo/goodenergy.png',
     imageMain: 'img/good-energy/macbook-640x400.jpg',
   },
-
-
-
-
-// Inside Rosie Lee
-
-// Bespoke business administration built as API with Node/Express
-// Client composed of Collection of UI components
-
-// VUE Playbook Application
-
-// CSS animation presentation tool. Offline-first and engineered on top of Impress.js
-// I later developed a custom backend solution to allow users to edit text
-// Worked closely with client on site to install presentation in cinema
-
-
-
   'rosie-lee-2016': {
     title: 'Rosie Lee 2016 Website',
     subTitle: 'Website for leading London design agency Rosie Lee',
@@ -85,5 +68,6 @@ export default {
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: 'img/vue/macbook-640x400.jpg',
+    vid: '/vid/vue.m4v'
   }
 }
