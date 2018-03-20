@@ -6,6 +6,18 @@ import Item from '../Partials/Item'
 
 import projects from '../../projects'
 
+var style = () => `
+.container-small {
+  max-width: 768px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .container-small {
+    padding: 0 15px;
+  }
+}
+`
+
 class Home extends React.Component {
   render() {
 
@@ -13,6 +25,8 @@ class Home extends React.Component {
       <article>
 
         <Header>Ed Williams</Header>
+
+        <style>{style()}</style>
 
         <div className="mbxl">
           <div className="container-small grid dsktp-2 mob-1">

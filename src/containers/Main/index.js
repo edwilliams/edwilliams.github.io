@@ -7,6 +7,16 @@ import About from 'containers/About'
 import Projects from 'containers/Projects'
 import Project from 'containers/Project'
 
+var style = () => `
+main {
+  border: 8px solid #494C4E;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 40px;
+}
+`
+
 var ProjectsSwitch = () => (
   <Switch>
     <Route exact path='/projects' component={Projects}/>
@@ -18,6 +28,7 @@ class MainContainer extends React.Component {
   render() {
     return (
       <main id="main">
+        <style>{style()}</style>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/projects' component={ProjectsSwitch}/>
