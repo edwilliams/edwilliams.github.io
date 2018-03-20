@@ -1,5 +1,4 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 import { Switch, Route } from 'react-router-dom'
 import { mergeDeepRight } from 'ramda'
 
@@ -15,7 +14,7 @@ var ProjectsSwitch = () => (
   </Switch>
 )
 
-var MainComponent = createReactClass({
+class MainContainer extends React.Component {
   render() {
     return (
       <main id="main">
@@ -27,6 +26,6 @@ var MainComponent = createReactClass({
       </main>
     )
   }
-})
+}
 
-export default MainComponent
+export default MainContainer

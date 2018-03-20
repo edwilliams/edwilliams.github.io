@@ -1,7 +1,6 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 
-var Item = createReactClass({
+class Item extends React.Component {
   render() {
 
     var { img, title, url, subTitle } = this.props
@@ -23,6 +22,6 @@ var Item = createReactClass({
     )
 
   }
-})
+}
 
 export default Item

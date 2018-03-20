@@ -1,5 +1,4 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 
 import Header from '../Partials/Header'
 import Footer from '../Partials/Footer'
@@ -7,7 +6,7 @@ import Item from '../Partials/Item'
 
 import projects from '../../projects'
 
-var Home = createReactClass({
+class Home extends React.Component {
   render() {
 
     return (
@@ -54,6 +53,6 @@ var Home = createReactClass({
 
   }
 
-})
+}
 
 export default Home

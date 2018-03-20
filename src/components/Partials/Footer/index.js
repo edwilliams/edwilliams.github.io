@@ -1,5 +1,4 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 
 var style = () => `
   .footer {
@@ -10,7 +9,7 @@ var style = () => `
   }
 `
 
-var Footer = createReactClass({
+class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
@@ -19,6 +18,6 @@ var Footer = createReactClass({
       </footer>
     )
   }
-})
+}
 
 export default Footer

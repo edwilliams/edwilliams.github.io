@@ -1,17 +1,12 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
-
 import Projects from 'components/Projects'
 
-export default createReactClass({
-
+class ProjectsContainer extends React.Component {
   render() {
-
     return (
       <Projects {...this.props}/>
     )
   }
+}
 
-})
-
-
+export default ProjectsContainer

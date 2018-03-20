@@ -1,17 +1,12 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
-
 import About from 'components/About'
 
-export default createReactClass({
-
+class AboutContainer extends React.Component {
   render() {
-
     return (
       <About/>
     )
   }
+}
 
-})
-
-
+export default AboutContainer

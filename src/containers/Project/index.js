@@ -1,9 +1,7 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
-
 import Project from 'components/Project'
 
-export default createReactClass({
+class ProjectContainer extends React.Component {
 
   render() {
 
@@ -12,6 +10,6 @@ export default createReactClass({
     )
   }
 
-})
+}
 
-
+export default ProjectContainer

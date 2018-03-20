@@ -1,11 +1,10 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 import { Link } from 'react-router-dom'
 import Header from '../Partials/Header'
 
 import projects from '../../projects'
 
-var Single = createReactClass({
+class Single extends React.Component {
   render() {
 
     var content = projects[this.props.match.params.id]
@@ -53,6 +52,6 @@ var Single = createReactClass({
     )
 
   }
-})
+}
 
 export default Single

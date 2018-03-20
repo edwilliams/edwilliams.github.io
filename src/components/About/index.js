@@ -1,14 +1,8 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 import Header from '../Partials/Header'
 import Footer from '../Partials/Footer'
 
-var About = createReactClass({
-
-  componentDidMount() {},
-
-  componentWillUnmount() {},
-
+class About extends React.Component {
   render() {
 
     return (
@@ -41,6 +35,6 @@ var About = createReactClass({
 
   }
 
-})
+}
 
 export default About

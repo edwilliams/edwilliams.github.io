@@ -1,5 +1,4 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
 
 var style = () => `
   .header {
@@ -65,7 +64,7 @@ var style = () => `
   }
 `
 
-var Header = createReactClass({
+class Header extends React.Component {
 
   render() {
 
@@ -93,6 +92,6 @@ var Header = createReactClass({
     )
 
   }
-})
+}
 
 export default Header

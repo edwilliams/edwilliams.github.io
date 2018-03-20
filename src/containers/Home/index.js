@@ -1,17 +1,12 @@
 import React from 'react'
-import createReactClass from 'create-react-class'
-
 import Home from 'components/Home'
 
-export default createReactClass({
-
+class HomeContainer extends React.Component {
   render() {
-
     return (
       <Home/>
     )
   }
+}
 
-})
-
-
+export default HomeContainer
