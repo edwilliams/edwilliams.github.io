@@ -24,6 +24,29 @@ var ProjectsSwitch = () => (
   </Switch>
 )
 
+var CV = () => {
+  // return <iframe width="1" height="1" frameBorder="0" src="test.txt"></iframe>
+  function saveAs(uri, filename) {
+      var link = document.createElement('a');
+      if (typeof link.download === 'string') {
+          document.body.appendChild(link); // Firefox requires the link to be in the body
+          link.download = filename;
+          link.href = uri;
+          link.click();
+          document.body.removeChild(link); // remove the link when done
+      } else {
+          location.replace(uri);
+      }
+  }
+  var padLeft = int => ( int > 9 ) ? int.toString() : `0${int}`
+  var d = new Date()
+  var DD = padLeft(d.getDate())
+  var MM = padLeft(d.getMonth() + 1)
+  var YY = d.getFullYear()
+  saveAs('CV.pdf', `cv-ed-williams-${YY}-${MM}-${DD}`)
+  return <p></p>
+}
+
 class MainContainer extends React.Component {
   render() {
     return (
@@ -33,6 +56,7 @@ class MainContainer extends React.Component {
           <Route exact path='/' component={Home}/>
           <Route path='/projects' component={ProjectsSwitch}/>
           <Route path='/about' component={About}/>
+          <Route path='/cv' component={CV}/>
         </Switch>
       </main>
     )

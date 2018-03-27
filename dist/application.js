@@ -7272,6 +7272,31 @@ var ProjectsSwitch = function ProjectsSwitch() {
   );
 };
 
+var CV = function CV() {
+  // return <iframe width="1" height="1" frameBorder="0" src="test.txt"></iframe>
+  function saveAs(uri, filename) {
+    var link = document.createElement('a');
+    if (typeof link.download === 'string') {
+      document.body.appendChild(link); // Firefox requires the link to be in the body
+      link.download = filename;
+      link.href = uri;
+      link.click();
+      document.body.removeChild(link); // remove the link when done
+    } else {
+      location.replace(uri);
+    }
+  }
+  var padLeft = function padLeft(int) {
+    return int > 9 ? int.toString() : '0' + int;
+  };
+  var d = new Date();
+  var DD = padLeft(d.getDate());
+  var MM = padLeft(d.getMonth() + 1);
+  var YY = d.getFullYear();
+  saveAs('CV.pdf', 'cv-ed-williams-' + YY + '-' + MM + '-' + DD);
+  return _react2.default.createElement('p', null);
+};
+
 var MainContainer = function (_React$Component) {
   (0, _inherits3.default)(MainContainer, _React$Component);
 
@@ -7296,7 +7321,8 @@ var MainContainer = function (_React$Component) {
           null,
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/projects', component: ProjectsSwitch }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/cv', component: CV })
         )
       );
     }
