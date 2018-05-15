@@ -16,6 +16,7 @@
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "pdfmake": "^0.1.36",
     "prop-types": "^15.6.0",
     "ramda": "^0.24.0",
     "react": "^16.2.0",

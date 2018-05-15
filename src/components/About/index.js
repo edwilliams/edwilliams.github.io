@@ -42,6 +42,8 @@ class About extends React.Component {
 
             <p className="mtl"><a href="mailto:edwilliamsdevelopment@gmail.com">edwilliamsdevelopment@gmail.com</a></p>
 
+            <p className="mtl">To download a copy of my CV, <a href="#/CV">please click here</a>.</p>
+
           </div>
 
           <img className="about-img mbs" src="img/ed.png"/>
