@@ -38,3 +38,7 @@ a {
   left: 0;
   bottom: -10px;
 }
+
+.typo-lowercase {
+  text-transform: lowercase;
+}

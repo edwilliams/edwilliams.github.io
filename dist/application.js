@@ -71,7 +71,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var _isPlaceholder = __webpack_require__(63);
+var _isPlaceholder = __webpack_require__(64);
 
 
 /**
@@ -104,7 +104,7 @@ module.exports = function _curry2(fn) {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _isPlaceholder = __webpack_require__(63);
+var _isPlaceholder = __webpack_require__(64);
 
 
 /**
@@ -132,7 +132,7 @@ module.exports = function _curry1(fn) {
 
 var _curry1 = __webpack_require__(1);
 var _curry2 = __webpack_require__(0);
-var _isPlaceholder = __webpack_require__(63);
+var _isPlaceholder = __webpack_require__(64);
 
 
 /**
@@ -319,7 +319,7 @@ module.exports = warning;
 var _arity = __webpack_require__(19);
 var _curry1 = __webpack_require__(1);
 var _curry2 = __webpack_require__(0);
-var _curryN = __webpack_require__(60);
+var _curryN = __webpack_require__(61);
 
 
 /**
@@ -503,7 +503,7 @@ exports.default = function (self, call) {
 
 var _curry2 = __webpack_require__(0);
 var _dispatchable = __webpack_require__(4);
-var _map = __webpack_require__(64);
+var _map = __webpack_require__(65);
 var _reduce = __webpack_require__(17);
 var _xmap = __webpack_require__(351);
 var curryN = __webpack_require__(7);
@@ -638,7 +638,7 @@ module.exports = _curry2(function equals(a, b) {
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _isArrayLike = __webpack_require__(61);
+var _isArrayLike = __webpack_require__(62);
 var _xwrap = __webpack_require__(159);
 var bind = __webpack_require__(137);
 
@@ -1117,7 +1117,7 @@ module.exports = $export;
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(28);
-var createDesc = __webpack_require__(51);
+var createDesc = __webpack_require__(52);
 module.exports = __webpack_require__(26) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
@@ -1152,7 +1152,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var store = __webpack_require__(84)('wks');
-var uid = __webpack_require__(52);
+var uid = __webpack_require__(53);
 var Symbol = __webpack_require__(23).Symbol;
 var USE_SYMBOL = typeof Symbol == 'function';
 
@@ -1620,7 +1620,7 @@ module.exports = function _isString(x) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var _isFunction = __webpack_require__(62);
+var _isFunction = __webpack_require__(63);
 var curryN = __webpack_require__(7);
 var toString = __webpack_require__(50);
 
@@ -1830,6 +1830,65 @@ module.exports = _curry1(function toString(val) { return _toString(val, []); });
 
 /***/ }),
 /* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  'passivliving-app': {
+    title: 'PassivLiving App iOS / Android',
+    subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
+    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    notes: ['Participating in new API specification', 'Working alongside MA UX students at City University to develop new features', 'Engineering bespoke animations to represent heating states within the app', 'Writing and maintaining unit tests and integration tests', 'Emulating and debugging devices in Xcode and Android Studio', 'Utilising iframes to migrate to new React ecosystem', 'Initial maintenance of legacy Ember codebase and build systems (Grunt / Gulp)', 'Maintaining and utilising Cordova plugins and build scripts', 'Writing / updating custom Webpack and Jenkins build scripts during migrations', 'Leading regular stakeholder meetings to plan new feature architecture', 'Working alongside MA UX students at City University to develop new features', 'Working with external designers to realise university generated wireframes', 'Engineering UI updates around an eventpoll system', 'Engineering bespoke animations to represent heating states within the app', 'Writing and maintaining unit tests (Ava) and integration tests (Cypress)', 'Utilising emulators in Xcode and Android Studio to test across a range of devices'],
+    location: 'Newbury: 2017 to Present',
+    logo: 'img/logo/passivliving.png',
+    imageMain: 'img/passivliving/iphone6-800x800.png',
+    images: ['img/passivliving/ipad-800x800.png']
+  },
+  'jaguar-land-rover': {
+    title: 'Jaguar Land Rover E-Learning Platform',
+    subTitle: 'A propriety and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
+    desc: 'This e-learning platform is Jaguar Land Rover\'s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was taked with tasking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy systems',
+    notes: ['Building the UI in vanilla Javascript, borrowing heavily from Angular\'s design pattern', 'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'Performed large scale CSS refactoring of legacy code', 'Working as part of a distributed national and international team', 'Supporting and integrating into existing legacy frontend code, including Knockout.js', 'Browser support stretching back to Internet Explorer 8'],
+    location: 'Virtual Forge: 2016',
+    logo: 'img/logo/jaguarlandrover.jpg',
+    imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg',
+    vid: '/vid/jlr.m4v'
+  },
+  'good-energy': {
+    title: 'Good Energy Quote Engine',
+    subTitle: 'Website for ethical renewable electricity company Good Energy',
+    desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
+    notes: ['Developing Good Energy\'s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
+    location: 'Dare West: 2016',
+    logo: 'img/logo/goodenergy.png',
+    imageMain: 'img/good-energy/macbook-640x400.jpg'
+  },
+  'rosie-lee-2016': {
+    title: 'Rosie Lee 2016 Website',
+    subTitle: 'Website for leading London design agency Rosie Lee',
+    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, \'Inside Rosie Lee\'. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
+    location: 'Rosie Lee: 2016',
+    logo: 'img/logo/rosielee.png',
+    imageMain: 'img/rosielee/macbook-640x400.jpg'
+  },
+  'vue-playbook': {
+    title: 'VUE Playbook presentation',
+    subTitle: 'HTML5 cinema presentation for VUE cinema',
+    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their \'playbooks\' to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
+    location: 'VUE: 2015',
+    logo: 'img/logo/vue.png',
+    imageMain: 'img/vue/macbook-640x400.jpg',
+    vid: '/vid/vue.m4v'
+  }
+};
+
+/***/ }),
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -1843,7 +1902,7 @@ module.exports = function (bitmap, value) {
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 var id = 0;
@@ -1854,7 +1913,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1930,7 +1989,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1988,7 +2047,7 @@ module.exports = invariant;
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
@@ -2017,7 +2076,7 @@ module.exports = _curry2(function add(a, b) {
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry3 = __webpack_require__(2);
@@ -2054,7 +2113,7 @@ module.exports = _curry3(function assoc(prop, val, obj) {
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
@@ -2108,11 +2167,11 @@ module.exports = _curry1(function curry(fn) {
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var curry = __webpack_require__(57);
+var curry = __webpack_require__(58);
 
 
 /**
@@ -2146,7 +2205,7 @@ module.exports = _curry1(function flip(fn) {
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = function _containsWith(pred, x, list) {
@@ -2164,11 +2223,11 @@ module.exports = function _containsWith(pred, x, list) {
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _arity = __webpack_require__(19);
-var _isPlaceholder = __webpack_require__(63);
+var _isPlaceholder = __webpack_require__(64);
 
 
 /**
@@ -2210,7 +2269,7 @@ module.exports = function _curryN(length, received, fn) {
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
@@ -2250,7 +2309,7 @@ module.exports = _curry1(function isArrayLike(x) {
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = function _isFunction(x) {
@@ -2259,7 +2318,7 @@ module.exports = function _isFunction(x) {
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports) {
 
 module.exports = function _isPlaceholder(a) {
@@ -2270,7 +2329,7 @@ module.exports = function _isPlaceholder(a) {
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = function _map(fn, functor) {
@@ -2286,7 +2345,7 @@ module.exports = function _map(fn, functor) {
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
@@ -2331,7 +2390,7 @@ module.exports = _curry2(function lens(getter, setter) {
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
@@ -2366,7 +2425,7 @@ module.exports = _curry1(function lift(fn) {
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry3 = __webpack_require__(2);
@@ -2414,7 +2473,7 @@ module.exports = _curry3(function mergeDeepWithKey(fn, lObj, rObj) {
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
@@ -2469,10 +2528,10 @@ module.exports = _curry2(function nAry(n, fn) {
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _curryN = __webpack_require__(60);
+var _curryN = __webpack_require__(61);
 var _dispatchable = __webpack_require__(4);
 var _has = __webpack_require__(8);
 var _reduce = __webpack_require__(17);
@@ -2534,7 +2593,7 @@ module.exports = _curryN(4, [], _dispatchable([], _xreduceBy,
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _complement = __webpack_require__(151);
@@ -2572,7 +2631,7 @@ module.exports = _curry2(function reject(pred, filterable) {
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
@@ -2610,7 +2669,7 @@ module.exports = _curry1(function reverse(list) {
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2669,7 +2728,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2740,65 +2799,6 @@ var Footer = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Footer;
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  'passivliving-app': {
-    title: 'PassivLiving App iOS / Android',
-    subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
-    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
-    notes: ['utilising iframes to migrate to new React ecosystem', 'initial maintenance of legacy Ember codebase and build systems (Grunt / Gulp)', 'maintaining and utilising Cordova plugins and build scripts', 'writing / updating custom Webpack and Jenkins build scripts during migrations', 'leading regular stakeholder meetings to plan new feature architecture', 'working alongside MA UX students at City University to develop new features', 'working with external designers to realise university generated wireframes', 'engineering UI updates around an eventpoll system', 'engineering bespoke animations to represent heating states within the app', 'participating in new API specification', 'writing and maintaining unit tests (Ava) and integration tests (Cypress)', 'utilising emulators in Xcode and Android Studio to test across a range of devices'],
-    location: 'Newbury: 2017 to Present',
-    logo: 'img/logo/passivliving.png',
-    imageMain: 'img/passivliving/iphone6-800x800.png',
-    images: ['img/passivliving/ipad-800x800.png']
-  },
-  'jaguar-land-rover': {
-    title: 'Jaguar Land Rover E-Learning Platform',
-    subTitle: 'A propriety and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
-    desc: 'This e-learning platform is Jaguar Land Rover\'s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was taked with tasking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy systems',
-    notes: ['working as part of a distributed national and international team', 'using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'supporting and integrating into existing legacy frontend code, including Knockout.js', 'browser support stretching back to Internet Explorer 8', 'building the UI in vanilla Javascript, borrowing heavily from Angular\'s design pattern'],
-    location: 'Virtual Forge: 2016',
-    logo: 'img/logo/jaguarlandrover.jpg',
-    imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg',
-    vid: '/vid/jlr.m4v'
-  },
-  'good-energy': {
-    title: 'Good Energy Quote Engine',
-    subTitle: 'Website for ethical renewable electricity company Good Energy',
-    desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
-    notes: ['Developing Good Energy\'s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
-    location: 'Dare West: 2016',
-    logo: 'img/logo/goodenergy.png',
-    imageMain: 'img/good-energy/macbook-640x400.jpg'
-  },
-  'rosie-lee-2016': {
-    title: 'Rosie Lee 2016 Website',
-    subTitle: 'Website for leading London design agency Rosie Lee',
-    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, \'Inside Rosie Lee\'. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
-    location: 'Rosie Lee: 2016',
-    logo: 'img/logo/rosielee.png',
-    imageMain: 'img/rosielee/macbook-640x400.jpg'
-  },
-  'vue-playbook': {
-    title: 'VUE Playbook presentation',
-    subTitle: 'HTML5 cinema presentation for VUE cinema',
-    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their \'playbooks\' to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
-    location: 'VUE: 2015',
-    logo: 'img/logo/vue.png',
-    imageMain: 'img/vue/macbook-640x400.jpg',
-    vid: '/vid/vue.m4v'
-  }
-};
 
 /***/ }),
 /* 75 */
@@ -2920,7 +2920,7 @@ module.exports = function (it, tag, stat) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var shared = __webpack_require__(84)('keys');
-var uid = __webpack_require__(52);
+var uid = __webpack_require__(53);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
 };
@@ -3341,7 +3341,7 @@ module.exports = _curry2(_dispatchable(['fantasy-land/chain', 'chain'], _xchain,
 /***/ (function(module, exports, __webpack_require__) {
 
 var pipe = __webpack_require__(174);
-var reverse = __webpack_require__(71);
+var reverse = __webpack_require__(72);
 
 
 /**
@@ -3382,7 +3382,7 @@ module.exports = function compose() {
 
 var _curry2 = __webpack_require__(0);
 var _isArray = __webpack_require__(24);
-var _isFunction = __webpack_require__(62);
+var _isFunction = __webpack_require__(63);
 var _isString = __webpack_require__(45);
 var toString = __webpack_require__(50);
 
@@ -3840,7 +3840,7 @@ module.exports = uniqBy(identity);
 /* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _containsWith = __webpack_require__(59);
+var _containsWith = __webpack_require__(60);
 var _curry2 = __webpack_require__(0);
 
 
@@ -4381,7 +4381,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 /***/ (function(module, exports, __webpack_require__) {
 
 var pIE = __webpack_require__(81);
-var createDesc = __webpack_require__(51);
+var createDesc = __webpack_require__(52);
 var toIObject = __webpack_require__(34);
 var toPrimitive = __webpack_require__(86);
 var has = __webpack_require__(27);
@@ -4864,7 +4864,7 @@ var _curry3 = __webpack_require__(2);
 var _has = __webpack_require__(8);
 var _isArray = __webpack_require__(24);
 var _isInteger = __webpack_require__(101);
-var assoc = __webpack_require__(56);
+var assoc = __webpack_require__(57);
 var isNil = __webpack_require__(161);
 
 
@@ -5002,8 +5002,8 @@ module.exports = function composeK() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var curry = __webpack_require__(57);
-var nAry = __webpack_require__(68);
+var curry = __webpack_require__(58);
+var nAry = __webpack_require__(69);
 
 
 /**
@@ -5070,7 +5070,7 @@ module.exports = _curry2(function constructN(n, Fn) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var _map = __webpack_require__(64);
+var _map = __webpack_require__(65);
 var curryN = __webpack_require__(7);
 var max = __webpack_require__(37);
 var pluck = __webpack_require__(49);
@@ -5195,7 +5195,7 @@ module.exports = _curry2(function difference(first, second) {
 /* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _containsWith = __webpack_require__(59);
+var _containsWith = __webpack_require__(60);
 var _curry3 = __webpack_require__(2);
 
 
@@ -5634,7 +5634,7 @@ module.exports = function _isNumber(x) {
 /* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _isArrayLike = __webpack_require__(61);
+var _isArrayLike = __webpack_require__(62);
 
 
 /**
@@ -6480,7 +6480,7 @@ module.exports = _curry2(function sequence(of, traversable) {
 /* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var add = __webpack_require__(55);
+var add = __webpack_require__(56);
 var reduce = __webpack_require__(21);
 
 
@@ -7237,7 +7237,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(72);
+var _reactRouterDom = __webpack_require__(73);
 
 var _ramda = __webpack_require__(261);
 
@@ -7371,7 +7371,7 @@ var _reactDom = __webpack_require__(194);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(72);
+var _reactRouterDom = __webpack_require__(73);
 
 var _Main = __webpack_require__(193);
 
@@ -7432,7 +7432,7 @@ var _Header = __webpack_require__(39);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(73);
+var _Footer = __webpack_require__(74);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -7559,7 +7559,7 @@ var _Header = __webpack_require__(39);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(73);
+var _Footer = __webpack_require__(74);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -7567,7 +7567,7 @@ var _Item = __webpack_require__(115);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _projects = __webpack_require__(74);
+var _projects = __webpack_require__(51);
 
 var _projects2 = _interopRequireDefault(_projects);
 
@@ -7654,13 +7654,13 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(72);
+var _reactRouterDom = __webpack_require__(73);
 
 var _Header = __webpack_require__(39);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _projects = __webpack_require__(74);
+var _projects = __webpack_require__(51);
 
 var _projects2 = _interopRequireDefault(_projects);
 
@@ -7743,7 +7743,7 @@ var Single = function (_React$Component) {
                 notes.map(function (note, i) {
                   return _react2.default.createElement(
                     'p',
-                    { key: i, className: 'mbs' },
+                    { key: i, className: 'mbs typo-lowercase' },
                     '- ',
                     note
                   );
@@ -7810,7 +7810,7 @@ var _Header = __webpack_require__(39);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(73);
+var _Footer = __webpack_require__(74);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -7818,7 +7818,7 @@ var _Item = __webpack_require__(115);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _projects = __webpack_require__(74);
+var _projects = __webpack_require__(51);
 
 var _projects2 = _interopRequireDefault(_projects);
 
@@ -7965,6 +7965,13 @@ exports.default = AboutContainer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _projects = __webpack_require__(51);
+
+var _projects2 = _interopRequireDefault(_projects);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = {
   content: [{
     text: 'Ed Williams',
@@ -8011,7 +8018,7 @@ exports.default = {
   }, {
     style: 'workitems',
     pageBreak: 'after',
-    ul: ['Bespoke React / Redux web app', 'Maintaining and utilising Cordova plugins and build scripts', 'Writing / updating custom Webpack and Jenkins build scripts', 'Participating in new API specification', 'Working alongside MA UX students at City University to develop new features', 'Engineering bespoke animations to represent heating states within the app', 'Writing and maintaining unit tests and integration tests', 'Emulating and debugging devices in Xcode and Android Studio']
+    ul: _projects2.default['passivliving-app'].notes
   },
   // </Item>
   // <Item>
@@ -8026,7 +8033,7 @@ exports.default = {
     text: 'Jaguar / Landrover Learning Platform'
   }, {
     style: 'workitems',
-    ul: ['Performed large scale CSS refactoring of legacy code', 'Working as part of a distributed national and international team', 'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'Supporting and integrating into existing legacy frontend code, including Knockout.js', 'Browser support stretching back to Internet Explorer 8', 'Building the UI in vanilla Javascript, borrowing heavily from Angular’s design pattern']
+    ul: _projects2.default['jaguar-land-rover'].notes
   },
   // </Item>
   // <Item>
@@ -8041,7 +8048,7 @@ exports.default = {
     text: 'Good Energy'
   }, {
     style: 'workitems',
-    ul: ['Developing quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp']
+    ul: _projects2.default['good-energy'].notes
   }, {
     style: 'worksubtitle',
     text: 'School of Economic Science'
@@ -8056,20 +8063,13 @@ exports.default = {
     text: 'Rosie Lee, London - December 2014 - May 2016'
   }, {
     style: 'workdesc',
-    text: 'As senior developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website (rosielee.co.uk) and a collection of microsites for JD Sports, other notable projects included:'
-  }, {
-    style: 'worksubtitle',
-    text: 'Inside Rosie Lee'
-  }, {
-    style: 'workitems',
-    ul: ['Bespoke business administration built as API with Node/Express', 'Client composed of Collection of UI components']
+    text: _projects2.default['rosie-lee-2016'].desc
   }, {
     style: 'worksubtitle',
     text: 'VUE Playbook Application'
   }, {
-    style: 'workitems',
-    pageBreak: 'after',
-    ul: ['CSS animation presentation tool. Offline-first and engineered on top of Impress.js', 'I later developed a custom backend solution to allow users to edit text', 'Worked closely with client on site to install presentation in cinema']
+    style: 'workdesc',
+    text: _projects2.default['vue-playbook'].desc
   },
   // </Item>
   // <Item>
@@ -8681,7 +8681,7 @@ module.exports = Array.isArray || function isArray(arg) {
 "use strict";
 
 var create = __webpack_require__(79);
-var descriptor = __webpack_require__(51);
+var descriptor = __webpack_require__(52);
 var setToStringTag = __webpack_require__(82);
 var IteratorPrototype = {};
 
@@ -8707,7 +8707,7 @@ module.exports = function (done, value) {
 /* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var META = __webpack_require__(52)('meta');
+var META = __webpack_require__(53)('meta');
 var isObject = __webpack_require__(33);
 var has = __webpack_require__(27);
 var setDesc = __webpack_require__(28).f;
@@ -9030,7 +9030,7 @@ var META = __webpack_require__(228).KEY;
 var $fails = __webpack_require__(41);
 var shared = __webpack_require__(84);
 var setToStringTag = __webpack_require__(82);
-var uid = __webpack_require__(52);
+var uid = __webpack_require__(53);
 var wks = __webpack_require__(35);
 var wksExt = __webpack_require__(88);
 var wksDefine = __webpack_require__(87);
@@ -9040,7 +9040,7 @@ var anObject = __webpack_require__(40);
 var isObject = __webpack_require__(33);
 var toIObject = __webpack_require__(34);
 var toPrimitive = __webpack_require__(86);
-var createDesc = __webpack_require__(51);
+var createDesc = __webpack_require__(52);
 var _create = __webpack_require__(79);
 var gOPNExt = __webpack_require__(230);
 var $GOPD = __webpack_require__(122);
@@ -9311,7 +9311,7 @@ var _warning = __webpack_require__(6);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _invariant = __webpack_require__(54);
+var _invariant = __webpack_require__(55);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -9622,7 +9622,7 @@ var _warning = __webpack_require__(6);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _invariant = __webpack_require__(54);
+var _invariant = __webpack_require__(55);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -10120,9 +10120,9 @@ exports.default = createMemoryHistory;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(130);
@@ -10424,9 +10424,9 @@ var createBrowserHistory = function createBrowserHistory() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(130);
@@ -10746,7 +10746,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(91);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -10917,7 +10917,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony reexport createHashHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(252);
 /* unused harmony reexport createMemoryHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(54);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(43);
@@ -61682,7 +61682,7 @@ module.exports = {
   F: __webpack_require__(262),
   T: __webpack_require__(263),
   __: __webpack_require__(264),
-  add: __webpack_require__(55),
+  add: __webpack_require__(56),
   addIndex: __webpack_require__(265),
   adjust: __webpack_require__(132),
   all: __webpack_require__(266),
@@ -61697,7 +61697,7 @@ module.exports = {
   apply: __webpack_require__(135),
   applySpec: __webpack_require__(271),
   ascend: __webpack_require__(272),
-  assoc: __webpack_require__(56),
+  assoc: __webpack_require__(57),
   assocPath: __webpack_require__(136),
   binary: __webpack_require__(273),
   bind: __webpack_require__(137),
@@ -61718,7 +61718,7 @@ module.exports = {
   contains: __webpack_require__(283),
   converge: __webpack_require__(140),
   countBy: __webpack_require__(284),
-  curry: __webpack_require__(57),
+  curry: __webpack_require__(58),
   curryN: __webpack_require__(7),
   dec: __webpack_require__(285),
   defaultTo: __webpack_require__(141),
@@ -61747,7 +61747,7 @@ module.exports = {
   findLast: __webpack_require__(300),
   findLastIndex: __webpack_require__(301),
   flatten: __webpack_require__(302),
-  flip: __webpack_require__(58),
+  flip: __webpack_require__(59),
   forEach: __webpack_require__(303),
   forEachObjIndexed: __webpack_require__(304),
   fromPairs: __webpack_require__(305),
@@ -61785,11 +61785,11 @@ module.exports = {
   last: __webpack_require__(163),
   lastIndexOf: __webpack_require__(364),
   length: __webpack_require__(164),
-  lens: __webpack_require__(65),
+  lens: __webpack_require__(66),
   lensIndex: __webpack_require__(365),
   lensPath: __webpack_require__(366),
   lensProp: __webpack_require__(367),
-  lift: __webpack_require__(66),
+  lift: __webpack_require__(67),
   liftN: __webpack_require__(165),
   lt: __webpack_require__(368),
   lte: __webpack_require__(369),
@@ -61810,14 +61810,14 @@ module.exports = {
   mergeDeepLeft: __webpack_require__(380),
   mergeDeepRight: __webpack_require__(381),
   mergeDeepWith: __webpack_require__(382),
-  mergeDeepWithKey: __webpack_require__(67),
+  mergeDeepWithKey: __webpack_require__(68),
   mergeWith: __webpack_require__(383),
   mergeWithKey: __webpack_require__(104),
   min: __webpack_require__(384),
   minBy: __webpack_require__(385),
   modulo: __webpack_require__(386),
   multiply: __webpack_require__(168),
-  nAry: __webpack_require__(68),
+  nAry: __webpack_require__(69),
   negate: __webpack_require__(387),
   none: __webpack_require__(388),
   not: __webpack_require__(169),
@@ -61856,15 +61856,15 @@ module.exports = {
   props: __webpack_require__(410),
   range: __webpack_require__(411),
   reduce: __webpack_require__(21),
-  reduceBy: __webpack_require__(69),
+  reduceBy: __webpack_require__(70),
   reduceRight: __webpack_require__(177),
   reduceWhile: __webpack_require__(412),
   reduced: __webpack_require__(413),
-  reject: __webpack_require__(70),
+  reject: __webpack_require__(71),
   remove: __webpack_require__(178),
   repeat: __webpack_require__(414),
   replace: __webpack_require__(415),
-  reverse: __webpack_require__(71),
+  reverse: __webpack_require__(72),
   scan: __webpack_require__(416),
   sequence: __webpack_require__(179),
   set: __webpack_require__(417),
@@ -62366,7 +62366,7 @@ module.exports = _curry3(function ascend(fn, a, b) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var nAry = __webpack_require__(68);
+var nAry = __webpack_require__(69);
 
 
 /**
@@ -62407,9 +62407,9 @@ module.exports = _curry1(function binary(fn) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var _isFunction = __webpack_require__(62);
+var _isFunction = __webpack_require__(63);
 var and = __webpack_require__(133);
-var lift = __webpack_require__(66);
+var lift = __webpack_require__(67);
 
 
 /**
@@ -62453,7 +62453,7 @@ module.exports = _curry2(function both(f, g) {
 /* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var curry = __webpack_require__(57);
+var curry = __webpack_require__(58);
 
 
 /**
@@ -62603,7 +62603,7 @@ module.exports = _curry1(function comparator(pred) {
 /* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var lift = __webpack_require__(66);
+var lift = __webpack_require__(67);
 var not = __webpack_require__(169);
 
 
@@ -62637,7 +62637,7 @@ module.exports = lift(not);
 /***/ (function(module, exports, __webpack_require__) {
 
 var pipeP = __webpack_require__(175);
-var reverse = __webpack_require__(71);
+var reverse = __webpack_require__(72);
 
 
 /**
@@ -62815,7 +62815,7 @@ module.exports = _curry2(_contains);
 /* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var reduceBy = __webpack_require__(69);
+var reduceBy = __webpack_require__(70);
 
 
 /**
@@ -62849,7 +62849,7 @@ module.exports = reduceBy(function(acc, elem) { return acc + 1; }, 0);
 /* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var add = __webpack_require__(55);
+var add = __webpack_require__(56);
 
 
 /**
@@ -62912,7 +62912,7 @@ module.exports = _curry3(function descend(fn, a, b) {
 
 var _curry2 = __webpack_require__(0);
 var _isInteger = __webpack_require__(101);
-var assoc = __webpack_require__(56);
+var assoc = __webpack_require__(57);
 var dissoc = __webpack_require__(144);
 var remove = __webpack_require__(178);
 var update = __webpack_require__(111);
@@ -63139,8 +63139,8 @@ module.exports = _curry2(_dispatchable(['dropWhile'], _xdropWhile, function drop
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var _isFunction = __webpack_require__(62);
-var lift = __webpack_require__(66);
+var _isFunction = __webpack_require__(63);
+var lift = __webpack_require__(67);
 var or = __webpack_require__(171);
 
 
@@ -63661,7 +63661,7 @@ module.exports = _curry1(function fromPairs(pairs) {
 
 var _checkForMethod = __webpack_require__(44);
 var _curry2 = __webpack_require__(0);
-var reduceBy = __webpack_require__(69);
+var reduceBy = __webpack_require__(70);
 
 /**
  * Splits a list into sub-lists stored in an object, based on the result of
@@ -63976,7 +63976,7 @@ module.exports = _curry3(function ifElse(condition, onTrue, onFalse) {
 /* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var add = __webpack_require__(55);
+var add = __webpack_require__(56);
 
 
 /**
@@ -64001,7 +64001,7 @@ module.exports = add(1);
 /* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var reduceBy = __webpack_require__(69);
+var reduceBy = __webpack_require__(70);
 
 
 /**
@@ -64102,7 +64102,7 @@ module.exports = slice(0, -1);
 /* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _containsWith = __webpack_require__(59);
+var _containsWith = __webpack_require__(60);
 var _curry3 = __webpack_require__(2);
 var _filter = __webpack_require__(99);
 
@@ -64570,7 +64570,7 @@ module.exports = function _equals(a, b, stackA, stackB) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _forceReduced = __webpack_require__(328);
-var _isArrayLike = __webpack_require__(61);
+var _isArrayLike = __webpack_require__(62);
 var _reduce = __webpack_require__(17);
 var _xfBase = __webpack_require__(5);
 
@@ -64722,7 +64722,7 @@ module.exports = function _quote(s) {
 
 var _assign = __webpack_require__(98);
 var _identity = __webpack_require__(100);
-var _isArrayLike = __webpack_require__(61);
+var _isArrayLike = __webpack_require__(62);
 var _isTransformer = __webpack_require__(103);
 var objOf = __webpack_require__(170);
 
@@ -64803,11 +64803,11 @@ module.exports = (function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _contains = __webpack_require__(29);
-var _map = __webpack_require__(64);
+var _map = __webpack_require__(65);
 var _quote = __webpack_require__(335);
 var _toISOString = __webpack_require__(337);
 var keys = __webpack_require__(20);
-var reject = __webpack_require__(70);
+var reject = __webpack_require__(71);
 
 
 module.exports = function _toString(x, seen) {
@@ -65256,7 +65256,7 @@ module.exports = (function() {
 /* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _curryN = __webpack_require__(60);
+var _curryN = __webpack_require__(61);
 var _has = __webpack_require__(8);
 var _xfBase = __webpack_require__(5);
 
@@ -65355,7 +65355,7 @@ module.exports = (function() {
 var _contains = __webpack_require__(29);
 var _curry2 = __webpack_require__(0);
 var _filter = __webpack_require__(99);
-var flip = __webpack_require__(58);
+var flip = __webpack_require__(59);
 var uniq = __webpack_require__(109);
 
 
@@ -65393,7 +65393,7 @@ module.exports = _curry2(function intersection(list1, list2) {
 /* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _containsWith = __webpack_require__(59);
+var _containsWith = __webpack_require__(60);
 var _curry3 = __webpack_require__(2);
 var uniqWith = __webpack_require__(110);
 
@@ -65801,7 +65801,7 @@ module.exports = _curry2(function lastIndexOf(target, xs) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var lens = __webpack_require__(65);
+var lens = __webpack_require__(66);
 var nth = __webpack_require__(47);
 var update = __webpack_require__(111);
 
@@ -65837,7 +65837,7 @@ module.exports = _curry1(function lensIndex(n) {
 
 var _curry1 = __webpack_require__(1);
 var assocPath = __webpack_require__(136);
-var lens = __webpack_require__(65);
+var lens = __webpack_require__(66);
 var path = __webpack_require__(48);
 
 
@@ -65875,8 +65875,8 @@ module.exports = _curry1(function lensPath(p) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var assoc = __webpack_require__(56);
-var lens = __webpack_require__(65);
+var assoc = __webpack_require__(57);
+var lens = __webpack_require__(66);
 var prop = __webpack_require__(105);
 
 
@@ -66383,7 +66383,7 @@ module.exports = _curry1(function mergeAll(list) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var mergeDeepWithKey = __webpack_require__(67);
+var mergeDeepWithKey = __webpack_require__(68);
 
 
 /**
@@ -66419,7 +66419,7 @@ module.exports = _curry2(function mergeDeepLeft(lObj, rObj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry2 = __webpack_require__(0);
-var mergeDeepWithKey = __webpack_require__(67);
+var mergeDeepWithKey = __webpack_require__(68);
 
 
 /**
@@ -66455,7 +66455,7 @@ module.exports = _curry2(function mergeDeepRight(lObj, rObj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry3 = __webpack_require__(2);
-var mergeDeepWithKey = __webpack_require__(67);
+var mergeDeepWithKey = __webpack_require__(68);
 
 
 /**
@@ -66936,7 +66936,7 @@ module.exports = _createPartialApplicator(_concat);
 
 var _concat = __webpack_require__(18);
 var _createPartialApplicator = __webpack_require__(152);
-var flip = __webpack_require__(58);
+var flip = __webpack_require__(59);
 
 
 /**
@@ -66972,7 +66972,7 @@ module.exports = _createPartialApplicator(flip(_concat));
 
 var filter = __webpack_require__(96);
 var juxt = __webpack_require__(162);
-var reject = __webpack_require__(70);
+var reject = __webpack_require__(71);
 
 
 /**
@@ -67186,7 +67186,7 @@ module.exports = _curry2(function pickBy(test, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var composeK = __webpack_require__(138);
-var reverse = __webpack_require__(71);
+var reverse = __webpack_require__(72);
 
 /**
  * Returns the left-to-right Kleisli composition of the provided functions,
@@ -67260,7 +67260,7 @@ module.exports = reduce(multiply, 1);
 /* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _map = __webpack_require__(64);
+var _map = __webpack_require__(65);
 var identity = __webpack_require__(97);
 var pickAll = __webpack_require__(173);
 var useWith = __webpack_require__(184);
@@ -67510,7 +67510,7 @@ module.exports = _curry2(function range(from, to) {
 /* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _curryN = __webpack_require__(60);
+var _curryN = __webpack_require__(61);
 var _reduce = __webpack_require__(17);
 var _reduced = __webpack_require__(25);
 
@@ -68691,7 +68691,7 @@ module.exports = _curry1(function unapply(fn) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var _curry1 = __webpack_require__(1);
-var nAry = __webpack_require__(68);
+var nAry = __webpack_require__(69);
 
 
 /**
@@ -69148,8 +69148,8 @@ module.exports = _curry2(function whereEq(spec, testObj) {
 
 var _contains = __webpack_require__(29);
 var _curry2 = __webpack_require__(0);
-var flip = __webpack_require__(58);
-var reject = __webpack_require__(70);
+var flip = __webpack_require__(59);
+var reject = __webpack_require__(71);
 
 
 /**

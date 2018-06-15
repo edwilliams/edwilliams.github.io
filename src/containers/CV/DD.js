@@ -1,3 +1,5 @@
+import projects from 'projects.js'
+
 export default {
 	content: [
 		{
@@ -58,16 +60,7 @@ export default {
     {
       style: 'workitems',
       pageBreak: 'after',
-      ul: [
-        'Bespoke React / Redux web app',
-        'Maintaining and utilising Cordova plugins and build scripts',
-        'Writing / updating custom Webpack and Jenkins build scripts',
-        'Participating in new API specification',
-        'Working alongside MA UX students at City University to develop new features',
-        'Engineering bespoke animations to represent heating states within the app',
-        'Writing and maintaining unit tests and integration tests',
-        'Emulating and debugging devices in Xcode and Android Studio',
-      ]
+      ul: projects['passivliving-app'].notes
     },
     // </Item>
     // <Item>
@@ -85,14 +78,7 @@ export default {
     },
     {
       style: 'workitems',
-      ul: [
-        'Performed large scale CSS refactoring of legacy code',
-        'Working as part of a distributed national and international team',
-        'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio',
-        'Supporting and integrating into existing legacy frontend code, including Knockout.js',
-        'Browser support stretching back to Internet Explorer 8',
-        'Building the UI in vanilla Javascript, borrowing heavily from Angular’s design pattern',
-      ]
+      ul: projects['jaguar-land-rover'].notes
     },
     // </Item>
     // <Item>
@@ -110,11 +96,7 @@ export default {
     },
     {
       style: 'workitems',
-      ul: [
-        'Developing quote engine UI alongside .NET developers',
-        'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend',
-        'Early adoption of ES6 modules with Browserify / Gulp',
-      ]
+      ul: projects['good-energy'].notes
     },
     {
       style: 'worksubtitle',
@@ -135,31 +117,15 @@ export default {
     },
     {
       style: 'workdesc',
-      text: 'As senior developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website (rosielee.co.uk) and a collection of microsites for JD Sports, other notable projects included:'
-    },
-    {
-      style: 'worksubtitle',
-      text: 'Inside Rosie Lee'
-    },
-    {
-      style: 'workitems',
-      ul: [
-        'Bespoke business administration built as API with Node/Express',
-        'Client composed of Collection of UI components',
-      ]
+      text: projects['rosie-lee-2016'].desc
     },
     {
       style: 'worksubtitle',
       text: 'VUE Playbook Application'
     },
     {
-      style: 'workitems',
-      pageBreak: 'after',
-      ul: [
-        'CSS animation presentation tool. Offline-first and engineered on top of Impress.js',
-        'I later developed a custom backend solution to allow users to edit text',
-        'Worked closely with client on site to install presentation in cinema',
-      ]
+      style: 'workdesc',
+      text: projects['vue-playbook'].desc
     },
     // </Item>
     // <Item>
