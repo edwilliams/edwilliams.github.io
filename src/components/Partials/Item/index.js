@@ -3,7 +3,7 @@ import React from 'react'
 class Item extends React.Component {
   render() {
 
-    var { img, title, url, subTitle } = this.props
+    const { img, title, url, subTitle } = this.props
 
     return (
       <div className="mbxl" onClick={() => { window.location.hash = `#/projects/${url}` }}>

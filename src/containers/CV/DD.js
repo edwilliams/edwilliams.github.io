@@ -1,5 +1,7 @@
 import projects from 'projects.js'
 
+const clone = str => JSON.parse(JSON.stringify(str))
+
 export default {
 	content: [
 		{
@@ -60,7 +62,7 @@ export default {
     {
       style: 'workitems',
       pageBreak: 'after',
-      ul: projects['passivliving-app'].notes
+      ul: clone(projects['passivliving-app'].notes)
     },
     // </Item>
     // <Item>
@@ -78,7 +80,7 @@ export default {
     },
     {
       style: 'workitems',
-      ul: projects['jaguar-land-rover'].notes
+      ul: clone(projects['jaguar-land-rover'].notes)
     },
     // </Item>
     // <Item>
@@ -96,7 +98,7 @@ export default {
     },
     {
       style: 'workitems',
-      ul: projects['good-energy'].notes
+      ul: clone(projects['good-energy'].notes)
     },
     {
       style: 'worksubtitle',
@@ -117,7 +119,7 @@ export default {
     },
     {
       style: 'workdesc',
-      text: projects['rosie-lee-2016'].desc
+      text: clone(projects['rosie-lee-2016'].desc)
     },
     {
       style: 'worksubtitle',
@@ -125,7 +127,7 @@ export default {
     },
     {
       style: 'workdesc',
-      text: projects['vue-playbook'].desc
+      text: clone(projects['vue-playbook'].desc)
     },
     // </Item>
     // <Item>

@@ -6,7 +6,7 @@ import Item from '../Partials/Item'
 
 import projects from '../../projects'
 
-var style = () => `
+const style = () => `
 .container-small {
   max-width: 768px;
   margin: 0 auto;

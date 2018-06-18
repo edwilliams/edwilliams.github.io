@@ -5,12 +5,13 @@ import Header from '../Partials/Header'
 import projects from '../../projects'
 
 class Single extends React.Component {
+
   render() {
 
-    var content = projects[this.props.match.params.id]
+    const content = projects[this.props.match.params.id]
     if ( !content ) return <p>404</p>
 
-    var { imageMain, images, title, subTitle, location, desc, notes, vid } = content
+    const { imageMain, images, title, subTitle, desc, notes, vid } = content
 
     return (
       <article>
@@ -52,6 +53,7 @@ class Single extends React.Component {
     )
 
   }
+
 }
 
 export default Single

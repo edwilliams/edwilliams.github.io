@@ -8,7 +8,7 @@ import Projects from 'containers/Projects'
 import Project from 'containers/Project'
 import CV from 'containers/CV'
 
-var style = () => `
+const style = () => `
 main {
   border: 8px solid #494C4E;
   min-height: 100%;
@@ -18,7 +18,7 @@ main {
 }
 `
 
-var ProjectsSwitch = () => (
+const ProjectsSwitch = () => (
   <Switch>
     <Route exact path='/projects' component={Projects}/>
     <Route path='/projects/:id' component={Project}/>

@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Partials/Header'
 import Footer from '../Partials/Footer'
 
-var style = () => `
+const style = () => `
 @media screen and (max-width: 600px) {
   .about {
     flex-direction: column-reverse;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-var style = () => `
+const style = () => `
   .header {
     display: flex;
     justify-content: space-between;
@@ -68,12 +68,12 @@ class Header extends React.Component {
 
   render() {
 
-    var routes = {
+    const routes = {
       home: { name: 'Home', url: '' },
       about: { name: 'About', url: 'about' },
     }
 
-    var x = ( window.location.hash === '#/' ) ? 'about' : 'home'
+    const x = ( window.location.hash === '#/' ) ? 'about' : 'home'
 
     return (
       <header className="header f_xl phm">

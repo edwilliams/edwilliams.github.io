@@ -1,6 +1,6 @@
 import React from 'react'
 
-var style = () => `
+const style = () => `
   .footer {
     border-top: 1px solid #494C4E;
     position: absolute;
