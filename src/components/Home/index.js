@@ -2,9 +2,6 @@ import React from 'react'
 
 import Header from '../Partials/Header'
 import Footer from '../Partials/Footer'
-import Item from '../Partials/Item'
-
-import projects from '../../projects'
 
 class Home extends React.Component {
 
@@ -20,7 +17,7 @@ class Home extends React.Component {
         <div className="amm typo-center">
 
           <p className="mbs">Wiltshire based JavaScript engineer, specialising in React / Redux</p>
-          <h3 onClick={() => { window.location.hash = '#/projects' }}>projects</h3>
+          <h3 style={{ textDecoration: 'underline' }} onClick={() => { window.location.hash = '#/projects' }}>projects</h3>
 
         </div>
 

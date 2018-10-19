@@ -26,6 +26,11 @@ const ProjectsSwitch = () => (
 )
 
 class MainContainer extends React.Component {
+
+  componentWillUpdate() {
+    window.scrollTo(0,0)
+  }
+
   render() {
     return (
       <main id="main">
@@ -39,6 +44,7 @@ class MainContainer extends React.Component {
       </main>
     )
   }
+
 }
 
 export default MainContainer

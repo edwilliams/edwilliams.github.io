@@ -23,9 +23,9 @@ export default {
     ],
     location: 'Newbury: 2017 to Present',
     logo: 'img/logo/passivliving.png',
-    imageMain: 'img/passivliving/iphone6-800x800.png',
+    imageMain: 'img/passivliving/iphone-se-840x1696.png',
     images: [
-      'img/passivliving/ipad-800x800.png'
+      'img/passivliving/ipad-1079x768.png'
     ],
   },
   'jaguar-land-rover': {
@@ -42,7 +42,7 @@ export default {
     ],
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
-    imageMain: 'img/jaguar-land-rover/macbook-640x400.jpg',
+    imageMain: 'img/jaguar-land-rover/ipad-1079x768.png',
     vid: '/vid/jlr.m4v'
   },
   'good-energy': {
@@ -56,7 +56,7 @@ export default {
     ],
     location: 'Dare West: 2016',
     logo: 'img/logo/goodenergy.png',
-    imageMain: 'img/good-energy/macbook-640x400.jpg',
+    imageMain: 'img/good-energy/macbook-1024x601.jpg',
   },
   'rosie-lee-2016': {
     title: 'Rosie Lee 2016 Website',
@@ -64,7 +64,7 @@ export default {
     desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, \'Inside Rosie Lee\'. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
-    imageMain: 'img/rosielee/macbook-640x400.jpg',
+    imageMain: 'img/rosielee/macbook-1024x601.jpg',
   },
   'vue-playbook': {
     title: 'VUE Playbook presentation',
@@ -72,7 +72,7 @@ export default {
     desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their \'playbooks\' to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
-    imageMain: 'img/vue/macbook-640x400.jpg',
+    imageMain: 'img/vue/macbook-1024x601.jpg',
     vid: '/vid/vue.m4v'
   }
 }
