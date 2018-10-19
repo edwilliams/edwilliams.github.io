@@ -16,7 +16,7 @@ class Home extends React.Component {
 
         <div className="amm typo-center">
 
-          <p className="mbs">Wiltshire based JavaScript engineer, specialising in React / Redux</p>
+          <p className="mbs">Wiltshire based software engineer, specialising in JavaScript / React / Node</p>
           <h3 style={{ textDecoration: 'underline' }} onClick={() => { window.location.hash = '#/projects' }}>projects</h3>
 
         </div>

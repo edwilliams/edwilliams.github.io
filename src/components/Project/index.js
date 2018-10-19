@@ -33,7 +33,7 @@ class Single extends React.Component {
 
               {notes && <div>
                 <p className="mbm">Below are some notable functions of the role:</p>
-                {notes.map((note, i) => <p key={i} className="mbs typo-lowercase">- {note}</p>)}
+                {notes.map((note, i) => <p key={i} className="mbs">- {note}</p>)}
               </div>}
 
               <Link className="mtl" to='/projects'>Back</Link>

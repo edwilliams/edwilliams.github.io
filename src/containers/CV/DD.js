@@ -1,54 +1,36 @@
+import data from 'data.js'
 import projects from 'projects.js'
+
+const { name, address, number, email, website, about } = data
 
 const clone = str => JSON.parse(JSON.stringify(str))
 
 export default {
 	content: [
-		{
-			text: 'Ed Williams',
-			style: 'header'
-    },
-    {
-      style: 'contact',
-      text: '101 Clay Street, Crockerton, Warminster, Wiltshire. BA12 2AF',
-    },
+		{ text: name, style: 'header' },
+    { style: 'contact', text: address },
     {
       style: 'contact',
       columns: [
-        {
-          width: '*',
-          text: '+44 (0) 7599 166144'
-        },
-        {
-          width: '*',
-          text: 'edwilliamsdevelopment@gmail.com'
-        },
-        {
-          width: '*',
-          text: 'edwilliamsdevelopment.com'
-        }
+        { width: '*', text: number },
+        { width: '*', text: email },
+        { width: '*', text: website }
       ],
     },
 		{
 			text: 'Professional Profile',
 			style: 'header'
     },
-    {
-      style: 'body',
-      text: 'As a developer, I have many years of commercial experience in building robust and scalable websites, Progressive Web Apps and API\'s. I write fullstack JavaScript and enjoy taking a project on from end-to-end. As a confident Linux user I am comfortable using the CLI and writing build scripts. As a UI developer I am equally at home styling interfaces with JavaScript as I am with SASS/LESS and have extensive experience with animations (CSS, SVG and WebGL). My experience with React and Cordova has enabled me to migrate projects to React Native, where I currently see an exciting future for native app development. I am a keen functional programmer and have a proactive approach to learning new skills / keeping skills up-to-date.',
-    },
-    {
-      style: 'body',
-      text: 'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al). As a Kanban enthusiast, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders. My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for what can be achieved by teamwork, as well as the ability to be effective both solo and remotely.'
-    },
+    { style: 'body', text: `${about[0]} ${about[1]} ${about[2]} ${about[3]} ${about[4]}` },
+    { style: 'body', text: `${about[5]} ${about[6]} ${about[7]}` },
     {
       style: 'small',
       text: 'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
     },
     {
       style: 'small',
-      text: 'edwilliamsdevelopment.com',
-      link: 'http://www.edwilliamsdevelopment.com/'
+      text: website,
+      link: email
     },
     // <Item>
     {
