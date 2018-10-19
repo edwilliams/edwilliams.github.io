@@ -13,6 +13,8 @@ class Single extends React.Component {
 
     const { imageMain, images, title, subTitle, desc, notes, vid } = content
 
+    const maxWidth = ( imageMain.frame === 'iphone' ) ? 320 : 768
+
     return (
       <article>
 
@@ -21,7 +23,7 @@ class Single extends React.Component {
         <div className="mbm">
 
           <div className="center">
-            <img className="mbs" src={imageMain}/>
+            <img className="mbs" style={{ maxWidth: `${maxWidth}px` }} src={imageMain.url}/>
           </div>
 
           <div className="grid dsktp-2 mob-1 phm">
