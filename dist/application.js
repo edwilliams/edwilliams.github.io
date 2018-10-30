@@ -8094,6 +8094,7 @@ var getProfile = function getProfile() {
     text: 'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
   }, {
     style: 'small',
+    pageBreak: 'after',
     text: website,
     link: email
   }];
@@ -8110,7 +8111,6 @@ var getWorkItems = function getWorkItems() {
     text: 'I am rebuilding the PassivLiving heating App - the control for their smart thermostat platform, available in App Store and Google Play'
   }, {
     style: 'workitems',
-    pageBreak: 'after',
     ul: clone(_projects2.default['passivliving-app'].notes)
   },
   // </Item>
@@ -8147,6 +8147,7 @@ var getWorkItems = function getWorkItems() {
     text: 'School of Economic Science'
   }, {
     style: 'workitems',
+    pageBreak: 'after',
     ul: ['Full-stack development of custom features', 'Third party API integration']
   },
   // </Item>

@@ -40,6 +40,7 @@ const getProfile = () => {
     },
     {
       style: 'small',
+      pageBreak: 'after',
       text: website,
       link: email
     },
@@ -59,7 +60,6 @@ const getWorkItems = () => {
     },
     {
       style: 'workitems',
-      pageBreak: 'after',
       ul: clone(projects['passivliving-app'].notes)
     },
     // </Item>
@@ -104,6 +104,7 @@ const getWorkItems = () => {
     },
     {
       style: 'workitems',
+      pageBreak: 'after',
       ul: [
         'Full-stack development of custom features',
         'Third party API integration',
