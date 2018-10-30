@@ -4212,7 +4212,7 @@ exports.default = {
   number: '+44 (0) 7599 166144',
   email: 'edwilliamsdevelopment@gmail.com',
   website: 'edwilliamsdevelopment.com',
-  about: ['As a software engineer, I have many years of commercial experience in building robust and scalable websites / webapps and API\'s.', 'Specialising in React / Redux, I favour a functional / declarative approach to writing JavaScript and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I am equally at home styling interfaces with JavaScript as I am with CSS / SASS and have extensive experience with animations (CSS, SVG and WebGL).', 'A keen advocate of PWA’s, I conform to development best practices whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside designing MySQL or noSQL databases, writing Bash build scripts and architecting API’s with either Node or PHP.', 'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al).', 'As a Kanban enthusiast, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders.', 'My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for what can be achieved by teamwork, as well as the ability to be effective both solo and remotely.']
+  about: ['As a software engineer, I have many years of commercial experience in building robust and scalable websites / webapps and REST API’s.', 'Specialising in React / Redux, I favour a functional / declarative approach to writing JavaScript and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I am equally at home styling interfaces with JavaScript as I am with CSS / SASS and have extensive experience with animations (CSS, SVG and WebGL).', 'A keen advocate of PWA’s, I conform to development best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as designing databases (MySQL / NoSQL), writing CI build scripts (Bash / Webpack / Gulp / Grunt), architecting API’s (Express / AWS Heroku / PHP) and keeping fine grain version control of codebases using Git.', 'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al).', 'As a Kanban enthusiast, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders.', 'My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for teamwork, as well as the ability to be effective both solo and remotely.']
 };
 
 /***/ }),
@@ -8078,25 +8078,33 @@ var clone = function clone(str) {
   return JSON.parse((0, _stringify2.default)(str));
 };
 
-exports.default = {
-  content: [{ text: name, style: 'header' }, { style: 'contact', text: address }, {
+var getHeader = function getHeader() {
+  return [{ text: name, style: 'header' }, { style: 'contact', text: address }, {
     style: 'contact',
     columns: [{ width: '*', text: number }, { width: '*', text: email }, { width: '*', text: website }]
-  }, {
+  }];
+};
+
+var getProfile = function getProfile() {
+  return [{
     text: 'Professional Profile',
     style: 'header'
-  }, { style: 'body', text: about[0] + ' ' + about[1] + ' ' + about[2] + ' ' + about[3] + ' ' + about[4] }, { style: 'body', text: about[5] + ' ' + about[6] + ' ' + about[7] }, {
+  }, { style: 'body', text: about[0] }, { style: 'body', text: about[1] }, { style: 'body', text: about[2] }, { style: 'body', text: about[3] }, { style: 'body', text: about[4] }, { style: 'body', text: about[5] }, { style: 'body', text: about[6] }, { style: 'body', text: about[7] }, {
     style: 'small',
     text: 'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
   }, {
     style: 'small',
     text: website,
     link: email
-  },
+  }];
+};
+
+var getWorkItems = function getWorkItems() {
+  return [
   // <Item>
   {
     style: 'worktitle',
-    text: 'Passiv Systems, Newbury (Contract) - January 2017 - Present'
+    text: 'PassivSystems, Newbury (Contract) - January 2017 - Present'
   }, {
     style: 'workdesc',
     text: 'I am rebuilding the PassivLiving heating App - the control for their smart thermostat platform, available in App Store and Google Play'
@@ -8173,15 +8181,25 @@ exports.default = {
   }, {
     style: 'workdesc',
     text: 'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
-  },
-  // </Item>
-  {
+  }];
+};
+
+var getEducation = function getEducation() {
+  return [{
     text: 'Education',
     style: 'header'
   }, {
     style: 'body',
     text: 'Exeter University, PGCE - 2005 - 2006 \n Dartington College of Arts, BA (Hons) Music Composition - 2002 - 2005'
-  }],
+  }];
+};
+
+var getContent = function getContent() {
+  return getHeader().concat(getProfile()).concat(getWorkItems()).concat(getEducation());
+};
+
+exports.default = {
+  content: getContent(),
   styles: {
     header: {
       fontSize: 12,

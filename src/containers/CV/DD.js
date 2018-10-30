@@ -5,8 +5,8 @@ const { name, address, number, email, website, about } = data
 
 const clone = str => JSON.parse(JSON.stringify(str))
 
-export default {
-	content: [
+const getHeader = () => {
+  return [
 		{ text: name, style: 'header' },
     { style: 'contact', text: address },
     {
@@ -17,12 +17,23 @@ export default {
         { width: '*', text: website }
       ],
     },
+  ]
+}
+
+const getProfile = () => {
+  return [
 		{
 			text: 'Professional Profile',
 			style: 'header'
     },
-    { style: 'body', text: `${about[0]} ${about[1]} ${about[2]} ${about[3]} ${about[4]}` },
-    { style: 'body', text: `${about[5]} ${about[6]} ${about[7]}` },
+    { style: 'body', text: about[0] },
+    { style: 'body', text: about[1] },
+    { style: 'body', text: about[2] },
+    { style: 'body', text: about[3] },
+    { style: 'body', text: about[4] },
+    { style: 'body', text: about[5] },
+    { style: 'body', text: about[6] },
+    { style: 'body', text: about[7] },
     {
       style: 'small',
       text: 'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
@@ -32,10 +43,15 @@ export default {
       text: website,
       link: email
     },
+  ]
+}
+
+const getWorkItems = () => {
+  return [
     // <Item>
     {
       style: 'worktitle',
-      text: 'Passiv Systems, Newbury (Contract) - January 2017 - Present'
+      text: 'PassivSystems, Newbury (Contract) - January 2017 - Present'
     },
     {
       style: 'workdesc',
@@ -132,7 +148,12 @@ export default {
       text: 'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
     },
     // </Item>
-		{
+	]
+}
+
+const getEducation = () => {
+  return [
+    {
 			text: 'Education',
 			style: 'header'
     },
@@ -140,7 +161,18 @@ export default {
       style: 'body',
       text: 'Exeter University, PGCE - 2005 - 2006 \n Dartington College of Arts, BA (Hons) Music Composition - 2002 - 2005',
     },
-	],
+  ]
+}
+
+const getContent = () => {
+  return getHeader()
+    .concat(getProfile())
+    .concat(getWorkItems())
+    .concat(getEducation())
+}
+
+export default {
+	content: getContent(),
 	styles: {
 		header: {
 			fontSize: 12,
