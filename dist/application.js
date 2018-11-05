@@ -2837,8 +2837,8 @@ exports.default = {
   'jaguar-land-rover': {
     title: 'Jaguar Land Rover E-Learning Platform',
     subTitle: 'A propriety and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
-    desc: 'This e-learning platform is Jaguar Land Rover\'s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was tasked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy devices.',
-    notes: ['Building the UI in vanilla Javascript, borrowing heavily from Angular\'s design pattern', 'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'Performed large scale CSS refactoring of legacy code', 'Working as part of a distributed national and international team', 'Supporting and integrating into existing legacy frontend code, including Knockout.js', 'Browser support stretching back to Internet Explorer 8'],
+    desc: 'This e-learning platform is Jaguar Land Rover’s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was tasked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy devices.',
+    notes: ['Building the UI in vanilla Javascript, borrowing heavily from Angular’s design pattern', 'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio', 'Performed large scale CSS refactoring of legacy code', 'Working as part of a distributed national and international team', 'Supporting and integrating into existing legacy frontend code, including Knockout.js', 'Browser support stretching back to Internet Explorer 8'],
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
     imageMain: {
@@ -2851,7 +2851,7 @@ exports.default = {
     title: 'Good Energy Quote Engine',
     subTitle: 'Website for ethical renewable electricity company Good Energy',
     desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
-    notes: ['Developing Good Energy\'s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
+    notes: ['Developing Good Energy’s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
     location: 'Dare West: 2016',
     logo: 'img/logo/goodenergy.png',
     imageMain: {
@@ -2862,7 +2862,7 @@ exports.default = {
   'rosie-lee-2016': {
     title: 'Rosie Lee 2016 Website',
     subTitle: 'Website for leading London design agency Rosie Lee',
-    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, \'Inside Rosie Lee\'. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
+    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, ’Inside Rosie Lee’. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: {
@@ -2873,7 +2873,7 @@ exports.default = {
   'vue-playbook': {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
-    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their \'playbooks\' to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
+    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their ’playbooks’ to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: {
@@ -4212,7 +4212,7 @@ exports.default = {
   number: '+44 (0) 7599 166144',
   email: 'edwilliamsdevelopment@gmail.com',
   website: 'edwilliamsdevelopment.com',
-  about: ['As a software engineer, I have many years of commercial experience in building robust and scalable websites / webapps and REST API’s.', 'Specialising in React / Redux, I favour a functional / declarative approach to writing JavaScript and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I am equally at home styling interfaces with JavaScript as I am with CSS / SASS and have extensive experience with animations (CSS, SVG and WebGL).', 'A keen advocate of PWA’s, I conform to development best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as designing databases (MySQL / NoSQL), writing CI build scripts (Bash / Webpack / Gulp / Grunt), architecting API’s (Express / AWS Heroku / PHP) and keeping fine grain version control of codebases using Git.', 'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al).', 'As a Kanban enthusiast, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders.', 'My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for teamwork, as well as the ability to be effective both solo and remotely.']
+  about: ['As a software engineer, I have many years of commercial experience in building robust and scalable websites / webapps and REST API’s.', 'Specialising in React / Redux, I favour a functional / declarative approach to writing JavaScript and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I am equally at home styling interfaces with JavaScript as I am with CSS / SASS and have extensive experience with animations (CSS, SVG and WebGL).', 'A keen advocate of PWA’s, I conform to development best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as writing CI build scripts (Bash / Webpack / Gulp / Grunt), designing databases (MySQL / NoSQL), architecting API’s (Node / AWS Heroku / PHP), keeping fine grain version control (Git) of codebases on the command line and working in multiple environments (Linux, OSX and Windows)', 'I am experienced in communicating with stakeholders and clients alike, whether consulting for small enterprises or scoping projects for multinationals (Jaguar Land Rover, Good Energy, Nike, VUE, et al).', 'As a Kanban enthusiast, I have brought Agile working to teams and believe in quick and direct communication with all colleagues and stakeholders.', 'My work history (which also includes music and guitar teaching) has enabled me to effectively mentor junior developers and has given me a lifelong appreciation for teamwork, as well as the ability to be effective both solo and remotely.']
 };
 
 /***/ }),
@@ -8101,7 +8101,7 @@ var getProfile = function getProfile() {
 };
 
 var getWorkItems = function getWorkItems() {
-  return [
+  var passiv = [
   // <Item>
   {
     style: 'worktitle',
@@ -8112,10 +8112,8 @@ var getWorkItems = function getWorkItems() {
   }, {
     style: 'workitems',
     ul: clone(_projects2.default['passivliving-app'].notes)
-  },
-  // </Item>
-  // <Item>
-  {
+  }];
+  var jlr = [{
     style: 'worktitle',
     text: 'Virtual Forge, Holt (Contract) - August 2016 - November 2016'
   }, {
@@ -8127,10 +8125,8 @@ var getWorkItems = function getWorkItems() {
   }, {
     style: 'workitems',
     ul: clone(_projects2.default['jaguar-land-rover'].notes)
-  },
-  // </Item>
-  // <Item>
-  {
+  }];
+  var dare = [{
     style: 'worktitle',
     text: 'Dare West, Bristol (Contract) - June 2016 - August 2016'
   }, {
@@ -8149,10 +8145,8 @@ var getWorkItems = function getWorkItems() {
     style: 'workitems',
     pageBreak: 'after',
     ul: ['Full-stack development of custom features', 'Third party API integration']
-  },
-  // </Item>
-  // <Item>
-  {
+  }];
+  var rosielee = [{
     style: 'worktitle',
     text: 'Rosie Lee, London - December 2014 - May 2016'
   }, {
@@ -8164,25 +8158,23 @@ var getWorkItems = function getWorkItems() {
   }, {
     style: 'workdesc',
     text: clone(_projects2.default['vue-playbook'].desc)
-  },
-  // </Item>
-  // <Item>
-  {
+  }];
+  var dbs = [{
     style: 'worktitle',
     text: 'Deep Blue Sky, Bath - February 2014 - December 2014'
   }, {
     style: 'workdesc',
     text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype). All applications we integrated into a proprietary CMS called Spirit, which was built with Perl and PHP. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
-  },
-  // </Item>
-  // <Item>
-  {
+  }];
+  var cognique = [{
     style: 'worktitle',
     text: 'Cognique, Street - May 2013 - February 2014'
   }, {
     style: 'workdesc',
     text: 'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
   }];
+
+  return [].concat(passiv, jlr, dare, rosielee, dbs, cognique);
 };
 
 var getEducation = function getEducation() {
@@ -8195,12 +8187,8 @@ var getEducation = function getEducation() {
   }];
 };
 
-var getContent = function getContent() {
-  return getHeader().concat(getProfile()).concat(getWorkItems()).concat(getEducation());
-};
-
 exports.default = {
-  content: getContent(),
+  content: [].concat(getHeader(), getProfile(), getWorkItems(), getEducation()),
   styles: {
     header: {
       fontSize: 12,

@@ -48,7 +48,7 @@ const getProfile = () => {
 }
 
 const getWorkItems = () => {
-  return [
+  const passiv = [
     // <Item>
     {
       style: 'worktitle',
@@ -61,9 +61,9 @@ const getWorkItems = () => {
     {
       style: 'workitems',
       ul: clone(projects['passivliving-app'].notes)
-    },
-    // </Item>
-    // <Item>
+    }
+  ]
+  const jlr = [
     {
       style: 'worktitle',
       text: 'Virtual Forge, Holt (Contract) - August 2016 - November 2016'
@@ -79,9 +79,9 @@ const getWorkItems = () => {
     {
       style: 'workitems',
       ul: clone(projects['jaguar-land-rover'].notes)
-    },
-    // </Item>
-    // <Item>
+    }
+  ]
+  const dare = [
     {
       style: 'worktitle',
       text: 'Dare West, Bristol (Contract) - June 2016 - August 2016'
@@ -109,9 +109,9 @@ const getWorkItems = () => {
         'Full-stack development of custom features',
         'Third party API integration',
       ]
-    },
-    // </Item>
-    // <Item>
+    }
+  ]
+  const rosielee = [
     {
       style: 'worktitle',
       text: 'Rosie Lee, London - December 2014 - May 2016'
@@ -127,9 +127,9 @@ const getWorkItems = () => {
     {
       style: 'workdesc',
       text: clone(projects['vue-playbook'].desc)
-    },
-    // </Item>
-    // <Item>
+    }
+  ]
+  const dbs = [
     {
       style: 'worktitle',
       text: 'Deep Blue Sky, Bath - February 2014 - December 2014'
@@ -137,9 +137,9 @@ const getWorkItems = () => {
     {
       style: 'workdesc',
       text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype). All applications we integrated into a proprietary CMS called Spirit, which was built with Perl and PHP. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
-    },
-    // </Item>
-    // <Item>
+    }
+  ]
+  const cognique = [
     {
       style: 'worktitle',
       text: 'Cognique, Street - May 2013 - February 2014'
@@ -147,9 +147,11 @@ const getWorkItems = () => {
     {
       style: 'workdesc',
       text: 'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
-    },
-    // </Item>
-	]
+    }
+  ]
+
+  return [].concat( passiv, jlr, dare, rosielee, dbs, cognique )
+
 }
 
 const getEducation = () => {
@@ -165,15 +167,8 @@ const getEducation = () => {
   ]
 }
 
-const getContent = () => {
-  return getHeader()
-    .concat(getProfile())
-    .concat(getWorkItems())
-    .concat(getEducation())
-}
-
 export default {
-	content: getContent(),
+	content: [].concat( getHeader(), getProfile(), getWorkItems(), getEducation() ),
 	styles: {
 		header: {
 			fontSize: 12,
