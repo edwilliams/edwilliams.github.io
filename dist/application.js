@@ -1333,7 +1333,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var style = function style() {
-  return '\n  .header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  }\n\n  .header > div { width: 100%; }\n\n  .header-inner {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .header-inner li:nth-child(1) {\n    margin-right: 20px;\n  }\n\n  .header-inner.open {\n    justify-content: space-between;\n  }\n  .header-inner.open li:nth-child(1) {\n    margin-right: 0;\n  }\n\n  .header-inner.open .link {\n    display: block;\n  }\n  .link {\n    display: none;\n    width: 16px;\n    height: 16px;\n    justify-content: center;\n    align-items: center;\n    transform: translateY(-9px);\n  }\n  .link.codepen {\n    width: 23px;\n    transform: translate(-5px,-5px);\n  }\n  @media screen and (max-width: 600px) {\n    .header {\n      justify-content: center;\n      text-align: center;\n    }\n    .header-inner {\n      justify-content: center;\n    }\n  }\n';
+  return '\n  .header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  }\n\n  .header > div { width: 100%; }\n\n  .header-inner {\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n  }\n\n  .header-inner li:nth-child(1),\n  .header-inner li:nth-child(2) {\n    margin-right: 20px;\n  }\n\n  .header-inner.open {\n    justify-content: space-between;\n  }\n  .header-inner.open li:nth-child(1) {\n    margin-right: 0;\n  }\n  .header-inner.open li:nth-child(2) {\n    display: none;\n  }\n\n  .header-inner.open .link {\n    display: block;\n  }\n  .link {\n    display: none;\n    width: 16px;\n    height: 16px;\n    justify-content: center;\n    align-items: center;\n    transform: translateY(-9px);\n  }\n  .link.codepen {\n    width: 23px;\n    transform: translate(-5px,-5px);\n  }\n  @media screen and (max-width: 600px) {\n    .header {\n      justify-content: center;\n      text-align: center;\n    }\n    .header-inner {\n      justify-content: center;\n    }\n  }\n';
 };
 
 var Header = function (_React$Component) {
@@ -1351,7 +1351,8 @@ var Header = function (_React$Component) {
 
       var routes = {
         home: { name: 'Home', url: '' },
-        about: { name: 'About', url: 'about' }
+        about: { name: 'About', url: 'about' },
+        projects: { name: 'Projects', url: 'projects' }
       };
 
       var x = window.location.hash === '#/' ? 'about' : 'home';
@@ -1388,6 +1389,17 @@ var Header = function (_React$Component) {
                     window.location.hash = '#/' + routes[x].url;
                   } },
                 routes[x].name
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'p',
+                { className: 'f_m', onClick: function onClick() {
+                    window.location.hash = '#/' + routes.projects.url;
+                  } },
+                routes.projects.name
               )
             ),
             _react2.default.createElement(
