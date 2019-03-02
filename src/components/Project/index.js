@@ -11,7 +11,7 @@ class Single extends React.Component {
     const content = projects[this.props.match.params.id]
     if ( !content ) return <p>404</p>
 
-    const { imageMain, images, title, subTitle, desc, notes, vid } = content
+    const { imageMain, images, title, subTitle, desc, notes, notesIntro, vid } = content
 
     const maxWidth = ( imageMain.frame === 'iphone' ) ? 320 : 768
 
@@ -34,7 +34,7 @@ class Single extends React.Component {
               <p className="mbm">{desc}</p>
 
               {notes && <div>
-                <p className="mbm">Below are some notable functions of the role:</p>
+                <p className="mbm">{notesIntro}</p>
                 {notes.map((note, i) => <p key={i} className="mbs">- {note}</p>)}
               </div>}
 

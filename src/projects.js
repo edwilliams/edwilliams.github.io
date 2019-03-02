@@ -3,6 +3,7 @@ export default {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
     desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    notesIntro: 'Below are some notable functions of the role:',
     notes: [
       'Working independently to build enterprise-grade React / Redux app from scratch',
       'Writing bespoke SVG and WebGL animations to represent heating states within the app',
@@ -30,10 +31,35 @@ export default {
       'img/passivliving/ipad-1079x768.png'
     ],
   },
+  'capio': {
+    title: 'Get Capio',
+    subTitle: 'App to scan, organise and read music and notes during rehearsal and performance.',
+    desc: 'Built and designed as a side project, Get Capio serves both as a best-in-class PWA (more below) and fulfills a gap in the market as an App that can scan, process and organise images all in one place.',
+    notesIntro: 'Some notable features of this App include:',
+    notes: [
+      'Built with React and state management by Redux',
+      'An offline-first experience with Service Workers caching crucial assets',
+      'Offline storage via IndexDB',
+      'All UI built on top of Google’s Material Design',
+      'Client-side image processing includes image resizing with CropperJS and PDF rendering for downloading images',
+      'Black and white client-side image processing via an adaptive thresholding algorithm',
+      'Persistence across devices achieved with AWS AppSync, utilising DynamoDB and GraphQL',
+    ],
+    location: '2018 to Present',
+    logo: 'img/logo/capio.png',
+    imageMain: {
+      frame: 'ipad',
+      url: 'img/capio/ipad-1856x2608.png',
+    },
+    images: [
+      'img/capio/iphone-840x1696.png'
+    ],
+  },
   'jaguar-land-rover': {
     title: 'Jaguar Land Rover E-Learning Platform',
     subTitle: 'A propriety and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
     desc: 'This e-learning platform is Jaguar Land Rover’s propriety dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was tasked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy devices.',
+    notesIntro: 'Below are some notable functions of the role:',
     notes: [
       'Building the UI in vanilla Javascript, borrowing heavily from Angular’s design pattern',
       'Using virtual machines to integrate into a .NET workflow, including TFS version control and Razor templates in Visual Studio',
@@ -54,6 +80,7 @@ export default {
     title: 'Good Energy Quote Engine',
     subTitle: 'Website for ethical renewable electricity company Good Energy',
     desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
+    notesIntro: 'Below are some notable functions of the role:',
     notes: [
       'Developing Good Energy’s quote engine UI alongside .NET developers',
       'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend',
@@ -70,6 +97,7 @@ export default {
     title: 'Rosie Lee 2016 Website',
     subTitle: 'Website for leading London design agency Rosie Lee',
     desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, ’Inside Rosie Lee’. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
+    notesIntro: 'Below are some notable functions of the role:',
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: {
@@ -81,6 +109,7 @@ export default {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
     desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their ’playbooks’ to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
+    notesIntro: 'Below are some notable functions of the role:',
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: {
