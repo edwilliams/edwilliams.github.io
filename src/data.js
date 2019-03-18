@@ -1,6 +1,6 @@
 export default {
   name: 'Ed Williams',
-  address: '101 Clay Street, Crockerton, Warminster, Wiltshire. BA12 2AF',
+  address: '101 Clay Street, Crockerton, Warminster, Wiltshire. BA12 8AF',
   number: '+44 (0) 7599 166144',
   email: 'edwilliamsdevelopment@gmail.com',
   website: 'edwilliamsdevelopment.com',
