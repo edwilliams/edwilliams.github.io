@@ -94,10 +94,15 @@ export default {
     },
   },
   'rosie-lee-2016': {
-    title: 'Rosie Lee 2016 Website',
+    title: 'Rosie Lee',
     subTitle: 'Website for leading London design agency Rosie Lee',
-    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, ’Inside Rosie Lee’. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
-    notesIntro: 'Below are some notable functions of the role:',
+    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element.',
+    notesIntro: 'Below are some notable projects undertaken while at Rosie Lee:',
+    notes: [
+      'Microsites for JD Sports and Nike: including Air Max Day 2015 - written in Angular 1.4.8',
+      'Rosie Lee website: inc. Google Maps API and high performance lazy loading',
+      '"Inside Rosie Lee": a fullstack intranet, including a timesheet system, a CRM and a system for tracking project management / finance.',
+    ],
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: {
@@ -108,8 +113,14 @@ export default {
   'vue-playbook': {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
-    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their ’playbooks’ to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
-    notesIntro: 'Below are some notable functions of the role:',
+    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE.',
+    notesIntro: 'Below are some notable aspects of the project:',
+    notes: [
+      'Offline-first HTML5 presentation to showcase VUE’s ’playbooks’ to their clients (e.g. Warner, Disney, et al)',
+      'CSS3 animations',
+      'Developed for Cinema screens',
+      'Working closely with VUE stakeholders to ensure smooth installation',
+    ],
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: {

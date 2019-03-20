@@ -125,8 +125,16 @@ const getWorkItems = () => {
       text: 'VUE Playbook Application'
     },
     {
-      style: 'workdesc',
-      text: clone(projects['vue-playbook'].desc)
+      style: 'workitems',
+      ul: clone(projects['vue-playbook'].notes)
+    },
+    {
+      style: 'worksubtitle',
+      text: 'Other notable projects undertaken while at Rosie Lee include:'
+    },
+    {
+      style: 'workitems',
+      ul: clone(projects['rosie-lee-2016'].notes)
     }
   ]
   const dbs = [
@@ -136,7 +144,7 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype). All applications we integrated into a proprietary CMS called Spirit, which was built with Perl and PHP. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
+      text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype.JS). All applications we integrated into a proprietary PHP CMS called Spirit. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
     }
   ]
   const cognique = [

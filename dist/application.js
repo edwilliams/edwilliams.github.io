@@ -2889,10 +2889,11 @@ exports.default = {
     }
   },
   'rosie-lee-2016': {
-    title: 'Rosie Lee 2016 Website',
+    title: 'Rosie Lee',
     subTitle: 'Website for leading London design agency Rosie Lee',
-    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element. Along with building the fullstack of their website and a collection of microsites for JD Sports, I also built a fullstack business application system known internally as, ’Inside Rosie Lee’. I worked with management to write all business logic and UI, which included a timesheet system, a CRM and a system for tracking project management and finance.',
-    notesIntro: 'Below are some notable functions of the role:',
+    desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element.',
+    notesIntro: 'Below are some notable projects undertaken while at Rosie Lee:',
+    notes: ['Microsites for JD Sports and Nike: including Air Max Day 2015 - written in Angular 1.4.8', 'Rosie Lee website: inc. Google Maps API and high performance lazy loading', '"Inside Rosie Lee": a fullstack intranet, including a timesheet system, a CRM and a system for tracking project management / finance.'],
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: {
@@ -2903,8 +2904,9 @@ exports.default = {
   'vue-playbook': {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
-    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE. The requirement was to develop an offline-first HTML5 presentation to showcase their ’playbooks’ to their clients. The application was developed to be projected on a cinema screen and I worked closely with VUE at their London office to ensure smooth installation.',
-    notesIntro: 'Below are some notable functions of the role:',
+    desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE.',
+    notesIntro: 'Below are some notable aspects of the project:',
+    notes: ['Offline-first HTML5 presentation to showcase VUE’s ’playbooks’ to their clients (e.g. Warner, Disney, et al)', 'CSS3 animations', 'Developed for Cinema screens', 'Working closely with VUE stakeholders to ensure smooth installation'],
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: {
@@ -8188,15 +8190,21 @@ var getWorkItems = function getWorkItems() {
     style: 'worksubtitle',
     text: 'VUE Playbook Application'
   }, {
-    style: 'workdesc',
-    text: clone(_projects2.default['vue-playbook'].desc)
+    style: 'workitems',
+    ul: clone(_projects2.default['vue-playbook'].notes)
+  }, {
+    style: 'worksubtitle',
+    text: 'Other notable projects undertaken while at Rosie Lee include:'
+  }, {
+    style: 'workitems',
+    ul: clone(_projects2.default['rosie-lee-2016'].notes)
   }];
   var dbs = [{
     style: 'worktitle',
     text: 'Deep Blue Sky, Bath - February 2014 - December 2014'
   }, {
     style: 'workdesc',
-    text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype). All applications we integrated into a proprietary CMS called Spirit, which was built with Perl and PHP. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
+    text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype.JS). All applications we integrated into a proprietary PHP CMS called Spirit. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
   }];
   var cognique = [{
     style: 'worktitle',
