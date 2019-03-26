@@ -1,8 +1,5 @@
-// return <iframe width="1" height="1" frameBorder="0" src="test.txt"></iframe>
-
 const padLeft = int => ( int > 9 ) ? int.toString() : `0${int}`
 
-// saveAs('CV.pdf', createName())
 export const saveAs = (uri, filename) => {
   const link = document.createElement('a');
   if (typeof link.download === 'string') {

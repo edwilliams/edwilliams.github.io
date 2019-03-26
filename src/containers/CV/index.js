@@ -1,23 +1,23 @@
 import React from 'react'
-import { saveAs, createName } from './utils'
-import PDFmake from './PDFmake'
-import DD from './DD'
+// import { saveAs, createName } from './utils'
+// import PDFmake from './PDFmake'
+// import DD from './DD'
 
 import Header from '../../components/Partials/Header'
 
 class CV extends React.Component {
 
-  componentDidMount() {
+  // generaturePDF() {
 
-    const pdfDocGenerator = PDFmake(DD)
+  //   const pdfDocGenerator = PDFmake(DD)
 
-    pdfDocGenerator.getDataUrl((dataUrl) => {
-      const iframe = document.createElement('iframe')
-      iframe.src = dataUrl
-      this.container.appendChild(iframe)
-    })
+  //   pdfDocGenerator.getDataUrl((dataUrl) => {
+  //     const iframe = document.createElement('iframe')
+  //     iframe.src = dataUrl
+  //     this.container.appendChild(iframe)
+  //   })
 
-  }
+  // }
 
   render() {
     return (
@@ -34,6 +34,8 @@ class CV extends React.Component {
         `}</style>
 
         <Header>Ed Williams - CV</Header>
+
+        <iframe src="cv-ed-williams.pdf"></iframe>
 
       </div>
     )
