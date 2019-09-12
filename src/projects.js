@@ -1,4 +1,23 @@
 export default {
+  'discover': {
+    title: 'Discover Financial Services',
+    subTitle: 'Enterprise Payments Platform',
+    desc: 'In this UI Tech Lead role I have been contracted to lead a team of developers to rebuild part of Discover\'s Enterprise Payment Platform (EPP)',
+    notesIntro: 'Below are some notable functions of the role:',
+    notes: [
+      'Migrating from Angular 1 to React',
+      'Working with a distributed team across multiple time zones',
+      'Making architectural design decisions',
+      'Mentoring developers',
+      'other Tech Lead duties (e.g. ensuring best practice, liaising with project management, etc)',
+    ],
+    location: 'Farnborough: 2019',
+    logo: 'img/logo/discover_.png',
+    imageMain: {
+      frame: 'macbook',
+      url: 'img/discover/logo-large.png',
+    }
+  },
   'rac': {
     title: 'RAC',
     subTitle: 'UK Breakdown Cover, e-commerce user journey',
