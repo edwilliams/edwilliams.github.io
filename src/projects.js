@@ -1,4 +1,22 @@
 export default {
+  'rac': {
+    title: 'RAC',
+    subTitle: 'UK Breakdown Cover, e-commerce user journey',
+    desc: 'In my role at RAC I helped finish a rebuild of a critical part of their website, UK Breakdown Cover.',
+    notesIntro: 'Below are some notable functions of the role:',
+    notes: [
+      'Recruiting and onboarding a team of developers',
+      'Migrating from Angular 1 to Angular 7',
+      'Fixing UI bugs',
+      'Working to a tight fixed deadline'
+    ],
+    location: 'Bristol: 2019',
+    logo: 'img/logo/rac.png',
+    imageMain: {
+      frame: 'macbook',
+      url: 'img/rac/macbook-1024x601.png',
+    }
+  },
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',

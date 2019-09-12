@@ -11,3 +11,10 @@
 
 ## About
 ## CV
+
+---
+
+## images
+
+- content in chrome frame set to: 1536 * 962
+- resze in gimp to 768 * 481
