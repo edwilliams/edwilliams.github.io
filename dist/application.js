@@ -4145,6 +4145,32 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
+  'discover': {
+    title: 'Discover Financial Services',
+    subTitle: 'Enterprise Payments Platform',
+    desc: 'In this UI Tech Lead role I have been contracted to lead a team of developers to rebuild part of Discover\'s Enterprise Payment Platform (EPP)',
+    notesIntro: 'Below are some notable functions of the role:',
+    notes: ['Migrating from Angular 1 to React', 'Working with a distributed team across multiple time zones', 'Making architectural design decisions', 'Mentoring developers', 'other Tech Lead duties (e.g. ensuring best practice, liaising with project management, etc)'],
+    location: 'Farnborough: 2019',
+    logo: 'img/logo/discover_.png',
+    imageMain: {
+      frame: 'macbook',
+      url: 'img/discover/logo-large.png'
+    }
+  },
+  'rac': {
+    title: 'RAC',
+    subTitle: 'UK Breakdown Cover, e-commerce user journey',
+    desc: 'In my role at RAC I helped finish a rebuild of a critical part of their website, UK Breakdown Cover.',
+    notesIntro: 'Below are some notable functions of the role:',
+    notes: ['Recruiting and onboarding a team of developers', 'Migrating from Angular 1 to Angular 7', 'Fixing UI bugs', 'Working to a tight fixed deadline'],
+    location: 'Bristol: 2019',
+    logo: 'img/logo/rac.png',
+    imageMain: {
+      frame: 'macbook',
+      url: 'img/rac/macbook-1024x601.png'
+    }
+  },
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
@@ -7935,7 +7961,7 @@ var _Item2 = _interopRequireDefault(_Item);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var style = function style() {
-  return '\n.container-small {\n  max-width: 768px;\n  margin: 0 auto;\n}\n@media screen and (max-width: 600px) {\n  .container-small {\n    padding: 0 15px;\n  }\n}\n';
+  return '\n.container-small {\n  max-width: 1024px;\n  margin: 0 auto;\n}\n@media screen and (max-width: 600px) {\n  .container-small {\n    padding: 0 15px;\n  }\n}\n';
 };
 
 var Home = function (_React$Component) {
@@ -8356,7 +8382,7 @@ exports.default = {
   number: '+44 (0) 7599 166144',
   email: 'edwilliamsdevelopment@gmail.com',
   website: 'edwilliamsdevelopment.com',
-  about: ['As a Frontend Engineer and Full Stack Developer, I have many years of experience in building robust and scalable websites, webapps and PWA’s. As well as solid commercial experience of building full-stack applications.', 'As a contractor I enjoy taking the lead in projects where ever possible and have experience working solo / remotely and in small teams mentoring other developers. I always work to high standards and deliver maintainable and test driven software while keeping the end user in mind at all times.', 'I have consulted for enterprises of all sizes (PassivSystems, Jaguar Land Rover, Good Energy, et al) and enjoy communicating with the client and all stakeholders throughout a project.', 'Specialising in React / Redux has been a natural fit for my style of development as I favour a functional / declarative approach to programming and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I have extensive experience with animations (CSS, SVG and WebGL) and feel equally at home styling interfaces with JavaScript as I do with CSS / SASS. I have also become a keen advocate of PWA’s and conform to best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as writing CI build scripts (Bash / Webpack / Gulp / Grunt), designing databases (MySQL / DynamoDB), architecting API’s (Node / AWS / Heroku / PHP), keeping fine grain version control (Git) of codebases on the command line and working in multiple environments (Linux, OSX and Windows)', 'See below for a selective list the applications I have developed over recent years. For more info / links, please visit: edwilliamsdevelopment.com']
+  about: ['As a Frontend Engineer and Full Stack Developer, I have many years of experience in building robust and scalable websites, webapps and PWA’s. As well as solid commercial experience of building full-stack applications.', 'As a contractor I enjoy taking the lead in projects wherever possible and have experience working solo / remotely and mentoring other developers. I always work to high standards and deliver maintainable and test driven software while keeping the end user in mind at all times.', 'I have consulted for enterprises of all sizes (Discover, RAC, PassivSystems, Jaguar Land Rover, Good Energy, et al) and enjoy communicating with the client and all stakeholders throughout a project.', 'Specialising in React / Redux has been a natural fit for my style of development as I favour a functional / declarative approach to programming and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I have extensive experience with animations (CSS, SVG and WebGL) and feel equally at home styling interfaces with JavaScript as I do with CSS / SASS. I have also become a keen advocate of PWA’s and conform to best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as writing CI build scripts (Bash / Webpack / Gulp / Grunt), designing databases (MySQL / DynamoDB / S3), architecting API’s (Node / AWS / Heroku / PHP), keeping fine grain version control (Git) of codebases on the command line and working in multiple environments (Linux, OSX and Windows)', 'See below for a selective list the applications I have developed over recent years. For more info / links, please visit: edwilliamsdevelopment.com']
 };
 
 /***/ }),
