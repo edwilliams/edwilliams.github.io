@@ -4,16 +4,16 @@ export default {
     subTitle: 'Enterprise Payments Platform',
     desc:
       "leading a team of developers to migrate Discover's Enterprise Payment Platform apps from Angular to React.",
-    notesIntro: 'Below are some notable functions of the role:',
+    notesIntro: '---',
     notes: [
-      'Distributed teams across multiple timezones. ',
-      'Architectural decisions. ',
-      'Mentoring developers. ',
-      'Ensuring React best practice. ',
-      'TDD with Jest. ',
+      'Distributed teams across multiple timezones.',
+      'Architectural decisions.',
+      'Mentoring developers.',
+      'Ensuring React best practice.',
+      'TDD with Jest.',
       'Components with Storybook'
     ],
-    location: 'Farnborough: 2019',
+    location: 'Farnborough: 2019 to 2020',
     logo: 'img/logo/discover_.png',
     imageMain: {
       frame: 'macbook',
@@ -24,14 +24,8 @@ export default {
     title: 'RAC',
     subTitle: 'UK Breakdown Cover, e-commerce user journey',
     desc:
-      'In my role at RAC I helped finish a rebuild of a critical part of their website, UK Breakdown Cover.',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: [
-      'Recruiting and onboarding a team of developers',
-      'Migrating from Angular 1 to Angular 7',
-      'Fixing UI bugs',
-      'Working to a tight fixed deadline'
-    ],
+      'Finished a rebuild of a critical part of rac.co.uk. Also helped to recruit and onboard a small team of FE devs (contractors and permanent) to continue this work.',
+    notes: [],
     location: 'Bristol: 2019',
     logo: 'img/logo/rac.png',
     imageMain: {
@@ -42,25 +36,19 @@ export default {
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
-    desc:
-      'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
-    notesIntro: 'Below are some notable functions of the role:',
+    // desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    notesIntro: '---',
     notes: [
-      'Working independently to build enterprise-grade React / Redux app from scratch',
-      'Engineering UI updates around an bespoke event poll system',
-      'Writing bespoke SVG and WebGL animations to represent heating states within the app',
-      'Translating proprietary business logic into standalone JavaScript libraries',
-      'Writing and maintaining unit tests and working with QA in integration testing',
-      'Initial maintenance then migration of legacy codebase (Ember) and build systems (Grunt / Gulp)',
-      'Leading regular stakeholder meetings to plan new feature architecture',
+      'Sole UI developer - complete rebuild of App from Ember to React',
+      'Wrapped in Cordova for deployment both in App stores (iOS / Android) alongside desktop and mobile',
+      'Bespoke WebGL and SVG animations',
+      'Long polling design pattern',
+      'Redux state management',
+      'Writing and maintaining unit tests (Tape) and E2E tests (Puppeteer)',
       'Debugging via device emulation in Xcode and Android Studio',
-      'Writing and updating Webpack and Jenkins build scripts',
-      'Maintaining and utilising Cordova plugins',
-      'Exposure to IoT via PassivSystems hardware (e.g. Smart Thermostats, Hubs, etc)',
-      'Assisting with wireframe development with City University students (MA UX)',
-      'Working with contract designers to realise wireframes into designs / animations'
+      'Assisting with wireframe development with City University students (MA UX)'
     ],
-    location: 'Newbury: 2017 to Present',
+    location: 'Newbury: 2017 to 2019',
     logo: 'img/logo/passivliving.png',
     imageMain: {
       frame: 'iphone',
@@ -69,11 +57,11 @@ export default {
     images: ['img/passivliving/ipad-1079x768.png']
   },
   capio: {
-    title: 'Get Capio',
+    title: 'CAPIO',
     subTitle: 'App to scan, organise and read music and notes during rehearsal and performance.',
     desc:
       'Built and designed as a side project, Get Capio serves both as a best-in-class PWA (more below) and fulfills a gap in the market as an App that can scan, process and organise images all in one place.',
-    notesIntro: 'Some notable features of this App include:',
+    notesIntro: '---',
     notes: [
       'Built with React and state management by Redux',
       'An offline-first experience with Service Workers caching crucial assets',
@@ -97,14 +85,12 @@ export default {
       'A proprietary and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
     desc:
       'This e-learning platform is Jaguar Land Rover’s proprietary dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was tasked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy devices.',
-    notesIntro: 'Below are some notable functions of the role:',
+    notesIntro: '---',
     notes: [
-      'Building the UI in vanilla Javascript due to support requirements (borrowing heavily from Angular’s design pattern)',
-      'Working as part of a distributed national and international team',
-      'Performed large scale CSS refactor of legacy code',
-      'Using VM’s to integrate into a .NET workflow, inc. TFS version control and Razor templates in Visual Studio',
-      'Supporting and integrating into existing legacy frontend code, including Knockout.js',
-      'Browser support stretching back to Internet Explorer 8 '
+      'Vanilla Javascript (based on Angular design pattern)',
+      'Working as part of a distributed and international teams',
+      '.NET workflow, (TFS , Razor, Visual Studio, etc)',
+      'Legacy browser support (IE8)'
     ],
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
@@ -119,10 +105,10 @@ export default {
     subTitle: 'Website for ethical renewable electricity company Good Energy',
     desc:
       'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
-    notesIntro: 'Below are some notable functions of the role:',
+    notesIntro: '---',
     notes: [
-      'Developing Good Energy’s quote engine UI alongside .NET developers',
-      'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend',
+      'Good Energy’s quote engine UI. .NET workflow (Umbraco, Razor)',
+      'BEM-centric frontend',
       'Early adoption of ES6 modules with Browserify / Gulp'
     ],
     location: 'Dare West: 2016',
@@ -137,11 +123,11 @@ export default {
     subTitle: 'Website for leading London design agency Rosie Lee',
     desc:
       'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element.',
-    notesIntro: 'Below are some notable projects undertaken while at Rosie Lee:',
+    notesIntro: '---',
     notes: [
-      'Microsites for JD Sports and Nike: including Air Max Day 2015 - written in Angular 1.4.8',
-      'Rosie Lee website: inc. Google Maps API and high performance lazy loading',
-      '"Inside Rosie Lee": a fullstack intranet, including a timesheet system, a CRM and a system for tracking project management / finance.'
+      'Microsites for JD Sports and Nike (inc. Air Max Day 2015, in Angular)',
+      'Fullstack internal system (inc. timesheet system, CRM, project tracking / finance, etc)',
+      'Rosie Lee website'
     ],
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
@@ -155,12 +141,11 @@ export default {
     subTitle: 'HTML5 cinema presentation for VUE cinema',
     desc:
       'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE.',
-    notesIntro: 'Below are some notable aspects of the project:',
+    notesIntro: '---',
     notes: [
       'Offline-first HTML5 presentation to showcase VUE’s ’playbooks’ to their clients (e.g. Warner, Disney, et al)',
       'CSS3 animations',
-      'Developed for Cinema screens',
-      'Working closely with VUE stakeholders to ensure smooth installation'
+      'Developed for Cinema screen sizes'
     ],
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
