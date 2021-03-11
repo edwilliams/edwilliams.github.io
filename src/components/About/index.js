@@ -30,7 +30,7 @@ class About extends React.Component {
 
         <div className="about grid dsktp-2 mob-1">
           <div className="pam">
-            <h3 className="mbm">Software Developer</h3>
+            <h3 className="mbm">Contract Software Engineer</h3>
 
             {this.props.about.map((line, i) => (
               <p key={i} className="mbs">
@@ -38,13 +38,13 @@ class About extends React.Component {
               </p>
             ))}
 
-            <p className="mtl">
-              <a href="mailto:edwilliamsdevelopment@gmail.com">{this.props.email}</a>
-            </p>
+            <p className="mbs">---</p>
 
-            <p className="mtl">
+            <a href="mailto:edwilliamsdevelopment@gmail.com">{this.props.email}</a>
+
+            {/* <p className="mtl">
               To download a copy of my CV, <a href="#/CV">please click here</a>.
-            </p>
+            </p> */}
           </div>
 
           <img className="about-img mbs" src="img/ed.png" />
