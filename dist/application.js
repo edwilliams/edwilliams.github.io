@@ -1370,24 +1370,33 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'ptm pbm', onClick: function onClick() {
+            {
+              className: 'ptm pbm',
+              onClick: function onClick() {
                 window.location.hash = '#/';
-              } },
+              }
+            },
             this.props.children
           ),
           _react2.default.createElement(
             'ul',
-            { className: 'header-inner', ref: function ref(el) {
+            {
+              className: 'header-inner',
+              ref: function ref(el) {
                 _this2.inner = el;
-              } },
+              }
+            },
             _react2.default.createElement(
               'li',
               null,
               _react2.default.createElement(
                 'p',
-                { className: 'f_m', onClick: function onClick() {
+                {
+                  className: 'f_m',
+                  onClick: function onClick() {
                     window.location.hash = '#/' + routes[x].url;
-                  } },
+                  }
+                },
                 routes[x].name
               )
             ),
@@ -1396,9 +1405,12 @@ var Header = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'p',
-                { className: 'f_m', onClick: function onClick() {
+                {
+                  className: 'f_m',
+                  onClick: function onClick() {
                     window.location.hash = '#/' + routes.projects.url;
-                  } },
+                  }
+                },
                 routes.projects.name
               )
             ),
@@ -1407,9 +1419,12 @@ var Header = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'p',
-                { className: 'f_m', onClick: function onClick() {
+                {
+                  className: 'f_m',
+                  onClick: function onClick() {
                     _this2.inner.classList.toggle('open');
-                  } },
+                  }
+                },
                 'Social'
               )
             ),
@@ -1422,7 +1437,10 @@ var Header = function (_React$Component) {
                 _react2.default.createElement(
                   'svg',
                   { viewBox: '0 0 16 16' },
-                  _react2.default.createElement('path', { d: 'M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z', fillRule: 'nonzero' }),
+                  _react2.default.createElement('path', {
+                    d: 'M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z',
+                    fillRule: 'nonzero'
+                  }),
                   '"'
                 )
               )
@@ -1432,11 +1450,18 @@ var Header = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { className: 'link', target: '_blank', href: 'https://uk.linkedin.com/in/edwilliamsdevelopment' },
+                {
+                  className: 'link',
+                  target: '_blank',
+                  href: 'https://uk.linkedin.com/in/edwilliamsdevelopment'
+                },
                 _react2.default.createElement(
                   'svg',
                   { viewBox: '0 0 16 16' },
-                  _react2.default.createElement('path', { d: 'M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z', fillRule: 'nonzero' })
+                  _react2.default.createElement('path', {
+                    d: 'M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z',
+                    fillRule: 'nonzero'
+                  })
                 )
               )
             ),
@@ -1449,7 +1474,10 @@ var Header = function (_React$Component) {
                 _react2.default.createElement(
                   'svg',
                   { viewBox: '0 0 16 16' },
-                  _react2.default.createElement('path', { d: 'M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8', fillRule: 'nonzero' })
+                  _react2.default.createElement('path', {
+                    d: 'M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8',
+                    fillRule: 'nonzero'
+                  })
                 )
               )
             ),
@@ -4145,25 +4173,24 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  'discover': {
+  discover: {
     title: 'Discover Financial Services',
     subTitle: 'Enterprise Payments Platform',
-    desc: 'In this UI Tech Lead role I have been contracted to lead a team of developers to rebuild part of Discover\'s Enterprise Payment Platform (EPP)',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: ['Migrating from Angular 1 to React', 'Working with a distributed team across multiple time zones', 'Making architectural design decisions', 'Mentoring developers', 'other Tech Lead duties (e.g. ensuring best practice, liaising with project management, etc)'],
-    location: 'Farnborough: 2019',
+    desc: "leading a team of developers to migrate Discover's Enterprise Payment Platform apps from Angular to React.",
+    notesIntro: '---',
+    notes: ['Distributed teams across multiple timezones.', 'Architectural decisions.', 'Mentoring developers.', 'Ensuring React best practice.', 'TDD with Jest.', 'Components with Storybook'],
+    location: 'Farnborough: 2019 to 2020',
     logo: 'img/logo/discover_.png',
     imageMain: {
       frame: 'macbook',
       url: 'img/discover/logo-large.png'
     }
   },
-  'rac': {
+  rac: {
     title: 'RAC',
     subTitle: 'UK Breakdown Cover, e-commerce user journey',
-    desc: 'In my role at RAC I helped finish a rebuild of a critical part of their website, UK Breakdown Cover.',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: ['Recruiting and onboarding a team of developers', 'Migrating from Angular 1 to Angular 7', 'Fixing UI bugs', 'Working to a tight fixed deadline'],
+    desc: 'Finished a rebuild of a critical part of rac.co.uk. Also helped to recruit and onboard a small team of FE devs (contractors and permanent) to continue this work.',
+    notes: [],
     location: 'Bristol: 2019',
     logo: 'img/logo/rac.png',
     imageMain: {
@@ -4174,10 +4201,10 @@ exports.default = {
   'passivliving-app': {
     title: 'PassivLiving App iOS / Android',
     subTitle: 'App to control smart thermostat platform, available in App Store and Google Play',
-    desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: ['Working independently to build enterprise-grade React / Redux app from scratch', 'Engineering UI updates around an bespoke event poll system', 'Writing bespoke SVG and WebGL animations to represent heating states within the app', 'Translating proprietary business logic into standalone JavaScript libraries', 'Writing and maintaining unit tests and working with QA in integration testing', 'Initial maintenance then migration of legacy codebase (Ember) and build systems (Grunt / Gulp)', 'Leading regular stakeholder meetings to plan new feature architecture', 'Debugging via device emulation in Xcode and Android Studio', 'Writing and updating Webpack and Jenkins build scripts', 'Maintaining and utilising Cordova plugins', 'Exposure to IoT via PassivSystems hardware (e.g. Smart Thermostats, Hubs, etc)', 'Assisting with wireframe development with City University students (MA UX)', 'Working with contract designers to realise wireframes into designs / animations'],
-    location: 'Newbury: 2017 to Present',
+    // desc: 'In January 2017 I started a contract with smart energy firm PassivSystems a contract to rebuild their heating control App into a series of reusable components. The new app was to be deployed both in App stores (iOS / Android) and on their desktop portal. This development needed to take place alongside the maintenance of the existing App before finally making the switch to the new App. The result was a managed migration away from the original codebase (written in Ember) to a React / Redux centric system, deployed within a Cordova shell',
+    notesIntro: '---',
+    notes: ['Sole UI developer - complete rebuild of App from Ember to React', 'Wrapped in Cordova for deployment both in App stores (iOS / Android) alongside desktop and mobile', 'Bespoke WebGL and SVG animations', 'Long polling design pattern', 'Redux state management', 'Writing and maintaining unit tests (Tape) and E2E tests (Puppeteer)', 'Debugging via device emulation in Xcode and Android Studio', 'Assisting with wireframe development with City University students (MA UX)'],
+    location: 'Newbury: 2017 to 2019',
     logo: 'img/logo/passivliving.png',
     imageMain: {
       frame: 'iphone',
@@ -4185,11 +4212,11 @@ exports.default = {
     },
     images: ['img/passivliving/ipad-1079x768.png']
   },
-  'capio': {
-    title: 'Get Capio',
+  capio: {
+    title: 'CAPIO',
     subTitle: 'App to scan, organise and read music and notes during rehearsal and performance.',
     desc: 'Built and designed as a side project, Get Capio serves both as a best-in-class PWA (more below) and fulfills a gap in the market as an App that can scan, process and organise images all in one place.',
-    notesIntro: 'Some notable features of this App include:',
+    notesIntro: '---',
     notes: ['Built with React and state management by Redux', 'An offline-first experience with Service Workers caching crucial assets', 'Offline storage via IndexDB', 'All UI built on top of Google’s Material Design', 'Client-side image processing includes image resizing with CropperJS and PDF rendering for downloading images', 'Black and white client-side image processing via an adaptive thresholding algorithm', 'Persistence across devices achieved with AWS AppSync, utilising DynamoDB and GraphQL'],
     location: '2018 to Present',
     logo: 'img/logo/capio.png',
@@ -4203,8 +4230,8 @@ exports.default = {
     title: 'Jaguar Land Rover E-Learning Platform',
     subTitle: 'A proprietary and internationally utilized Learning platform for staff at iconic Jaguar Land Rover',
     desc: 'This e-learning platform is Jaguar Land Rover’s proprietary dashboard to monitor and record staff progress through various professional courses they have to undertake in their role. Brought in towards the end of this enterprise scale project, I was tasked with taking a proof-of-concept dashboard and building it into a robust browser application that worked on a range of new and legacy devices.',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: ['Building the UI in vanilla Javascript due to support requirements (borrowing heavily from Angular’s design pattern)', 'Working as part of a distributed national and international team', 'Performed large scale CSS refactor of legacy code', 'Using VM’s to integrate into a .NET workflow, inc. TFS version control and Razor templates in Visual Studio', 'Supporting and integrating into existing legacy frontend code, including Knockout.js', 'Browser support stretching back to Internet Explorer 8 '],
+    notesIntro: '---',
+    notes: ['Vanilla Javascript (based on Angular design pattern)', 'Working as part of a distributed and international teams', '.NET workflow, (TFS , Razor, Visual Studio, etc)', 'Legacy browser support (IE8)'],
     location: 'Virtual Forge: 2016',
     logo: 'img/logo/jaguarlandrover.jpg',
     imageMain: {
@@ -4217,8 +4244,8 @@ exports.default = {
     title: 'Good Energy Quote Engine',
     subTitle: 'Website for ethical renewable electricity company Good Energy',
     desc: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.',
-    notesIntro: 'Below are some notable functions of the role:',
-    notes: ['Developing Good Energy’s quote engine UI alongside .NET developers', 'Created BEM-centric frontend code in Razor templates to integrate into an Umbraco / .NET backend', 'Early adoption of ES6 modules with Browserify / Gulp'],
+    notesIntro: '---',
+    notes: ['Good Energy’s quote engine UI. .NET workflow (Umbraco, Razor)', 'BEM-centric frontend', 'Early adoption of ES6 modules with Browserify / Gulp'],
     location: 'Dare West: 2016',
     logo: 'img/logo/goodenergy.png',
     imageMain: {
@@ -4230,8 +4257,8 @@ exports.default = {
     title: 'Rosie Lee',
     subTitle: 'Website for leading London design agency Rosie Lee',
     desc: 'As Senior Developer I was responsible for all in-house development and provided consultancy for all projects with a digital element.',
-    notesIntro: 'Below are some notable projects undertaken while at Rosie Lee:',
-    notes: ['Microsites for JD Sports and Nike: including Air Max Day 2015 - written in Angular 1.4.8', 'Rosie Lee website: inc. Google Maps API and high performance lazy loading', '"Inside Rosie Lee": a fullstack intranet, including a timesheet system, a CRM and a system for tracking project management / finance.'],
+    notesIntro: '---',
+    notes: ['Microsites for JD Sports and Nike (inc. Air Max Day 2015, in Angular)', 'Fullstack internal system (inc. timesheet system, CRM, project tracking / finance, etc)', 'Rosie Lee website'],
     location: 'Rosie Lee: 2016',
     logo: 'img/logo/rosielee.png',
     imageMain: {
@@ -4243,8 +4270,8 @@ exports.default = {
     title: 'VUE Playbook presentation',
     subTitle: 'HTML5 cinema presentation for VUE cinema',
     desc: 'In my role as Senior Developer at Rosie Lee I undertook as significant project for the marketing department at leading cinema company VUE.',
-    notesIntro: 'Below are some notable aspects of the project:',
-    notes: ['Offline-first HTML5 presentation to showcase VUE’s ’playbooks’ to their clients (e.g. Warner, Disney, et al)', 'CSS3 animations', 'Developed for Cinema screens', 'Working closely with VUE stakeholders to ensure smooth installation'],
+    notesIntro: '---',
+    notes: ['Offline-first HTML5 presentation to showcase VUE’s ’playbooks’ to their clients (e.g. Warner, Disney, et al)', 'CSS3 animations', 'Developed for Cinema screen sizes'],
     location: 'VUE: 2015',
     logo: 'img/logo/vue.png',
     imageMain: {
@@ -7293,38 +7320,34 @@ var _reactRouterDom = __webpack_require__(75);
 
 var _ramda = __webpack_require__(265);
 
-var _Home = __webpack_require__(204);
+var _home = __webpack_require__(202);
 
-var _Home2 = _interopRequireDefault(_Home);
+var _home2 = _interopRequireDefault(_home);
 
-var _About = __webpack_require__(202);
+var _about = __webpack_require__(199);
 
-var _About2 = _interopRequireDefault(_About);
+var _about2 = _interopRequireDefault(_about);
 
-var _Projects = __webpack_require__(206);
+var _projects = __webpack_require__(205);
 
-var _Projects2 = _interopRequireDefault(_Projects);
+var _projects2 = _interopRequireDefault(_projects);
 
-var _Project = __webpack_require__(205);
+var _project = __webpack_require__(203);
 
-var _Project2 = _interopRequireDefault(_Project);
+var _project2 = _interopRequireDefault(_project);
 
-var _CV = __webpack_require__(203);
+var _cv = __webpack_require__(200);
 
-var _CV2 = _interopRequireDefault(_CV);
+var _cv2 = _interopRequireDefault(_cv);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var style = function style() {
-  return '\nmain {\n  border: 8px solid #494C4E;\n  min-height: 100%;\n  width: 100%;\n  position: absolute;\n  padding-bottom: 40px;\n}\n';
-};
 
 var ProjectsSwitch = function ProjectsSwitch() {
   return _react2.default.createElement(
     _reactRouterDom.Switch,
     null,
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _Projects2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { path: '/projects/:id', component: _Project2.default })
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _projects2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/projects/:id', component: _project2.default })
   );
 };
 
@@ -7348,17 +7371,12 @@ var MainContainer = function (_React$Component) {
         'main',
         { id: 'main' },
         _react2.default.createElement(
-          'style',
-          null,
-          style()
-        ),
-        _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { path: '/projects', component: ProjectsSwitch }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/cv', component: _CV2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/cv', component: _cv2.default })
         )
       );
     }
@@ -7485,94 +7503,61 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(40);
-
-var _Header2 = _interopRequireDefault(_Header);
-
-var _Footer = __webpack_require__(76);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var style = function style() {
-  return '\n@media screen and (max-width: 600px) {\n  .about {\n    flex-direction: column-reverse;\n    display: flex;\n  }\n}\n\n.about-img {\n  padding: 0 20px 0 0;\n}\n@media screen and (max-width: 600px) {\n  .about-img {\n    padding: 20px 0 0 0;\n  }\n}\n';
-};
+var Item = function (_React$Component) {
+  (0, _inherits3.default)(Item, _React$Component);
 
-var About = function (_React$Component) {
-  (0, _inherits3.default)(About, _React$Component);
-
-  function About() {
-    (0, _classCallCheck3.default)(this, About);
-    return (0, _possibleConstructorReturn3.default)(this, (About.__proto__ || (0, _getPrototypeOf2.default)(About)).apply(this, arguments));
+  function Item() {
+    (0, _classCallCheck3.default)(this, Item);
+    return (0, _possibleConstructorReturn3.default)(this, (Item.__proto__ || (0, _getPrototypeOf2.default)(Item)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(About, [{
-    key: 'render',
+  (0, _createClass3.default)(Item, [{
+    key: "render",
     value: function render() {
+      var _props = this.props,
+          img = _props.img,
+          title = _props.title,
+          url = _props.url,
+          subTitle = _props.subTitle;
+
 
       return _react2.default.createElement(
-        'article',
-        null,
+        "div",
+        {
+          className: "mbxl",
+          onClick: function onClick() {
+            window.location.hash = "#/projects/" + url;
+          }
+        },
         _react2.default.createElement(
-          _Header2.default,
-          null,
-          'About Me'
+          "div",
+          { className: "center" },
+          _react2.default.createElement("img", { className: "mbs", src: img })
         ),
         _react2.default.createElement(
-          'style',
-          null,
-          style()
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'about grid dsktp-2 mob-1' },
+          "div",
+          { className: "phm" },
           _react2.default.createElement(
-            'div',
-            { className: 'pam' },
-            _react2.default.createElement(
-              'h3',
-              { className: 'mbm' },
-              'Software Developer'
-            ),
-            this.props.about.map(function (line, i) {
-              return _react2.default.createElement(
-                'p',
-                { key: i, className: 'mbs' },
-                line
-              );
-            }),
-            _react2.default.createElement(
-              'p',
-              { className: 'mtl' },
-              _react2.default.createElement(
-                'a',
-                { href: 'mailto:edwilliamsdevelopment@gmail.com' },
-                this.props.email
-              )
-            ),
-            _react2.default.createElement(
-              'p',
-              { className: 'mtl' },
-              'To download a copy of my CV, ',
-              _react2.default.createElement(
-                'a',
-                { href: '#/CV' },
-                'please click here'
-              ),
-              '.'
-            )
+            "h3",
+            { className: "mbm underline" },
+            title
           ),
-          _react2.default.createElement('img', { className: 'about-img mbs', src: 'img/ed.png' })
-        ),
-        _react2.default.createElement(_Footer2.default, null)
+          _react2.default.createElement(
+            "h4",
+            { className: "mbxl" },
+            subTitle
+          ),
+          _react2.default.createElement("hr", null)
+        )
       );
     }
   }]);
-  return About;
+  return Item;
 }(_react2.default.Component);
 
-exports.default = About;
+exports.default = Item;
 
 /***/ }),
 /* 198 */
@@ -7609,61 +7594,87 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(40);
+var _header = __webpack_require__(40);
 
-var _Header2 = _interopRequireDefault(_Header);
+var _header2 = _interopRequireDefault(_header);
 
-var _Footer = __webpack_require__(76);
+var _footer = __webpack_require__(76);
 
-var _Footer2 = _interopRequireDefault(_Footer);
+var _footer2 = _interopRequireDefault(_footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Home = function (_React$Component) {
-  (0, _inherits3.default)(Home, _React$Component);
+var style = function style() {
+  return '\n@media screen and (max-width: 600px) {\n  .about {\n    flex-direction: column-reverse;\n    display: flex;\n  }\n}\n\n.about-img {\n  padding: 0 20px 0 0;\n}\n@media screen and (max-width: 600px) {\n  .about-img {\n    padding: 20px 0 0 0;\n  }\n}\n';
+};
 
-  function Home() {
-    (0, _classCallCheck3.default)(this, Home);
-    return (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).apply(this, arguments));
+var About = function (_React$Component) {
+  (0, _inherits3.default)(About, _React$Component);
+
+  function About() {
+    (0, _classCallCheck3.default)(this, About);
+    return (0, _possibleConstructorReturn3.default)(this, (About.__proto__ || (0, _getPrototypeOf2.default)(About)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(Home, [{
+  (0, _createClass3.default)(About, [{
     key: 'render',
     value: function render() {
-
       return _react2.default.createElement(
         'article',
         null,
         _react2.default.createElement(
-          _Header2.default,
-          null,
-          'Ed Williams'
-        ),
-        _react2.default.createElement('iframe', { src: '/sites/shooting-stars/', className: 'full-screen' }),
-        _react2.default.createElement(
           'div',
-          { className: 'amm typo-center' },
+          { className: 'container-large' },
           _react2.default.createElement(
-            'p',
-            { className: 'mbs' },
-            this.props.title
-          ),
-          _react2.default.createElement(
-            'h3',
-            { style: { textDecoration: 'underline' }, onClick: function onClick() {
-                window.location.hash = '#/projects';
-              } },
-            'projects'
+            _header2.default,
+            null,
+            'About Me'
           )
         ),
-        _react2.default.createElement(_Footer2.default, null)
+        _react2.default.createElement(
+          'style',
+          null,
+          style()
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'about container-small grid dsktp-2 mob-1' },
+          _react2.default.createElement(
+            'div',
+            { className: 'pam' },
+            _react2.default.createElement(
+              'h3',
+              { className: 'mbm' },
+              'Contract Software Engineer'
+            ),
+            this.props.about.map(function (line, i) {
+              return _react2.default.createElement(
+                'p',
+                { key: i, className: 'mbs' },
+                line
+              );
+            }),
+            _react2.default.createElement(
+              'p',
+              { className: 'mbs' },
+              '---'
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'mailto:edwilliamsdevelopment@gmail.com' },
+              this.props.email
+            )
+          ),
+          _react2.default.createElement('img', { className: 'about-img mbs', src: 'img/ed.png' })
+        ),
+        _react2.default.createElement(_footer2.default, null)
       );
     }
   }]);
-  return Home;
+  return About;
 }(_react2.default.Component);
 
-exports.default = Home;
+exports.default = About;
 
 /***/ }),
 /* 199 */
@@ -7700,58 +7711,34 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _about = __webpack_require__(198);
+
+var _about2 = _interopRequireDefault(_about);
+
+var _data = __webpack_require__(207);
+
+var _data2 = _interopRequireDefault(_data);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Item = function (_React$Component) {
-  (0, _inherits3.default)(Item, _React$Component);
+var AboutContainer = function (_React$Component) {
+  (0, _inherits3.default)(AboutContainer, _React$Component);
 
-  function Item() {
-    (0, _classCallCheck3.default)(this, Item);
-    return (0, _possibleConstructorReturn3.default)(this, (Item.__proto__ || (0, _getPrototypeOf2.default)(Item)).apply(this, arguments));
+  function AboutContainer() {
+    (0, _classCallCheck3.default)(this, AboutContainer);
+    return (0, _possibleConstructorReturn3.default)(this, (AboutContainer.__proto__ || (0, _getPrototypeOf2.default)(AboutContainer)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(Item, [{
-    key: "render",
+  (0, _createClass3.default)(AboutContainer, [{
+    key: 'render',
     value: function render() {
-      var _props = this.props,
-          img = _props.img,
-          title = _props.title,
-          url = _props.url,
-          subTitle = _props.subTitle;
-
-
-      return _react2.default.createElement(
-        "div",
-        { className: "mbxl", onClick: function onClick() {
-            window.location.hash = "#/projects/" + url;
-          } },
-        _react2.default.createElement(
-          "div",
-          { className: "center" },
-          _react2.default.createElement("img", { className: "mbs", src: img })
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "phm" },
-          _react2.default.createElement(
-            "h3",
-            { className: "mbm underline" },
-            title
-          ),
-          _react2.default.createElement(
-            "h4",
-            { className: "mbxl" },
-            subTitle
-          ),
-          _react2.default.createElement("hr", null)
-        )
-      );
+      return _react2.default.createElement(_about2.default, _data2.default);
     }
   }]);
-  return Item;
+  return AboutContainer;
 }(_react2.default.Component);
 
-exports.default = Item;
+exports.default = AboutContainer;
 
 /***/ }),
 /* 200 */
@@ -7788,124 +7775,66 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(75);
+var _header = __webpack_require__(40);
 
-var _Header = __webpack_require__(40);
-
-var _Header2 = _interopRequireDefault(_Header);
-
-var _projects = __webpack_require__(116);
-
-var _projects2 = _interopRequireDefault(_projects);
+var _header2 = _interopRequireDefault(_header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Single = function (_React$Component) {
-  (0, _inherits3.default)(Single, _React$Component);
+var CV = function (_React$Component) {
+  (0, _inherits3.default)(CV, _React$Component);
 
-  function Single() {
-    (0, _classCallCheck3.default)(this, Single);
-    return (0, _possibleConstructorReturn3.default)(this, (Single.__proto__ || (0, _getPrototypeOf2.default)(Single)).apply(this, arguments));
+  function CV() {
+    (0, _classCallCheck3.default)(this, CV);
+    return (0, _possibleConstructorReturn3.default)(this, (CV.__proto__ || (0, _getPrototypeOf2.default)(CV)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(Single, [{
+  (0, _createClass3.default)(CV, [{
     key: 'render',
+
+    // generaturePDF() {
+
+    //   const pdfDocGenerator = PDFmake(DD)
+
+    //   pdfDocGenerator.getDataUrl((dataUrl) => {
+    //     const iframe = document.createElement('iframe')
+    //     iframe.src = dataUrl
+    //     this.container.appendChild(iframe)
+    //   })
+
+    // }
+
     value: function render() {
-
-      var content = _projects2.default[this.props.match.params.id];
-      if (!content) return _react2.default.createElement(
-        'p',
-        null,
-        '404'
-      );
-
-      var imageMain = content.imageMain,
-          images = content.images,
-          title = content.title,
-          subTitle = content.subTitle,
-          desc = content.desc,
-          notes = content.notes,
-          notesIntro = content.notesIntro,
-          vid = content.vid;
-
-
-      var maxWidth = imageMain.frame === 'iphone' ? 320 : 768;
+      var _this2 = this;
 
       return _react2.default.createElement(
-        'article',
-        null,
+        'div',
+        {
+          ref: function ref(el) {
+            _this2.container = el;
+          }
+        },
         _react2.default.createElement(
-          _Header2.default,
+          'style',
           null,
-          'Ed Williams'
+          '\n          iframe {\n            position: absolute;\n            width: calc(100% - 30px);\n            height: calc(100% - 30px);\n            top: 74px;\n            left: 15px;\n          }\n        '
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'mbm' },
-          _react2.default.createElement(
-            'div',
-            { className: 'center' },
-            _react2.default.createElement('img', { className: 'mbs', style: { maxWidth: maxWidth + 'px' }, src: imageMain.url })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'grid dsktp-2 mob-1 phm' },
-            _react2.default.createElement(
-              'div',
-              null,
-              _react2.default.createElement(
-                'h3',
-                { className: 'mbm underline' },
-                title
-              ),
-              _react2.default.createElement(
-                'p',
-                { className: 'mbm' },
-                subTitle
-              ),
-              _react2.default.createElement(
-                'p',
-                { className: 'mbm' },
-                desc
-              ),
-              notes && _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                  'p',
-                  { className: 'mbm' },
-                  notesIntro
-                ),
-                notes.map(function (note, i) {
-                  return _react2.default.createElement(
-                    'p',
-                    { key: i, className: 'mbs' },
-                    '- ',
-                    note
-                  );
-                })
-              ),
-              _react2.default.createElement(
-                _reactRouterDom.Link,
-                { className: 'mtl', to: '/projects' },
-                'Back'
-              )
-            ),
-            images && _react2.default.createElement('img', { className: 'mbs', src: images[0] }),
-            vid && _react2.default.createElement(
-              'video',
-              { style: { width: '100%' }, controls: true },
-              _react2.default.createElement('source', { src: vid, type: 'video/mp4' })
-            )
-          )
-        )
+          _header2.default,
+          null,
+          'Ed Williams - CV'
+        ),
+        _react2.default.createElement('iframe', { src: 'cv-ed-williams.pdf' })
       );
     }
   }]);
-  return Single;
+  return CV;
 }(_react2.default.Component);
+// import { saveAs, createName } from './utils'
+// import PDFmake from './PDFmake'
+// import DD from './DD'
 
-exports.default = Single;
+exports.default = CV;
 
 /***/ }),
 /* 201 */
@@ -7917,10 +7846,6 @@ exports.default = Single;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _keys = __webpack_require__(211);
-
-var _keys2 = _interopRequireDefault(_keys);
 
 var _getPrototypeOf = __webpack_require__(9);
 
@@ -7946,23 +7871,15 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(40);
+var _header = __webpack_require__(40);
 
-var _Header2 = _interopRequireDefault(_Header);
+var _header2 = _interopRequireDefault(_header);
 
-var _Footer = __webpack_require__(76);
+var _footer = __webpack_require__(76);
 
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _Item = __webpack_require__(199);
-
-var _Item2 = _interopRequireDefault(_Item);
+var _footer2 = _interopRequireDefault(_footer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var style = function style() {
-  return '\n.container-small {\n  max-width: 1024px;\n  margin: 0 auto;\n}\n@media screen and (max-width: 600px) {\n  .container-small {\n    padding: 0 15px;\n  }\n}\n';
-};
 
 var Home = function (_React$Component) {
   (0, _inherits3.default)(Home, _React$Component);
@@ -7973,43 +7890,107 @@ var Home = function (_React$Component) {
   }
 
   (0, _createClass3.default)(Home, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      ;(function () {
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var blobArray = [];
+        var xPos = 0;
+        var yPos = 0;
+        var triggered = false;
+
+        function config() {
+          canvas.width = window.innerWidth / 4 * 3;
+          canvas.height = window.innerHeight / 4 * 3;
+        }
+
+        function init() {
+          config();
+          events();
+        }
+
+        function events() {
+          window.addEventListener('mouseover', function (e) {
+            if (triggered) return;
+            var animation = setInterval(function () {
+              draw(xPos, yPos);
+              triggered = true;
+            }, 30);
+          }, false);
+
+          window.addEventListener('mousemove', function (e) {
+            xPos = e.x;
+            yPos = e.y;
+          }, false);
+        }
+
+        // helpers
+        function randomRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        function draw(xPos, yPos) {
+          var blob = {
+            x: xPos,
+            y: yPos,
+            xSpeed: randomRange(-10, 10),
+            ySpeed: randomRange(-10, 10),
+            size: 5
+          };
+
+          blobArray.push(blob);
+
+          ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+          for (var i = blobArray.length - 1; i >= 0; i--) {
+            blob = blobArray[i];
+
+            ctx.fillStyle = '#F5C453';
+            ctx.fillRect(blob.x, blob.y, blob.size, blob.size);
+
+            blob.x = blob.x + blob.xSpeed;
+            blob.y = blob.y + blob.ySpeed;
+
+            blob.size = blob.size * 0.96;
+          }
+        }
+
+        init();
+      })();
+    }
+  }, {
     key: 'render',
     value: function render() {
-      var projects = this.props.projects;
-
-
       return _react2.default.createElement(
         'article',
         null,
         _react2.default.createElement(
-          _Header2.default,
+          _header2.default,
           null,
           'Ed Williams'
         ),
-        _react2.default.createElement(
-          'style',
-          null,
-          style()
-        ),
+        _react2.default.createElement('canvas', { id: 'canvas', className: 'amm abs' }),
         _react2.default.createElement(
           'div',
-          { className: 'mbxl' },
+          { className: 'amm typo-center' },
           _react2.default.createElement(
-            'div',
-            { className: 'container-small grid dsktp-2 mob-1' },
-            (0, _keys2.default)(projects).map(function (key, i) {
-              var project = projects[key];
-              return _react2.default.createElement(_Item2.default, {
-                key: i,
-                img: project.logo,
-                title: project.title,
-                subTitle: project.subTitle,
-                desc: project.desc,
-                url: key });
-            })
+            'p',
+            { className: 'mbs' },
+            this.props.title
+          ),
+          _react2.default.createElement(
+            'h3',
+            {
+              style: { textDecoration: 'underline' },
+              onClick: function onClick() {
+                window.location.hash = '#/projects';
+              }
+            },
+            'projects'
           )
         ),
-        _react2.default.createElement(_Footer2.default, null)
+        _react2.default.createElement(_footer2.default, null)
       );
     }
   }]);
@@ -8053,34 +8034,30 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _About = __webpack_require__(197);
+var _home = __webpack_require__(201);
 
-var _About2 = _interopRequireDefault(_About);
-
-var _data = __webpack_require__(207);
-
-var _data2 = _interopRequireDefault(_data);
+var _home2 = _interopRequireDefault(_home);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var AboutContainer = function (_React$Component) {
-  (0, _inherits3.default)(AboutContainer, _React$Component);
+var HomeContainer = function (_React$Component) {
+  (0, _inherits3.default)(HomeContainer, _React$Component);
 
-  function AboutContainer() {
-    (0, _classCallCheck3.default)(this, AboutContainer);
-    return (0, _possibleConstructorReturn3.default)(this, (AboutContainer.__proto__ || (0, _getPrototypeOf2.default)(AboutContainer)).apply(this, arguments));
+  function HomeContainer() {
+    (0, _classCallCheck3.default)(this, HomeContainer);
+    return (0, _possibleConstructorReturn3.default)(this, (HomeContainer.__proto__ || (0, _getPrototypeOf2.default)(HomeContainer)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(AboutContainer, [{
+  (0, _createClass3.default)(HomeContainer, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_About2.default, _data2.default);
+      return _react2.default.createElement(_home2.default, { title: 'Wiltshire based software engineer, specialising in React / JavaScript / Node' });
     }
   }]);
-  return AboutContainer;
+  return HomeContainer;
 }(_react2.default.Component);
 
-exports.default = AboutContainer;
+exports.default = HomeContainer;
 
 /***/ }),
 /* 203 */
@@ -8117,65 +8094,30 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(40);
+var _project = __webpack_require__(204);
 
-var _Header2 = _interopRequireDefault(_Header);
+var _project2 = _interopRequireDefault(_project);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CV = function (_React$Component) {
-  (0, _inherits3.default)(CV, _React$Component);
+var ProjectContainer = function (_React$Component) {
+  (0, _inherits3.default)(ProjectContainer, _React$Component);
 
-  function CV() {
-    (0, _classCallCheck3.default)(this, CV);
-    return (0, _possibleConstructorReturn3.default)(this, (CV.__proto__ || (0, _getPrototypeOf2.default)(CV)).apply(this, arguments));
+  function ProjectContainer() {
+    (0, _classCallCheck3.default)(this, ProjectContainer);
+    return (0, _possibleConstructorReturn3.default)(this, (ProjectContainer.__proto__ || (0, _getPrototypeOf2.default)(ProjectContainer)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(CV, [{
+  (0, _createClass3.default)(ProjectContainer, [{
     key: 'render',
-
-
-    // generaturePDF() {
-
-    //   const pdfDocGenerator = PDFmake(DD)
-
-    //   pdfDocGenerator.getDataUrl((dataUrl) => {
-    //     const iframe = document.createElement('iframe')
-    //     iframe.src = dataUrl
-    //     this.container.appendChild(iframe)
-    //   })
-
-    // }
-
     value: function render() {
-      var _this2 = this;
-
-      return _react2.default.createElement(
-        'div',
-        { ref: function ref(el) {
-            _this2.container = el;
-          } },
-        _react2.default.createElement(
-          'style',
-          null,
-          '\n          iframe {\n            position: absolute;\n            width: calc(100% - 30px);\n            height: calc(100% - 30px);\n            top: 74px;\n            left: 15px;\n          }\n        '
-        ),
-        _react2.default.createElement(
-          _Header2.default,
-          null,
-          'Ed Williams - CV'
-        ),
-        _react2.default.createElement('iframe', { src: 'cv-ed-williams.pdf' })
-      );
+      return _react2.default.createElement(_project2.default, this.props);
     }
   }]);
-  return CV;
+  return ProjectContainer;
 }(_react2.default.Component);
-// import { saveAs, createName } from './utils'
-// import PDFmake from './PDFmake'
-// import DD from './DD'
 
-exports.default = CV;
+exports.default = ProjectContainer;
 
 /***/ }),
 /* 204 */
@@ -8212,94 +8154,130 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Home = __webpack_require__(198);
+var _reactRouterDom = __webpack_require__(75);
 
-var _Home2 = _interopRequireDefault(_Home);
+var _header = __webpack_require__(40);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _projects = __webpack_require__(116);
+
+var _projects2 = _interopRequireDefault(_projects);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HomeContainer = function (_React$Component) {
-  (0, _inherits3.default)(HomeContainer, _React$Component);
+var Single = function (_React$Component) {
+  (0, _inherits3.default)(Single, _React$Component);
 
-  function HomeContainer() {
-    (0, _classCallCheck3.default)(this, HomeContainer);
-    return (0, _possibleConstructorReturn3.default)(this, (HomeContainer.__proto__ || (0, _getPrototypeOf2.default)(HomeContainer)).apply(this, arguments));
+  function Single() {
+    (0, _classCallCheck3.default)(this, Single);
+    return (0, _possibleConstructorReturn3.default)(this, (Single.__proto__ || (0, _getPrototypeOf2.default)(Single)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(HomeContainer, [{
+  (0, _createClass3.default)(Single, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_Home2.default, { title: 'Wiltshire based software engineer, specialising in React / JavaScript / Node' });
+      var content = _projects2.default[this.props.match.params.id];
+      if (!content) return _react2.default.createElement(
+        'p',
+        null,
+        '404'
+      );
+
+      var imageMain = content.imageMain,
+          images = content.images,
+          title = content.title,
+          subTitle = content.subTitle,
+          desc = content.desc,
+          notes = content.notes,
+          notesIntro = content.notesIntro,
+          vid = content.vid;
+
+
+      var maxWidth = imageMain.frame === 'iphone' ? 320 : 768;
+
+      return _react2.default.createElement(
+        'article',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'container-large' },
+          _react2.default.createElement(
+            _header2.default,
+            null,
+            'Ed Williams'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'mbm' },
+            _react2.default.createElement(
+              'div',
+              { className: 'center' },
+              _react2.default.createElement('img', { className: 'mbs', style: { maxWidth: maxWidth + 'px' }, src: imageMain.url })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'grid dsktp-2 mob-1 phm' },
+              _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                  'h3',
+                  { className: 'mbm underline' },
+                  title
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'mbm' },
+                  subTitle
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'mbm' },
+                  desc
+                ),
+                notes && _react2.default.createElement(
+                  'div',
+                  null,
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mbm' },
+                    notesIntro
+                  ),
+                  notes.map(function (note, i) {
+                    return _react2.default.createElement(
+                      'p',
+                      { key: i, className: 'mbs' },
+                      '- ',
+                      note
+                    );
+                  })
+                ),
+                _react2.default.createElement(
+                  _reactRouterDom.Link,
+                  { className: 'mtl', to: '/projects' },
+                  'Back'
+                )
+              ),
+              images && _react2.default.createElement('img', { className: 'mbs', src: images[0] }),
+              vid && _react2.default.createElement(
+                'video',
+                { style: { width: '100%' }, controls: true },
+                _react2.default.createElement('source', { src: vid, type: 'video/mp4' })
+              )
+            )
+          )
+        )
+      );
     }
   }]);
-  return HomeContainer;
+  return Single;
 }(_react2.default.Component);
 
-exports.default = HomeContainer;
+exports.default = Single;
 
 /***/ }),
 /* 205 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _getPrototypeOf = __webpack_require__(9);
-
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(10);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(11);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(13);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(12);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Project = __webpack_require__(200);
-
-var _Project2 = _interopRequireDefault(_Project);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ProjectContainer = function (_React$Component) {
-  (0, _inherits3.default)(ProjectContainer, _React$Component);
-
-  function ProjectContainer() {
-    (0, _classCallCheck3.default)(this, ProjectContainer);
-    return (0, _possibleConstructorReturn3.default)(this, (ProjectContainer.__proto__ || (0, _getPrototypeOf2.default)(ProjectContainer)).apply(this, arguments));
-  }
-
-  (0, _createClass3.default)(ProjectContainer, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(_Project2.default, this.props);
-    }
-  }]);
-  return ProjectContainer;
-}(_react2.default.Component);
-
-exports.default = ProjectContainer;
-
-/***/ }),
-/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8337,13 +8315,13 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Projects = __webpack_require__(201);
-
-var _Projects2 = _interopRequireDefault(_Projects);
-
-var _projects = __webpack_require__(116);
+var _projects = __webpack_require__(206);
 
 var _projects2 = _interopRequireDefault(_projects);
+
+var _projects3 = __webpack_require__(116);
+
+var _projects4 = _interopRequireDefault(_projects3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8358,13 +8336,129 @@ var ProjectsContainer = function (_React$Component) {
   (0, _createClass3.default)(ProjectsContainer, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_Projects2.default, (0, _extends3.default)({}, this.props, { projects: _projects2.default }));
+      return _react2.default.createElement(_projects2.default, (0, _extends3.default)({}, this.props, { projects: _projects4.default }));
     }
   }]);
   return ProjectsContainer;
 }(_react2.default.Component);
 
 exports.default = ProjectsContainer;
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _keys = __webpack_require__(211);
+
+var _keys2 = _interopRequireDefault(_keys);
+
+var _getPrototypeOf = __webpack_require__(9);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(10);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(11);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(13);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(12);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _header = __webpack_require__(40);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _footer = __webpack_require__(76);
+
+var _footer2 = _interopRequireDefault(_footer);
+
+var _item = __webpack_require__(197);
+
+var _item2 = _interopRequireDefault(_item);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var style = function style() {
+  return '\n.container-small {\n  max-width: 1024px;\n  margin: 0 auto;\n}\n@media screen and (max-width: 600px) {\n  .container-small {\n    padding: 0 15px;\n  }\n}\n';
+};
+
+var Home = function (_React$Component) {
+  (0, _inherits3.default)(Home, _React$Component);
+
+  function Home() {
+    (0, _classCallCheck3.default)(this, Home);
+    return (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).apply(this, arguments));
+  }
+
+  (0, _createClass3.default)(Home, [{
+    key: 'render',
+    value: function render() {
+      var projects = this.props.projects;
+
+
+      return _react2.default.createElement(
+        'article',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'container-large' },
+          _react2.default.createElement(
+            _header2.default,
+            null,
+            'About Me'
+          ),
+          _react2.default.createElement(
+            'style',
+            null,
+            style()
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'mbxl phm' },
+            _react2.default.createElement(
+              'div',
+              { className: 'container-small grid dsktp-2 mob-1' },
+              (0, _keys2.default)(projects).map(function (key, i) {
+                var project = projects[key];
+                return _react2.default.createElement(_item2.default, {
+                  key: i,
+                  img: project.logo,
+                  title: project.title,
+                  subTitle: project.subTitle,
+                  desc: project.desc,
+                  url: key
+                });
+              })
+            )
+          )
+        ),
+        _react2.default.createElement(_footer2.default, null)
+      );
+    }
+  }]);
+  return Home;
+}(_react2.default.Component);
+
+exports.default = Home;
 
 /***/ }),
 /* 207 */
@@ -8382,7 +8476,7 @@ exports.default = {
   number: '+44 (0) 7599 166144',
   email: 'edwilliamsdevelopment@gmail.com',
   website: 'edwilliamsdevelopment.com',
-  about: ['As a Frontend Engineer and Full Stack Developer, I have many years of experience in building robust and scalable websites, webapps and PWA’s. As well as solid commercial experience of building full-stack applications.', 'As a contractor I enjoy taking the lead in projects wherever possible and have experience working solo / remotely and mentoring other developers. I always work to high standards and deliver maintainable and test driven software while keeping the end user in mind at all times.', 'I have consulted for enterprises of all sizes (Discover, RAC, PassivSystems, Jaguar Land Rover, Good Energy, et al) and enjoy communicating with the client and all stakeholders throughout a project.', 'Specialising in React / Redux has been a natural fit for my style of development as I favour a functional / declarative approach to programming and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.', 'As a UI expert I have extensive experience with animations (CSS, SVG and WebGL) and feel equally at home styling interfaces with JavaScript as I do with CSS / SASS. I have also become a keen advocate of PWA’s and conform to best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.', 'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as writing CI build scripts (Bash / Webpack / Gulp / Grunt), designing databases (MySQL / DynamoDB / S3), architecting API’s (Node / AWS / Heroku / PHP), keeping fine grain version control (Git) of codebases on the command line and working in multiple environments (Linux, OSX and Windows)', 'See below for a selective list the applications I have developed over recent years. For more info / links, please visit: edwilliamsdevelopment.com']
+  about: ['As a Senior Frontend Full Stack Contractor, I have many years of experience in building robust and scalable websites, webapps, PWA’s and API’s.', 'I enjoy taking the lead in projects and have extensive experience in mentoring junior developers. I always work to high standards and deliver maintainable and test driven software while keeping the end user in mind at all times.', 'I have consulted for enterprises of all sizes (Discover, RAC, PassivSystems, Jaguar Land Rover, Good Energy, et al) and enjoy communicating with the client and all stakeholders throughout a project.', 'Specialising in Javasript has been a natural fit for my development style, favouring a functional / declarative approach to programming and always seeking to lift the codebase into pure testable libraries and utilities.', 'As a UI expert I have extensive experience with React and associated libraries and I am a keen advocate of PWA’s and always conform to best practices. I also have a solid commercial experience of Cordova and App store deployment.', 'In developing API’s I favour Node (Express) and MongoDB though have experience with AWS (Lambda, DynamoDB and S3) as well as experience with PHP (Laravel)']
 };
 
 /***/ }),

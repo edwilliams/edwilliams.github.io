@@ -22,28 +22,29 @@ class Home extends React.Component {
 
     return (
       <article>
-        <Header>Ed Williams</Header>
+        <div className="container-large">
+          <Header>About Me</Header>
 
-        <style>{style()}</style>
+          <style>{style()}</style>
 
-        <div className="mbxl">
-          <div className="container-small grid dsktp-2 mob-1">
-            {Object.keys(projects).map((key, i) => {
-              const project = projects[key]
-              return (
-                <Item
-                  key={i}
-                  img={project.logo}
-                  title={project.title}
-                  subTitle={project.subTitle}
-                  desc={project.desc}
-                  url={key}
-                />
-              )
-            })}
+          <div className="mbxl phm">
+            <div className="container-small grid dsktp-2 mob-1">
+              {Object.keys(projects).map((key, i) => {
+                const project = projects[key]
+                return (
+                  <Item
+                    key={i}
+                    img={project.logo}
+                    title={project.title}
+                    subTitle={project.subTitle}
+                    desc={project.desc}
+                    url={key}
+                  />
+                )
+              })}
+            </div>
           </div>
         </div>
-
         <Footer />
       </article>
     )

@@ -24,11 +24,13 @@ class About extends React.Component {
   render() {
     return (
       <article>
-        <Header>About Me</Header>
+        <div className="container-large">
+          <Header>About Me</Header>
+        </div>
 
         <style>{style()}</style>
 
-        <div className="about grid dsktp-2 mob-1">
+        <div className="about container-small grid dsktp-2 mob-1">
           <div className="pam">
             <h3 className="mbm">Contract Software Engineer</h3>
 
@@ -49,7 +51,6 @@ class About extends React.Component {
 
           <img className="about-img mbs" src="img/ed.png" />
         </div>
-
         <Footer />
       </article>
     )
