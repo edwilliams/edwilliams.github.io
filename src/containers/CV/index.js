@@ -3,7 +3,7 @@ import React from 'react'
 // import PDFmake from './PDFmake'
 // import DD from './DD'
 
-import Header from '../../components/Partials/Header'
+import Header from '../../components/header'
 
 class CV extends React.Component {
   // generaturePDF() {

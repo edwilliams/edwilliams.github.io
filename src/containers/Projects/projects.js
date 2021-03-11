@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Header from '../Partials/Header'
-import Footer from '../Partials/Footer'
-import Item from '../Partials/Item'
+import Header from '../../components/header'
+import Footer from '../../components/footer'
+import Item from '../../components/item'
 
 const style = () => `
 .container-small {

@@ -2,21 +2,11 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { mergeDeepRight } from 'ramda'
 
-import Home from 'containers/Home'
-import About from 'containers/About'
-import Projects from 'containers/Projects'
-import Project from 'containers/Project'
-import CV from 'containers/CV'
-
-const style = () => `
-main {
-  border: 8px solid #494C4E;
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  padding-bottom: 40px;
-}
-`
+import Home from 'containers/home'
+import About from 'containers/about'
+import Projects from 'containers/projects'
+import Project from 'containers/project'
+import CV from 'containers/cv'
 
 const ProjectsSwitch = () => (
   <Switch>
@@ -33,7 +23,6 @@ class MainContainer extends React.Component {
   render() {
     return (
       <main id="main">
-        <style>{style()}</style>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={ProjectsSwitch} />

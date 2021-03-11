@@ -1,5 +1,5 @@
 import React from 'react'
-import Projects from 'components/Projects'
+import Projects from './projects'
 
 import projects from 'projects'
 

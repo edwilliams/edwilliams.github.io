@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../Partials/Header'
-import Footer from '../Partials/Footer'
+import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 const style = () => `
 @media screen and (max-width: 600px) {

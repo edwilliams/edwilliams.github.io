@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Header from '../Partials/Header'
-import Footer from '../Partials/Footer'
+import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 class Home extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Home extends React.Component {
       <article>
         <Header>Ed Williams</Header>
 
-        <iframe src="/sites/shooting-stars/" className="full-screen"></iframe>
+        {/* <iframe src="/sites/shooting-stars/" className="full-screen"></iframe> */}
 
         <div className="amm typo-center">
           <p className="mbs">{this.props.title}</p>

@@ -7,11 +7,11 @@
 hr {
   height: 1px;
   border: 0;
-  background: #F0EEEE;
+  background: #f0eeee;
 }
 
 h3 {
-  color: #F5C453;
+  color: #f5c453;
   text-transform: uppercase;
 }
 
@@ -31,14 +31,38 @@ a {
 
 .underline:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 10px;
   height: 1px;
-  background: #494C4E;
+  background: #494c4e;
   left: 0;
   bottom: -10px;
 }
 
 .typo-lowercase {
   text-transform: lowercase;
+}
+
+main {
+  border: 8px solid #494c4e;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 40px;
+}
+
+.container-large {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container-small {
+    padding: 0 15px;
+  }
 }
