@@ -11,6 +11,6 @@ export default {
     'Specialising in React / Redux has been a natural fit for my style of development as I favour a functional / declarative approach to programming and always seeks to lift as much of a codebase into pure functions as possible, where it can be written into utilities / libraries and tested.',
     'As a UI expert I have extensive experience with animations (CSS, SVG and WebGL) and feel equally at home styling interfaces with JavaScript as I do with CSS / SASS. I have also become a keen advocate of PWA’s and conform to best practices (e.g. responsive design, cross browser development) whilst retaining solid commercial experience of Cordova and App store deployment.',
     'Having worked end-to-end on many large projects I am comfortable taking on all of the above alongside other responsibilities, such as writing CI build scripts (Bash / Webpack / Gulp / Grunt), designing databases (MySQL / DynamoDB / S3), architecting API’s (Node / AWS / Heroku / PHP), keeping fine grain version control (Git) of codebases on the command line and working in multiple environments (Linux, OSX and Windows)',
-    'See below for a selective list the applications I have developed over recent years. For more info / links, please visit: edwilliamsdevelopment.com',
+    'See below for a selective list the applications I have developed over recent years. For more info / links, please visit: edwilliamsdevelopment.com'
   ]
 }

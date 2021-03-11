@@ -7,7 +7,7 @@ const clone = str => JSON.parse(JSON.stringify(str))
 
 const getHeader = () => {
   return [
-		{ text: name, style: 'header' },
+    { text: name, style: 'header' },
     { style: 'contact', text: address },
     {
       style: 'contact',
@@ -15,16 +15,16 @@ const getHeader = () => {
         { width: '*', text: number },
         { width: '*', text: email },
         { width: '*', text: website }
-      ],
-    },
+      ]
+    }
   ]
 }
 
 const getProfile = () => {
   return [
-		{
-			text: 'Professional Profile',
-			style: 'header'
+    {
+      text: 'Professional Profile',
+      style: 'header'
     },
     { style: 'body', text: about[0] },
     { style: 'body', text: about[1] },
@@ -36,14 +36,15 @@ const getProfile = () => {
     { style: 'body', text: about[7] },
     {
       style: 'small',
-      text: 'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
+      text:
+        'See below for a selection of the applications I have developed over recent years. For more info / links, please visit:'
     },
     {
       style: 'small',
       pageBreak: 'after',
       text: website,
       link: email
-    },
+    }
   ]
 }
 
@@ -56,7 +57,8 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'I am rebuilding the PassivLiving heating App - the control for their smart thermostat platform, available in App Store and Google Play'
+      text:
+        'I am rebuilding the PassivLiving heating App - the control for their smart thermostat platform, available in App Store and Google Play'
     },
     {
       style: 'workitems',
@@ -70,7 +72,8 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'I rebuilt a core piece of functionality of the Jaguar Landrover e-learning system, based on new designs, and worked closely with other developers into integrate this with their existing bespoke .NET platform.'
+      text:
+        'I rebuilt a core piece of functionality of the Jaguar Landrover e-learning system, based on new designs, and worked closely with other developers into integrate this with their existing bespoke .NET platform.'
     },
     {
       style: 'worksubtitle',
@@ -88,7 +91,8 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.'
+      text:
+        'I joined Dare West as a fullstack developer to assist them in completing a site rebuild for the School of Economic Science. I continued in this role to work on their project with Good Energy.'
     },
     {
       style: 'worksubtitle',
@@ -105,10 +109,7 @@ const getWorkItems = () => {
     {
       style: 'workitems',
       pageBreak: 'after',
-      ul: [
-        'Full-stack development of custom features',
-        'Third party API integration',
-      ]
+      ul: ['Full-stack development of custom features', 'Third party API integration']
     }
   ]
   const rosielee = [
@@ -144,7 +145,8 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype.JS). All applications we integrated into a proprietary PHP CMS called Spirit. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
+      text:
+        'In this role I was responsible for building the frontend codebases of all new applications and maintaining legacy codebases (inc using Prototype.JS). All applications we integrated into a proprietary PHP CMS called Spirit. Notable projects included comparerecruit.com, amplifychange.org and manxflights.com'
     }
   ]
   const cognique = [
@@ -154,68 +156,68 @@ const getWorkItems = () => {
     },
     {
       style: 'workdesc',
-      text: 'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
+      text:
+        'In this role I built fullstack a range of bespoke websites. Including oldmillgroup.co.uk, collierreading.co.uk and strodetheatre.org.uk. I also developed a ‘guess-the-brand’ promotional game for Pandora Dress Agency, which was available in both the App Store and Google Play.'
     }
   ]
 
-  return [].concat( passiv, jlr, dare, rosielee, dbs, cognique )
-
+  return [].concat(passiv, jlr, dare, rosielee, dbs, cognique)
 }
 
 const getEducation = () => {
   return [
     {
-			text: 'Education',
-			style: 'header'
+      text: 'Education',
+      style: 'header'
     },
     {
       style: 'body',
-      text: 'Exeter University, PGCE - 2005 - 2006 \n Dartington College of Arts, BA (Hons) Music Composition - 2002 - 2005',
-    },
+      text:
+        'Exeter University, PGCE - 2005 - 2006 \n Dartington College of Arts, BA (Hons) Music Composition - 2002 - 2005'
+    }
   ]
 }
 
 export default {
-	content: [].concat( getHeader(), getProfile(), getWorkItems(), getEducation() ),
-	styles: {
-		header: {
-			fontSize: 12,
-			bold: true,
-      margin: [ 0, 20, 0, 20 ] // [ left, top, right, bottom ]
-		},
+  content: [].concat(getHeader(), getProfile(), getWorkItems(), getEducation()),
+  styles: {
+    header: {
+      fontSize: 12,
+      bold: true,
+      margin: [0, 20, 0, 20] // [ left, top, right, bottom ]
+    },
     contact: {
       fontSize: 10,
       alignment: 'center',
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
     },
-		body: {
-			fontSize: 11,
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
-		},
+    body: {
+      fontSize: 11,
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
+    },
     small: {
       fontSize: 10,
       italics: true,
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
     },
     worktitle: {
       fontSize: 12,
       bold: true,
-      margin: [ 0, 30, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 30, 0, 10] // [ left, top, right, bottom ]
     },
     workdesc: {
       fontSize: 11,
       italics: true,
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
     },
     worksubtitle: {
       fontSize: 11,
       bold: true,
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
     },
     workitems: {
       fontSize: 11,
-      margin: [ 0, 0, 0, 10 ] // [ left, top, right, bottom ]
+      margin: [0, 0, 0, 10] // [ left, top, right, bottom ]
     }
-	}
-
+  }
 }

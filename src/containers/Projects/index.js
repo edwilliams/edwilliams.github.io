@@ -5,9 +5,7 @@ import projects from 'projects'
 
 class ProjectsContainer extends React.Component {
   render() {
-    return (
-      <Projects {...this.props} projects={projects}/>
-    )
+    return <Projects {...this.props} projects={projects} />
   }
 }
 

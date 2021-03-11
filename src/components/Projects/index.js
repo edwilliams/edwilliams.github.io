@@ -18,19 +18,16 @@ const style = () => `
 
 class Home extends React.Component {
   render() {
-
     const { projects } = this.props
 
     return (
       <article>
-
         <Header>Ed Williams</Header>
 
         <style>{style()}</style>
 
         <div className="mbxl">
           <div className="container-small grid dsktp-2 mob-1">
-
             {Object.keys(projects).map((key, i) => {
               const project = projects[key]
               return (
@@ -40,20 +37,17 @@ class Home extends React.Component {
                   title={project.title}
                   subTitle={project.subTitle}
                   desc={project.desc}
-                  url={key}/>
+                  url={key}
+                />
               )
             })}
-
           </div>
         </div>
 
-        <Footer/>
-
+        <Footer />
       </article>
     )
-
   }
-
 }
 
 export default Home

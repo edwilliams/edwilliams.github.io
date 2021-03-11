@@ -6,7 +6,6 @@ import React from 'react'
 import Header from '../../components/Partials/Header'
 
 class CV extends React.Component {
-
   // generaturePDF() {
 
   //   const pdfDocGenerator = PDFmake(DD)
@@ -21,8 +20,11 @@ class CV extends React.Component {
 
   render() {
     return (
-      <div ref={el => { this.container = el }}>
-
+      <div
+        ref={el => {
+          this.container = el
+        }}
+      >
         <style>{`
           iframe {
             position: absolute;
@@ -36,11 +38,9 @@ class CV extends React.Component {
         <Header>Ed Williams - CV</Header>
 
         <iframe src="cv-ed-williams.pdf"></iframe>
-
       </div>
     )
   }
-
 }
 
 export default CV

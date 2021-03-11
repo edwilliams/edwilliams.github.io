@@ -7,7 +7,7 @@ var render = () => {
   return ReactDOM.render(
     <div>
       <HashRouter>
-        <Main/>
+        <Main />
       </HashRouter>
     </div>,
     document.getElementById('app')

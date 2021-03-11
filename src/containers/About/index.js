@@ -5,9 +5,7 @@ import data from 'data.js'
 
 class AboutContainer extends React.Component {
   render() {
-    return (
-      <About {...data}/>
-    )
+    return <About {...data} />
   }
 }
 
