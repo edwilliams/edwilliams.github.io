@@ -1,20 +1,15 @@
-# Portfolio Website
+# edwilliams.github.io
 
-## Home
-## Projects
+`/public` is source of truth for:
 
-- PassivLiving App iOS / Android
-- Jaguar Land Rover E-Learning Platform
-- Good Energy Quote Engine
-- Rosie Lee 2016 Website
-- VUE Playbook presentation
+- css
+- fonts
+- img
+- vid
+- app.min.js
+- favicon
+- index.html
+- manifest.json
+- sw.js
 
-## About
-## CV
-
----
-
-## images
-
-- content in chrome frame set to: 1536 * 962
-- resze in gimp to 768 * 481
+For ease, these files are duplicated at root level on github pages

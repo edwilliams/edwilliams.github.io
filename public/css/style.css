@@ -1,0 +1,68 @@
+.full-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: #f0eeee;
+}
+
+h3 {
+  color: #f5c453;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.underline {
+  position: relative;
+}
+
+a {
+  text-decoration: underline;
+  display: inline-block;
+  color: #232323;
+}
+
+.underline:after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background: #494c4e;
+  left: 0;
+  bottom: -10px;
+}
+
+.typo-lowercase {
+  text-transform: lowercase;
+}
+
+main {
+  border: 8px solid #494c4e;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 40px;
+}
+
+.container-large {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container-small {
+    padding: 0 15px;
+  }
+}

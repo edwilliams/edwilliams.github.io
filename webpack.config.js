@@ -1,47 +1,65 @@
-var webpack = require('webpack')
-var PROD = JSON.parse(process.env.PROD_ENV || '0')
+const path = require('path')
+const { DefinePlugin } = require('webpack')
+const htmlWebpackPlugin = require('html-webpack-plugin')
 
-var loaders = [{
-  test: /\.js$/,
-  exclude: /node_modules/,
-  loader: 'babel-loader?presets[]=es2015&presets[]=react'
-}]
-
-var config = {
-  dev: {
-    devtool: 'source-map',
-    entry: [
-      './index.js',
-      'webpack-dev-server/client?http://0.0.0.0:8080',
-    ],
-    output: {
-      filename: 'dist/bundle.js',
-      publicPath: ''
-    },
-    module: { loaders: loaders }
+module.exports = {
+  output: {
+    filename: 'app.min.js',
+    path: path.resolve(__dirname, 'dist')
   },
-  prod: {
-    devtool: 'source-map',
-    entry: {
-      'application': './index.js'
-    },
-    output: {
-      filename: 'dist/[name].js'
-    },
-    module: { loaders: loaders },
-    plugins: [
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: JSON.stringify('production')
+  devtool: 'source-map',
+  module: {
+    rules: [
+      {
+        // test: /\.(sass|less|css)$/,
+        test: /\.(css)$/,
+        loaders: [
+          'style-loader',
+          'css-loader'
+          //  'less-loader'
+        ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
         }
-      })
-      // new webpack.optimize.UglifyJsPlugin({
-      //   compress: { warnings: false },
-      //   output: { comments: false },
-      //   minimize: true
-      // })
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader'
+          }
+        ]
+      }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      utils: path.resolve(__dirname, './src/utils'),
+      config: path.resolve(__dirname, './src/config'),
+      api: path.resolve(__dirname, './src/api'),
+      components: path.resolve(__dirname, './src/components')
+    }
+  },
+  devServer: {
+    contentBase: 'public',
+    host: '0.0.0.0', // enable WDS to listen for requests from the network
+    proxy: {
+      '/v1': 'http://localhost:3000'
+    }
+  },
+  plugins: [
+    new htmlWebpackPlugin({
+      template: './src/index.ejs',
+      filename: './index.html'
+    }),
+    new DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.APP': JSON.stringify(process.env.APP)
+    })
+  ]
 }
-
-module.exports = ( PROD ) ? config.prod : config.dev

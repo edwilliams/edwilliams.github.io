@@ -1,0 +1,126 @@
+/* https://tailwindcss.com/docs/adding-new-utilities/ */
+
+@tailwind utilities;
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border,
+.border-t,
+.border-r,
+.border-b,
+.border-l {
+  border-style: solid;
+}
+
+.border-l-transparent {
+  border-left-color: transparent;
+}
+.border-r-transparent {
+  border-right-color: transparent;
+}
+
+.disabled {
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.truncate-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.truncate-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.truncate-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.absolute-tl,
+.absolute-t,
+.absolute-tr {
+  position: absolute;
+  top: 0;
+}
+
+.absolute-bl,
+.absolute-b,
+.absolute-br {
+  position: absolute;
+  bottom: 0;
+}
+
+.absolute-tl,
+.absolute-l,
+.absolute-bl {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-tr,
+.absolute-r,
+.absolute-br {
+  position: absolute;
+  right: 0;
+}
+
+.absolute-t-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.absolute-b-center {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.absolute-l-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.absolute-r-center {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pt-full {
+  padding-top: 100%;
+}
