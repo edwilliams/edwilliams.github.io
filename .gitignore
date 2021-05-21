@@ -10,8 +10,6 @@
 
 # next.js
 /.next/
-# changed from out for gh pages
-/docs/
 
 # production
 /build
